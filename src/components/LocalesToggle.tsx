@@ -1,11 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
 
 const langs = [
   { code: "en", name: "EN" },
@@ -15,24 +9,17 @@ const langs = [
 export const LocaleToggle = () => {
   const { i18n } = useTranslation();
   return (
-    <Select onValueChange={(newLang) => i18n.changeLanguage(newLang)}>
-      <SelectTrigger className="mr-4">
-        <SelectValue
-          aria-label={i18n.language.toUpperCase()}
-          placeholder={i18n.language.toUpperCase()}
-        />
-      </SelectTrigger>
-      <SelectContent>
-        {langs.map((lang) => (
-          <SelectItem
-            key={lang.code}
-            value={lang.code}
-            onClick={() => i18n.changeLanguage(lang.code)}
-          >
-            {lang.name}
-          </SelectItem>
-        ))}
-      </SelectContent>
-    </Select>
+    <ToggleGroup type="single" defaultValue={i18n.language}>
+      {langs.map((lang) => (
+        <ToggleGroupItem
+          className={i18n.language === lang.code ? 'accent-slate-50' : ''}
+          key={lang.code}
+          value={lang.code}
+          onClick={() => i18n.changeLanguage(lang.code)}
+        >
+          {lang.name}
+        </ToggleGroupItem>
+      ))}
+    </ToggleGroup>
   );
 };

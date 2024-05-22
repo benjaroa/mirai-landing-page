@@ -1,20 +1,17 @@
-import './App.css'
-import { Navbar } from './components/Navbar'
-import { Hero } from './components/Hero'
-
-import { Footer } from './components/Footer'
-import { ScrollToTop } from './components/ScrollToTop'
-import HeroSectionCentredWithImage from './components/HeroSection'
+import "./App.css";
+import { TopHeader } from "./components/TopHeader.tsx";
+import { MainContent } from "./components/MainContent.tsx";
+import { NewFooter } from "./components/NewFooter.tsx";
+import { TopButtons } from './components/TopButtons';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <HeroSectionCentredWithImage />
-      <Footer />
-      <ScrollToTop />
-    </>
+    <main className="mt-16">
+      <TopButtons />
+      <TopHeader />
+      <MainContent />
+      <NewFooter />
+    </main>
   );
 }
 

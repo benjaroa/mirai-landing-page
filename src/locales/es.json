@@ -1,5 +1,4 @@
 {
-  "test": "probando",
   "navbar": {
     "about": "Acerca de",
     "who-we-are": "Quiénes somos",
@@ -12,14 +11,20 @@
   },
   "hero": {
     "title": "Ramen + Fermentación",
-    "main-text": "Somos un proyecto emergente que utiliza técnicas de alta cocina y fermentación en la búsqueda de sabores que funsionen el ramen japonés contemporáneo con los sabores e ingredientes del paladar latinoamericano."
+    "main-text": "Somos un proyecto emergente que utiliza técnicas de alta cocina y fermentación en la fusión del ramen japonés contemporáneo con los sabores e ingredientes del paladar latinoamericano."
   },
-  "main-description-tabs": {
-    "titles": {
-      "restaurant": "Restaurant 🍜",
-      "products": "Productos 📦",
-      "pop-ups": "Pop-ups 👯"
+  "projects": {
+    "restaurant": {
+      "title": "Barra de Ramen 🍜",
+      "description": "Carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación."
+    },
+    "products": {
+      "title": "Productos 📦",
+      "description": "Fermentación tradicional y moderna en productos de alta calidad: kombuchas, misos, koji y más."
+    },
+    "pop-ups": {
+      "title": "Pop-ups 👯",
+      "description": "Colaboraciones con otros restaurantes para llevar nuestra propuesta a nuevos espacios, experimentar y aprender de otros."
     }
   }
-
 }
