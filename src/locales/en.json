@@ -1,0 +1,24 @@
+{
+  "test": "testing",
+  "navbar": {
+    "about": "About",
+    "who-we-are": "Who We Are",
+    "services": "Services"
+  },
+  "theme-mode-toggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "hero": {
+    "title": "Ramen + Fermentation",
+    "main-text": "We are a rising project that aims to use high cuisine techniques and fermentation, looking for flavors that fusion contemporary ramen with flavors and ingredients from Latin America."
+  },
+  "main-description-tabs": {
+    "titles": {
+      "restaurant": "Restaurant 🍜",
+      "products": "Products 📦",
+      "pop-ups": "Pop-ups 👯"
+    }
+  }
+}
