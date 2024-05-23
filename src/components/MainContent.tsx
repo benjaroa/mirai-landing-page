@@ -12,9 +12,9 @@ export const MainContent = () => {
       {(t('projects', { returnObjects: true }) as Project[]).map(({title, description, links}, index: number) => (
         <div key={`project-${index}`} className="border-l-4 border-slate-200 p-4 mb-4">
           <div className="my-3">
-            <h3 className="font-semibold text-lg leading-none tracking-tight mb-2">
+            <h2 className="font-bold text-xl mb-2">
               {title}
-            </h3>
+            </h2>
             <p className="text-sm text-muted-foreground">
               {description}
             </p>
