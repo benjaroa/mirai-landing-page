@@ -13,18 +13,37 @@
     "title": "Ramen + Fermentation",
     "main-text": "We are a growing project that aims to use high cuisine techniques and fermentation to create flavors that combine contemporary japanese ramen with flavors and ingredients from Latin America."
   },
-  "projects": {
-    "restaurant": {
+  "projects": [
+    {
       "title": "Ramen Shop 🍜",
-      "description": "Reduced menu of Japanese tapas and ramen, with a focus on the quality of ingredients and preparation techniques."
+      "description": "Reduced menu of Japanese tapas and ramen, with a focus on the quality of ingredients and preparation techniques.",
+      "links": [
+        { "target": "", "icon": "", "title": "ubicación" },
+        { "target": "", "icon": "", "title": "carta" },
+        { "target": "", "icon": "", "title": "reservas" },
+        { "target": "", "icon": "", "title": "contacto" },
+        { "target": "", "icon": "", "title": "google maps" }
+      ]
     },
-    "products": {
+    {
       "title": "Products 📦",
-      "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques."
+      "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
+      "links": [
+        { "target": "", "icon": "", "title": "tienda" },
+        { "target": "", "icon": "", "title": "dónde encontrarlos" },
+        { "target": "", "icon": "", "title": "mayoristas" },
+        { "target": "", "icon": "", "title": "contacto" }
+      ]
     },
-    "pop-ups": {
+    {
       "title": "Pop-ups 👯",
-      "description": "Working in collaboration with other restaurants to expand our proposal to new spaces, experiment, and learn from others."
+      "description": "Working in collaboration with other restaurants to expand our proposal to new spaces, experiment, and learn from others.",
+      "links": [
+        { "target": "", "icon": "", "title": "agenda" },
+        { "target": "", "icon": "", "title": "proximamente" },
+        { "target": "", "icon": "", "title": "reservas" },
+        { "target": "", "icon": "", "title": "contacto" }
+      ]
     }
-  }
+  ]
 }

@@ -1,58 +1,33 @@
 import { useTranslation } from "react-i18next";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const MainContent = () => {
   const { t } = useTranslation();
 
-  type ProjectDictionary = Record<string, { title: string; description: string }>;
-  const restaurant = t("projects.restaurant", { returnObjects: true }) as ProjectDictionary;
-  const products = t("projects.products", { returnObjects: true }) as ProjectDictionary;
-  const popUps = t("projects.pop-ups", { returnObjects: true }) as ProjectDictionary;
+  type Link = { target: string, icon: string, title: string };
+  type Project = { title: string; description: string, links: Link[] }; 
 
   return (
     <div className="container col-span-2 grid items-start gap-6 lg:col-span-1">
 
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            {restaurant.title as unknown as string}
-          </CardTitle>
-          <CardDescription>
-            {restaurant.description as unknown as string}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="grid gap-6">
-          [ubicación] [carta] [reservas] [contacto] [google maps]
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            {products.title as unknown as string}
-          </CardTitle>
-          <CardDescription>
-            {products.description as unknown as string}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="grid gap-6">
-          [tienda] [dónde encontrarlos] [mayoristas] [contacto]
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            {popUps.title as unknown as string}
-          </CardTitle>
-          <CardDescription>
-            {popUps.description as unknown as string}
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="grid gap-6">
-          [agenda] [quiero colaborar] [proximamente] [contacto]
-        </CardContent>
-      </Card>
+      {(t('projects', { returnObjects: true }) as Project[]).map(({title, description, links}, index: number) => (
+        <div key={`project-${index}`} className="border-l-4 border-slate-200 p-4 mb-4">
+          <div className="my-3">
+            <h3 className="font-semibold text-lg leading-none tracking-tight mb-2">
+              {title}
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              {description}
+            </p>
+          </div>
+          <div>
+            {links.map((link, index) => (
+              <a key={`link-${index}`} href={link.target} className="ml-2 text-slate-400 hover:underline">
+                [{link.title}]
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
 
     </div>
   );

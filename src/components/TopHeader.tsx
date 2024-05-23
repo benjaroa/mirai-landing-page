@@ -15,7 +15,6 @@ export const TopHeader = () => {
           </div>
         </a>
       </div>
-
     </div>
   );
 };
