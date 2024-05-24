@@ -9,7 +9,7 @@ export default defineConfig({
     {
       name: "markdown-loader",
       transform(code, id) {
-        if (id.slice(-3) === ".md") {
+        if ([".mdx", ".md"].includes(id.slice(-3))) {
           // For .md files, get the raw content
           return `export default ${JSON.stringify(code)};`;
         }

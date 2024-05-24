@@ -18,31 +18,54 @@
       "title": "Barra de Ramen 🍜",
       "description": "Carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
       "links": [
-        { "target": "", "icon": "", "title": "ubicación" },
-        { "target": "", "icon": "", "title": "carta" },
-        { "target": "", "icon": "", "title": "reservas" },
-        { "target": "", "icon": "", "title": "contacto" },
-        { "target": "", "icon": "", "title": "google maps" }
+        {
+          "type": "drawer",
+          "target": "location",
+          "icon": "",
+          "title": "ubicación y horario"
+        },
+        {
+          "type": "url",
+          "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
+          "icon": "",
+          "title": "carta"
+        }
       ]
     },
     {
       "title": "Productos 📦",
       "description": "Fermentación tradicional y moderna en productos de alta calidad: kombuchas, misos, koji y más.",
       "links": [
-        { "target": "", "icon": "", "title": "tienda" },
-        { "target": "", "icon": "", "title": "dónde encontrarlos" },
-        { "target": "", "icon": "", "title": "mayoristas" },
-        { "target": "", "icon": "", "title": "contacto" }
+        {
+          "type": "url",
+          "target": "https://tienda.miraifoodlab.cl",
+          "icon": "",
+          "title": "tienda"
+        },
+        {
+          "type": "drawer",
+          "target": "",
+          "icon": "",
+          "title": "dónde encontrarlos"
+        },
+        {
+          "type": "drawer",
+          "target": "seller-partners",
+          "icon": "",
+          "title": "¿eres mayorista?"
+        }
       ]
     },
     {
       "title": "Pop-ups 👯",
       "description": "Colaboraciones con otros restaurantes para llevar nuestra propuesta a nuevos espacios, experimentar y aprender de otros.",
       "links": [
-        { "target": "", "icon": "", "title": "agenda" },
-        { "target": "", "icon": "", "title": "proximamente" },
-        { "target": "", "icon": "", "title": "reservas" },
-        { "target": "", "icon": "", "title": "contacto" }
+        {
+          "type": "drawer",
+          "target": "pop-ups-calendar",
+          "icon": "",
+          "title": "agenda"
+        }
       ]
     }
   ]
