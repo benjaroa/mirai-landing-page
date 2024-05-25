@@ -22,13 +22,13 @@
           "type": "drawer",
           "target": "location",
           "icon": "",
-          "title": "ubicación y horario"
+          "title": "[ubicación y horario]"
         },
         {
           "type": "url",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
           "icon": "",
-          "title": "carta"
+          "title": "[carta]"
         }
       ]
     },
@@ -40,19 +40,19 @@
           "type": "url",
           "target": "https://tienda.miraifoodlab.cl",
           "icon": "",
-          "title": "tienda"
+          "title": "[tienda]"
         },
         {
           "type": "drawer",
           "target": "",
           "icon": "",
-          "title": "dónde encontrarlos"
+          "title": "[dónde encontrarlos]"
         },
         {
           "type": "drawer",
           "target": "seller-partners",
           "icon": "",
-          "title": "¿eres mayorista?"
+          "title": "[¿eres mayorista?]"
         }
       ]
     },
@@ -64,9 +64,12 @@
           "type": "drawer",
           "target": "pop-ups-calendar",
           "icon": "",
-          "title": "agenda"
+          "title": "[agenda]"
         }
       ]
     }
-  ]
+  ],
+  "footer": {
+    "work-and-stage-with-us": "Trabaja con nosotros / Pasantías"
+  }
 }

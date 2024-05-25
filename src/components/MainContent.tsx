@@ -1,13 +1,5 @@
-import { Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import { I18nMarkdown } from "./I18nMarkdown";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTrigger,
-} from "./ui/sheet";
+import { getFallback, typesMap } from "./TypesMap";
 
 export const MainContent = () => {
   const { t } = useTranslation();
@@ -18,40 +10,16 @@ export const MainContent = () => {
     title: string;
     type: "drawer" | "url";
   };
-  type Project = { title: string; description: string; links: Link[] };
-
-  const getDrawer = (key: number, filename: string, title: string) => (
-    <Suspense key={key} fallback="loading...">
-      <Sheet>
-        <SheetTrigger className="ml-2 text-slate-400 hover:underline inline">
-          [{title}]
-        </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetDescription>
-              <I18nMarkdown filename={filename} />
-            </SheetDescription>
-          </SheetHeader>
-        </SheetContent>
-      </Sheet>
-    </Suspense>
-  );
-
-  const getLink = (key: number, target: string, title: string) => (
-    <a key={key} href={target} className="ml-2 text-slate-400 hover:underline">
-      [{title}]
-    </a>
-  );
-
-  const typesMap = {
-    "drawer": getDrawer,
-    "url": getLink,
+  type Project = {
+    title: string;
+    description: string;
+    links: Link[];
   };
 
   const processLinks = (links: Link[]) => {
     return links.map(({ target, title, type }, key) => {
-      const component = typesMap[type] || ((key: number) => (<span key={key}>{title}</span>));
-      return component(key, target, title);
+      const component = typesMap[type] || getFallback;
+      return component({ key, target, title });
     });
   };
 
