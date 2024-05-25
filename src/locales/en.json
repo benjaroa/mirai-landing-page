@@ -20,12 +20,14 @@
       "links": [
         {
           "type": "drawer",
+          "className": "ml-2",
           "target": "work-and-stage-with-us",
           "icon": "",
           "title": "[location and hours]"
         },
         {
           "type": "url",
+          "className": "ml-2",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
           "icon": "",
           "title": "[menu]"
@@ -38,18 +40,21 @@
       "links": [
         {
           "type": "url",
+          "className": "ml-2",
           "target": "https://tienda.miraifoodlab.cl",
           "icon": "",
           "title": "[shop]"
         },
         {
           "type": "drawer",
+          "className": "ml-2",
           "target": "",
           "icon": "",
           "title": "[where you can find us]"
         },
         {
           "type": "drawer",
+          "className": "ml-2",
           "target": "seller-partners",
           "icon": "",
           "title": "[are you a wholesaler?]"
@@ -62,6 +67,7 @@
       "links": [
         {
           "type": "drawer",
+          "className": "ml-2",
           "target": "pop-ups-calendar",
           "icon": "",
           "title": "[schedule]"
