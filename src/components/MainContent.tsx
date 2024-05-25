@@ -6,6 +6,7 @@ export const MainContent = () => {
 
   type Link = {
     target: string;
+    className?: string;
     icon: string;
     title: string;
     type: "drawer" | "url";
@@ -17,9 +18,9 @@ export const MainContent = () => {
   };
 
   const processLinks = (links: Link[]) => {
-    return links.map(({ target, title, type }, key) => {
+    return links.map(({ target, title, type, className }, key) => {
       const component = typesMap[type] || getFallback;
-      return component({ key, target, title });
+      return component({ key, target, title, className });
     });
   };
 

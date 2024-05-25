@@ -22,7 +22,7 @@
           "type": "drawer",
           "target": "work-and-stage-with-us",
           "icon": "",
-          "title": "[location]"
+          "title": "[location and hours]"
         },
         {
           "type": "url",

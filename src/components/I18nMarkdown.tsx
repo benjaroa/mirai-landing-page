@@ -5,6 +5,7 @@ import mdI18n from "../md-i18n.json";
 
 type I18nMarkdownProps = {
   filename: string;
+  className?: string;
 };
 
 export const I18nMarkdown = ({ filename }: I18nMarkdownProps) => {

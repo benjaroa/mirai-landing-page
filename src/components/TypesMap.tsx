@@ -9,25 +9,26 @@ import {
 } from "./ui/sheet";
 
 export type UniversalComponent = {
-  key: number,
+  key?: number,
   target: string,
-  title: string
+  title?: string
+  className?: string
 };
 
 export const getFallback = (
-  { key, title }: UniversalComponent
-) => (<span key={key}>{title}</span>);
+  { key, title, className }: UniversalComponent
+) => (<span key={key} className={className}>{title}</span>);
 
-export const getDrawer = ({ key, target, title }: UniversalComponent) => (
+export const getDrawer = ({ key, target, title, className }: UniversalComponent) => (
   <Suspense key={key} fallback="loading...">
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger className={className}>
         {title}
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
           <SheetDescription>
-            <I18nMarkdown filename={target} />
+            <I18nMarkdown className={className} filename={target} />
           </SheetDescription>
         </SheetHeader>
       </SheetContent>
@@ -35,9 +36,9 @@ export const getDrawer = ({ key, target, title }: UniversalComponent) => (
   </Suspense>
 );
 
-const getUrl = ({ key, target, title }: UniversalComponent) => (
-  <a key={key} href={target} className="ml-2 text-slate-400 hover:underline">
-    [{title}]
+const getUrl = ({ key, target, title, className }: UniversalComponent) => (
+  <a key={key} href={target} className={`${className} text-slate-400 hover:underline`}>
+    {title}
   </a>
 );
 
