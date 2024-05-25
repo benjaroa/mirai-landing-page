@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ScrollArea } from "./ui/scroll-area";
+import mdI18n from "../md-i18n.json";
 
 type I18nMarkdownProps = {
   filename: string;
@@ -13,15 +14,8 @@ export const I18nMarkdown = ({ filename }: I18nMarkdownProps) => {
 
   useEffect(() => {
     const lang = i18n.language;
-    const path = `../md/${lang}/${filename}.md`;
-    import(path)
-      .then((module) => {
-        setMarkdown(module.default);
-      })
-      .catch((err) => {
-        console.error(err);
-        setMarkdown("# Error!");
-      });
+    const markdownKey = `src/md/${lang}/${filename}.md`;
+    setMarkdown((mdI18n as any)[markdownKey]);
   });
 
   return (
