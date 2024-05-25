@@ -21,7 +21,7 @@
         {
           "type": "drawer",
           "className": "ml-2",
-          "target": "work-and-stage-with-us",
+          "target": "location",
           "icon": "",
           "title": "[location and hours]"
         },
