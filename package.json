@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "md-to-json": "node ./scripts/md-to-json.js",
     "dev": "run-s md-to-json vite-dev",
-    "build": "run-s md-to-json vite-build"
+    "copy-assets": "cpx './src/assets/*' './dist/assets'",
+    "build": "run-s md-to-json vite-build copy-assets"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.4.0",
@@ -63,6 +64,7 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
+    "cpx": "^1.5.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
