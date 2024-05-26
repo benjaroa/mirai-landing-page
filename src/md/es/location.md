@@ -2,7 +2,7 @@
 
 ## Factoría Franklin
 
-![image](./src/assets/mirai-franklin.png)
+![image](./assets/mirai-franklin.png)
 
 📍Franklin 741, local A2, Santiago
 
