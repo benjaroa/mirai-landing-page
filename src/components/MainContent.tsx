@@ -34,7 +34,7 @@ export const MainContent = () => {
             <div className="">
               <img
                 className="object-cover object-center h-60"
-                src="/src/assets/hero/hero-1.jpg"
+                src="/assets/hero-1.jpg"
                 alt="nature image"
               />
             </div>
