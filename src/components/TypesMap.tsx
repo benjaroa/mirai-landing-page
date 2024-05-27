@@ -3,8 +3,6 @@ import { I18nMarkdown } from "./I18nMarkdown";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
   SheetTrigger,
 } from "./ui/sheet";
 
