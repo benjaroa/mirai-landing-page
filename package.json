@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "md-to-json": "node ./scripts/md-to-json.js",
     "dev": "run-s md-to-json vite-dev",
-    "copy-assets": "cpx './src/assets/*' './dist/assets'",
+    "copy-assets": "cpx './assets/*' './dist/assets'",
     "build": "run-s md-to-json vite-build copy-assets"
   },
   "dependencies": {

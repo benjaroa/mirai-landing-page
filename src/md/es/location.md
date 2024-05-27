@@ -2,11 +2,11 @@
 
 ## Factoría Franklin
 
-![image](./assets/mirai-franklin.png)
-
 📍Franklin 741, local A2, Santiago
 
 Nuestro restaurant está ubicado en la Factoría Franklin, una antigua fábrica de medicamentos que hoy aloja a muchos proyectos como el nuestro.
+
+Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en un grupo grande, te recomendamos no tomar desayuno y llegar temprano.
 
 ### Horarios
 

@@ -15,7 +15,7 @@ export const I18nMarkdown = ({ filename }: I18nMarkdownProps) => {
   const markdown = (mdI18n as any)[markdownKey];
 
   return (
-    <ScrollArea className="h-screen prose dark:prose-invert p-4 py-8">
+    <ScrollArea className="h-screen prose dark:prose-invert py-8">
       <ReactMarkdown children={markdown} />
     </ScrollArea>
   );

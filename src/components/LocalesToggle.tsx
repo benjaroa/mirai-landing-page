@@ -1,24 +1,27 @@
 import { useTranslation } from "react-i18next";
-import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
 
-const langs = [
-  { code: "en", name: "EN" },
-  { code: "es", name: "ES" },
-];
+const baseClasses = "text-sm h-8 w-8 border";
+const selectedClass = "underline font-bold";
+const unSelectedClass = "";
 
 export const LocaleToggle = () => {
   const { i18n } = useTranslation();
   return (
-    <ToggleGroup type="single" defaultValue={ i18n.language }>
-      {langs.map(({ code, name }) => (
-        <ToggleGroupItem
-          className={ i18n.language === code ? 'accent-slate-50' : '' }
-          key={ code }
-          value={ code }
-          onClick={ () => i18n.changeLanguage(code) }>
-          {name}
-        </ToggleGroupItem>
-      ))}
-    </ToggleGroup>
+    <div className="inline-flex">
+      <button
+        className={`${baseClasses} ${i18n.language === "es" ? selectedClass : unSelectedClass} rounded-l border-r-0`}
+        value={"es"}
+        onClick={() => i18n.changeLanguage("es")}
+      >
+        ES
+      </button>
+      <button
+        className={`${baseClasses} ${i18n.language === "en" ? selectedClass : unSelectedClass} rounded-r`}
+        value={"en"}
+        onClick={() => i18n.changeLanguage("en")}
+      >
+        EN
+      </button>
+    </div>
   );
 };

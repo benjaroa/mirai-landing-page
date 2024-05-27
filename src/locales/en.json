@@ -48,7 +48,7 @@
         {
           "type": "drawer",
           "className": "ml-2",
-          "target": "",
+          "target": "where-you-can-find-us",
           "icon": "",
           "title": "[where you can find us]"
         },

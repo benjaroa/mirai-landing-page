@@ -26,11 +26,7 @@ export const getDrawer = ({ key, target, title, className }: UniversalComponent)
         {title}
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader>
-          <SheetDescription>
-            <I18nMarkdown className={className} filename={target} />
-          </SheetDescription>
-        </SheetHeader>
+        <I18nMarkdown className={className} filename={target} />
       </SheetContent>
     </Sheet>
   </Suspense>
