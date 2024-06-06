@@ -20,17 +20,17 @@
       "links": [
         {
           "type": "drawer",
-          "className": "ml-2",
+          "className": "",
           "target": "location",
           "icon": "",
-          "title": "[location and hours]"
+          "title": "location and hours]"
         },
         {
           "type": "url",
-          "className": "ml-2",
+          "className": "",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
           "icon": "",
-          "title": "[menu]"
+          "title": "menu"
         }
       ]
     },
@@ -40,24 +40,24 @@
       "links": [
         {
           "type": "url",
-          "className": "ml-2",
+          "className": "",
           "target": "https://tienda.miraifoodlab.cl",
           "icon": "",
-          "title": "[shop]"
+          "title": "shop"
         },
         {
           "type": "drawer",
-          "className": "ml-2",
+          "className": "",
           "target": "where-you-can-find-us",
           "icon": "",
-          "title": "[where you can find us]"
+          "title": "[where you can find us"
         },
         {
           "type": "drawer",
-          "className": "ml-2",
+          "className": "",
           "target": "seller-partners",
           "icon": "",
-          "title": "[are you a wholesaler?]"
+          "title": "are you a wholesaler?"
         }
       ]
     },
@@ -67,10 +67,10 @@
       "links": [
         {
           "type": "drawer",
-          "className": "ml-2",
+          "className": "",
           "target": "pop-ups-calendar",
           "icon": "",
-          "title": "[schedule]"
+          "title": "schedule"
         }
       ]
     }
