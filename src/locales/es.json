@@ -20,13 +20,13 @@
       "links": [
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "location",
           "icon": "",
           "title": "ubicación y horario"
         },
         {
-          "type": "url",
+          "type": "button",
           "className": "",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
           "icon": "",
@@ -39,7 +39,7 @@
       "description": "Fermentación tradicional y moderna en productos de alta calidad: kombuchas, misos, koji y más.",
       "links": [
         {
-          "type": "url",
+          "type": "button",
           "className": "",
           "target": "https://tienda.miraifoodlab.cl",
           "icon": "",
@@ -47,14 +47,14 @@
         },
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "where-you-can-find-us",
           "icon": "",
           "title": "dónde encontrarlos"
         },
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "seller-partners",
           "icon": "",
           "title": "¿eres mayorista?"
@@ -67,7 +67,7 @@
       "links": [
         {
           "type": "drawer",
-          "className": "",  
+          "className": "button",  
           "target": "pop-ups-calendar",
           "icon": "",
           "title": "agenda"

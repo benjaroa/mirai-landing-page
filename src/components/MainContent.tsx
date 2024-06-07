@@ -17,8 +17,9 @@ type Project = {
 const processLinks = (links: Link[]) => {
   return links.map(({ target, title, type, className }, key) => {
     const component = typesMap[type] || getFallback;
+    // <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
     return (
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+      <span className="inline-block pr-3 py-1 mb-1">
         {component({ key, target, title, className })}
       </span>
     );
@@ -28,23 +29,24 @@ const processLinks = (links: Link[]) => {
 export const MainContent = () => {
   const { t } = useTranslation();
   return (
-    <div className="container grid grid-cols-1 gap-4 md:grid-cols-3">
+    <div className="container grid grid-cols-1 gap-8 md:grid-cols-3">
       {(t("projects", { returnObjects: true }) as Project[]).map(
         ({ title, description, links }, index: number) => (
           <div
             key={`project-${index}`}
-            className="rounded overflow-hidden shadow"
+            className="rounded overflow-hidden shadow-lg dark:shadow-slate-800 flex flex-col z-0 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <img
               className="w-full"
               src="/assets/hero-1.jpg"
-              alt="Sunset in the mountains"
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{title}</div>
-              <p className="text-gray-700 text-base">{description}</p>
+              <p className="text-slate-600 text-base">{description}</p>
             </div>
-            <div className="px-6 pt-4 pb-2">{processLinks(links)}</div>
+            <div className="px-6 pt-4 pb-2 flex flex-wrap mt-auto">
+              {processLinks(links)}
+            </div>
           </div>
         )
       )}

@@ -20,13 +20,13 @@
       "links": [
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "location",
           "icon": "",
-          "title": "location and hours]"
+          "title": "location and hours"
         },
         {
-          "type": "url",
+          "type": "button",
           "className": "",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
           "icon": "",
@@ -39,7 +39,7 @@
       "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
       "links": [
         {
-          "type": "url",
+          "type": "button",
           "className": "",
           "target": "https://tienda.miraifoodlab.cl",
           "icon": "",
@@ -47,14 +47,14 @@
         },
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "where-you-can-find-us",
           "icon": "",
-          "title": "[where you can find us"
+          "title": "where you can find us"
         },
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "seller-partners",
           "icon": "",
           "title": "are you a wholesaler?"
@@ -67,7 +67,7 @@
       "links": [
         {
           "type": "drawer",
-          "className": "",
+          "className": "button",
           "target": "pop-ups-calendar",
           "icon": "",
           "title": "schedule"
