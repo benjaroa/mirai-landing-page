@@ -34,7 +34,7 @@ export const MainContent = () => {
         ({ title, description, links }, index: number) => (
           <div
             key={`project-${index}`}
-            className="rounded overflow-hidden shadow-lg dark:shadow-slate-800 flex flex-col z-0 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            className="rounded overflow-hidden shadow-lg dark:outline-1 dark:outline dark:outline-white flex flex-col z-0 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <img
               className="w-full"
@@ -44,7 +44,7 @@ export const MainContent = () => {
               <div className="font-bold text-xl mb-2">{title}</div>
               <p className="text-slate-600 text-base">{description}</p>
             </div>
-            <div className="px-6 pt-4 pb-2 flex flex-wrap mt-auto">
+            <div className="px-6 pt-4 pb-4 flex flex-wrap mt-auto">
               {processLinks(links)}
             </div>
           </div>
