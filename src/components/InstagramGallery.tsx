@@ -11,10 +11,13 @@ const images = [
   { src: "./assets/ig-7.jpg", url: "https://www.instagram.com/p/C05Q05vrbYN/" },
   { src: "./assets/ig-8.jpg", url: "https://www.instagram.com/p/C1a9-BoISVr/" },
   { src: "./assets/ig-9.jpg", url: "https://www.instagram.com/p/C5mVDEZxz3L/" },
-  {
-    src: "./assets/ig-10.jpg",
-    url: "https://www.instagram.com/p/C7ASu9yxNFg/",
-  },
+  { src: "./assets/ig-10.jpg", url: "https://www.instagram.com/p/C7ASu9yxNFg/" },
+  { src: "./assets/ig-11.jpg", url: "https://www.instagram.com/p/CzfLYfLO8Sm/" },
+  { src: "./assets/ig-12.jpg", url: "https://www.instagram.com/p/CyZZ0fXRNNx/" },
+  { src: "./assets/ig-13.jpg", url: "https://www.instagram.com/p/CwMBkeMrFKz/" },
+  { src: "./assets/ig-14.jpg", url: "https://www.instagram.com/p/CvutxnLuBk6/" },
+  { src: "./assets/ig-15.jpg", url: "https://www.instagram.com/p/C5UIM73xQt9/" },
+  { src: "./assets/ig-16.jpg", url: "https://www.instagram.com/p/B-x4HQwnkq8/" }
 ];
 
 export const InstagramGallery = () => {
@@ -45,7 +48,7 @@ export const IntagramCarrousel = () => {
         >
         <CarouselContent className="-ml-2 md:-ml-4">
           {images.map(({ src, url }, index) => (
-            <CarouselItem key={index} className="pl-1 sm:basis-1/3 md:basis-1/4 lg:basis-1/6 opacity-65 transition-opacity hover:opacity-100">
+            <CarouselItem key={index} className="pl-1 basis-6/12 sm:basis-5/12 md:basis-4/12 lg:basis-3/12 xl:basis-2/12 2xl:basis-1/12 opacity-65 transition-opacity hover:opacity-100">
               <a target="_blank" href={url} className="flex aspect-square items-center p-6">
                 <img
                   className="h-auto max-w-full rounded-lg mb-4"
