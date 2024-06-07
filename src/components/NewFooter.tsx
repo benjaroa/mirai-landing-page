@@ -6,7 +6,7 @@ export const NewFooter = () => {
   const { t } = useTranslation();
   return (
     <footer className="container text-center">
-      <div className="mx-6 py-20 mt-2 text-center md:text-left text-sm text-slate-500">
+      <div className="mx-6 py-10 mt-2 text-center md:text-left text-sm text-slate-500">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           <div className="mx-auto md:mx-0">
             <img
