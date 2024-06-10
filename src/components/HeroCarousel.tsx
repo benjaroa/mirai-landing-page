@@ -8,7 +8,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const imagesComponents = images.map((imageSrc, index) => (
-  <CarouselItem key={index} className="">
+  <CarouselItem key={index} className="p-0">
     <img
       src={imageSrc}
       alt="Mirai"
