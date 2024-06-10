@@ -17,6 +17,7 @@
   "projects": [
     {
       "title": "Ramen Shop 🍜",
+      "img-scr": "ig-1.jpg",
       "description": "Reduced menu of Japanese tapas and ramen, with a focus on the quality of ingredients and preparation techniques.",
       "links": [
         {
@@ -37,6 +38,7 @@
     },
     {
       "title": "Products 📦",
+      "img-scr": "ig-12.jpg",
       "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
       "links": [
         {
@@ -64,6 +66,7 @@
     },
     {
       "title": "Pop-ups 👯",
+      "img-scr": "ig-7.jpg",
       "description": "Working in collaboration with other restaurants to expand our proposal to new spaces, experiment, and learn from others.",
       "links": [
         {

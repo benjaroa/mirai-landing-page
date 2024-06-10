@@ -12,6 +12,7 @@ type Project = {
   title: string;
   description: string;
   links: Link[];
+  'img-scr': string;
 };
 
 const processLinks = (links: Link[]) => {
@@ -31,14 +32,14 @@ export const MainContent = () => {
   return (
     <div className="container grid grid-cols-1 gap-8 md:grid-cols-3">
       {(t("projects", { returnObjects: true }) as Project[]).map(
-        ({ title, description, links }, index: number) => (
+        ({ title, description, links, "img-scr": imgSrc }, index: number) => (
           <div
             key={`project-${index}`}
             className="rounded overflow-hidden shadow-lg dark:outline-1 dark:outline dark:outline-white flex flex-col z-0 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
             <img
               className="w-full"
-              src="/assets/hero/hero-1.jpg"
+              src={`/assets/${imgSrc}`}
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{title}</div>

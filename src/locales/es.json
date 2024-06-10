@@ -17,6 +17,7 @@
   "projects": [
     {
       "title": "Barra de Ramen 🍜",
+      "img-scr": "ig-1.jpg",
       "description": "Carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
       "links": [
         {
@@ -37,6 +38,7 @@
     },
     {
       "title": "Productos 📦",
+      "img-scr": "ig-12.jpg",
       "description": "Fermentación tradicional y moderna en productos de alta calidad: kombuchas, misos, koji y más.",
       "links": [
         {
@@ -64,6 +66,7 @@
     },
     {
       "title": "Pop-ups 👯",
+      "img-scr": "ig-7.jpg",
       "description": "Colaboraciones con otros restaurantes para llevar nuestra propuesta a nuevos espacios, experimentar y aprender de otros.",
       "links": [
         {
