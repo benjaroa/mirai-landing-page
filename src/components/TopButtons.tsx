@@ -11,7 +11,7 @@ type TopButtonsProps = {
 export const TopButtons = ({ activateDarkMode }: TopButtonsProps) => {
   console.log("activateDarkMode", activateDarkMode);
   return (
-    <div className="z-10 sticky bg-white top-0 p-4">
+    <div className="z-10 sticky bg-white top-0 p-4 shadow-lg">
       <header className="container">
         <div className="flex justify-end space-x-2">
           <a target="_blank" href="https://instagram.com/miraifoodlab">
