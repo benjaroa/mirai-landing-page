@@ -1,4 +1,3 @@
-import { TopButtons } from "./TopButtons";
 import heroImage1 from "/assets/hero/hero-1.jpg";
 import heroImage2 from "/assets/hero/hero-2.jpg";
 import heroImage3 from "/assets/hero/hero-3.jpg";
