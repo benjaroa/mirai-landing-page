@@ -3,41 +3,47 @@ import heroImage1 from "/assets/hero/hero-1.jpg";
 import heroImage2 from "/assets/hero/hero-2.jpg";
 import heroImage3 from "/assets/hero/hero-3.jpg";
 import heroImage4 from "/assets/hero/hero-4.jpg";
-import { useTranslation } from "react-i18next";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay"
+
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
+const imagesComponents = images.map((imageSrc, index) => (
+  <CarouselItem key={index} className="">
+    <img
+      src={imageSrc}
+      alt="Mirai"
+      className="w-screen h-screen object-cover top-0"
+    />
+  </CarouselItem>
+));
 
 
 export const HeroCarousel = () => {
-  const { t } = useTranslation();
-
-  const imagesComponents = images.map((image) => (
-    <img
-      src={image}
-      alt="Mirai"
-      className="w-screen h-screen object-cover opacity-0 top-0"
-    />
-  ));
-
   return (
     <section
       id="photos-hero"
-      className={`w-full h-screen py-10 px-0`}
+      className={`w-full h-screen`}
     >
-      {<img
-        src={currentImage}
-        alt="Mirai"
-        className="w-screen h-screen object-cover opacity-100 top-0"
-      />}
+      <Carousel
+        opts={{ align: "start", loop: true, slidesToScroll: 1, watchDrag: false }}
+        orientation="horizontal"
+        plugins={[ Autoplay({ delay: 3000 })] }
+        >
+        <CarouselContent>
+          {imagesComponents}
+        </CarouselContent>
+      </Carousel>
       <div className="container">
-        {<TopButtons />}
-        <div className="bottom-0 flex  space-x-2  justify-end">
-          <div className="p-10 rounded-t-xl bg-white text-sm flex justify-end space-x-2">
-            <h3 className="font-bold text-4xl">Mirai Food Lab</h3>
-            <p className="text-muted-foreground text-xl">
-              {t("hero.main-text")}
-            </p>
+        <div className="container absolute top-0 p-8">
+          <div className="right-0">
+            <TopButtons />
           </div>
+        </div>
+        <div className="absolute bottom-0 py-20">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-10xl font-bold text-white">
+            MIRAI FOOD LAB
+          </h1>
         </div>
       </div>
     </section>
