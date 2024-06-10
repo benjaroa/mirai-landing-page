@@ -3,7 +3,6 @@ import { MainContent } from "./components/MainContent.tsx";
 import { NewFooter } from "./components/NewFooter.tsx";
 import { IntagramCarrousel } from "./components/InstagramGallery.tsx";
 import { HeroCarousel } from "./components/HeroCarousel.tsx";
-// import { TopHeader } from "./components/TopHeader.tsx";
 import { DescriptionCard } from './components/DescriptionCard';
 
 const App = () => {
