@@ -6,7 +6,7 @@ import { LocaleToggle } from './LocalesToggle';
 
 export const TopButtons = () => {
   return (
-    <header className="t-0 sticky my-4 absolute z-10">
+    <header className="m-10">
       <div className="flex justify-end space-x-2">
         <a target="_blank" href="https://instagram.com/miraifoodlab">
           <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
