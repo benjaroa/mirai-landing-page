@@ -20,7 +20,7 @@ const processLinks = (links: Link[]) => {
     const component = typesMap[type] || getFallback;
     // <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
     return (
-      <span className="inline-block pr-3 py-1 mb-1">
+      <span className="inline-block pr-3 py-1 mb-1" key={`span-${key}`}>
         {component({ key, target, title, className })}
       </span>
     );
@@ -35,12 +35,15 @@ export const MainContent = () => {
         ({ title, description, links, "img-scr": imgSrc }, index: number) => (
           <div
             key={`project-${index}`}
-            className="rounded overflow-hidden shadow-lg dark:outline-1 dark:outline dark:outline-white flex flex-col z-0 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-          >
-            <img
-              className="w-full"
-              src={`/assets/${imgSrc}`}
-            />
+            className="rounded-lg overflow-hidden shadow-lg dark:outline-1 dark:outline dark:outline-white flex flex-col z-0"
+            >
+            {/*transition-all duration-300 hover:scale-105 hover:shadow-2xl */}
+            <picture className="overflow-hidden block">
+              <img
+                className="w-full transition-all hover:scale-110 ease-in duration-150"
+                src={`/assets/${imgSrc}`}
+              />
+            </picture>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{title}</div>
               <p className="text-slate-600 text-base">{description}</p>

@@ -4,10 +4,13 @@ import { NewFooter } from "./components/NewFooter.tsx";
 import { IntagramCarrousel } from "./components/InstagramGallery.tsx";
 import { HeroCarousel } from "./components/HeroCarousel.tsx";
 import { DescriptionCard } from './components/DescriptionCard';
+import { TopButtons } from "./components/TopButtons.tsx";
+import { ScrollToTop } from './components/ScrollToTop';
 
 const App = () => {
   return (
     <main className="">
+      <TopButtons activateDarkMode={false} />
       <HeroCarousel />
       <div className="my-20" />
       <DescriptionCard />
@@ -17,6 +20,7 @@ const App = () => {
       <IntagramCarrousel />
       <div className="my-20" />
       <NewFooter />
+      <ScrollToTop />
     </main>
   );
 }
