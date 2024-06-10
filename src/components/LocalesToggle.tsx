@@ -9,14 +9,14 @@ export const LocaleToggle = () => {
   return (
     <div className="inline-flex">
       <button
-        className={`${baseClasses} ${i18n.language === "es" ? selectedClass : unSelectedClass} rounded-l border-r-0`}
+        className={`${baseClasses} ${i18n.language === "es" ? selectedClass : unSelectedClass} bg-white rounded-l border-r-0`}
         value={"es"}
         onClick={() => i18n.changeLanguage("es")}
       >
         ES
       </button>
       <button
-        className={`${baseClasses} ${i18n.language === "en" ? selectedClass : unSelectedClass} rounded-r`}
+        className={`${baseClasses} ${i18n.language === "en" ? selectedClass : unSelectedClass} bg-white rounded-r`}
         value={"en"}
         onClick={() => i18n.changeLanguage("en")}
       >

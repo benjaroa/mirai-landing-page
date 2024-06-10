@@ -38,7 +38,7 @@ export const MainContent = () => {
           >
             <img
               className="w-full"
-              src="/assets/hero-1.jpg"
+              src="/assets/hero/hero-1.jpg"
             />
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">{title}</div>
