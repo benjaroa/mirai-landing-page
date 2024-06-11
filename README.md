@@ -28,15 +28,6 @@ npm run build
 
 Al empujar a la rama main, se gatilla un proceso en CloudFlare que escucha un evento de GitHub y despliega el código usando `npm run build` y el contenido de la carpeta `/dist`.
 
+Para empujar sin pasar por el CI, agregar en el mensaje del commit: `[CI Skip]`, `[CI-Skip]`, `[Skip CI]`, `[Skip-CI]` or `[CF-Pages-Skip]` (case insensitive).
+
 Documentación: [CloudFlare Pages](https://developers.cloudflare.com/pages/)
-
-## To-do
-
-- [ ] Que cuando entres a /en aparezca el sitio en inglés
-- [ ] Agregar una imágen de un ramen al slider de imágenes del encabezado
-- [ ] Mejorar textos en español
-- [ ] Pedirle a ayuda a alguien que nos haga una versión digna de los textos en inglés (guatón Osvaldo?)
-- [ ] Revisar contenido
-- [ ] Hacer formulario de contacto
-- [ ] Optimizar SEO
-- [ ] Mejorar links a las secciones del sitio para que sean reenviables
