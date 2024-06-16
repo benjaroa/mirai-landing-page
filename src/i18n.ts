@@ -12,14 +12,15 @@ const resources = {
 
 i18n
   .use(LanguageDetector)
-  .use(languageDetector as Module)
   .use(initReactI18next)
+  .use(languageDetector as Module)
   .init({
     debug: process.env.NODE_ENV !== 'prod' || true,
+    supportedLngs: ['en', 'es'],
     resources,
-    lng: 'es',
+    // lng: 'es',
     fallbackLng: 'es',
     interpolation: {
       escapeValue: false
-    },
+    }
   });

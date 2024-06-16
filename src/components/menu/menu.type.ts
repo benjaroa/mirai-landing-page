@@ -56,30 +56,31 @@ export type Business = {
     phone?: string;
     whatsapp?: string;
     email?: string;
-    address?: string;
+    website?: string;
     socialMedia?: {
       facebook?: string;
       instagram?: string;
       twitter?: string;
     };
   };
-  addres: {
+  address: {
     street: string;
     number: string;
+    district: string;
     city: string;
     postalCode: string;
     country: string;
   };
-  location: {
+  location?: {
     latitude: number;
     longitude: number;
   };
-  delivery: {
+  delivery?: {
     available: boolean;
     radius: number;
     fee: number;
   };
-  paymentMethods: string[];
+  paymentMethods?: string[];
   deliveryHours?: OpeningHours;
   properties: {
     isPetFriendly?: boolean;
@@ -88,8 +89,8 @@ export type Business = {
     hasParking?: boolean;
     isAlcoholServed?: boolean;
     isTakeAwayAvailable?: boolean;
-  }
-  localeConfiguration: {
+  };
+  localeConfiguration?: {
     currency: string;
     language: string;
     decimalSeparator: string;
@@ -98,14 +99,39 @@ export type Business = {
     timeFormat: string;
     numberOfDecimals: number;
   };
-  defaultButtons: {
+  defaultButtons?: {
     showShareButton: boolean;
     showCallButton: boolean;
     showInstagramIcon: boolean;
   }
 };
 
+export type GeneralOptions = {
+  showToTopButton?: boolean;
+  style?:
+    | "default"
+    | "minimal"
+    | "modern"
+    | "elegant"
+    | "classic"
+    | "retro";
+  colors?: {
+    primary?: string;
+    secondary?: string;
+    background?: string;
+    text?: string;
+  };
+  typography?: {
+    fontFamily?: string;
+    fontSize?: string;
+    fontWeight?: string;
+    lineHeight?: string;
+  };
+  isDarkModeActive?: boolean;
+}
+
 export type Menu = {
   business: Business;
   items: Item[];
+  options?: GeneralOptions;
 };

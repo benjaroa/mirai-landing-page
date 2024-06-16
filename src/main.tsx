@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import { ThemeProvider } from "@/components/theme-provider.tsx";
 import "./index.css";
 import "./i18n.ts";
+import { Router } from "./Router.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <Router />
     </ThemeProvider>
   </React.StrictMode>
 );
