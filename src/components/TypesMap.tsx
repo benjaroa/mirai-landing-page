@@ -15,7 +15,7 @@ export type UniversalComponent = {
   key?: number;
   title?: string;
   className?: string;
-  metadata: Record<string, unknown>;
+  metadata?: Record<string, unknown>;
 };
 
 type ComponentType = "drawer" | "url" | "button";
@@ -26,7 +26,7 @@ type Link = {
   icon: string;
   title: string;
   type: ComponentType;
-  metadata: Record<string, unknown>;
+  metadata?: Record<string, unknown>;
 };
 
 export type Project = {
