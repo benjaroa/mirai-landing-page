@@ -23,7 +23,9 @@ export const NewFooter = () => {
               Links
             </h6>
             <p className="mb-4">
-              <a href="#!">Contacto</a>
+              <a href="#" data-tally-open="mBBBaY" data-tally-emoji-text="🍜" data-tally-emoji-animation="wave" data-tally-auto-close="5000">
+                {t("footer.contact-link")}
+              </a>
             </p>
             <p className="mb-4">
               {getDrawer({ key: 1, target: "work-and-stage-with-us", title: t("footer.work-and-stage-with-us") }, isDesktop)}
