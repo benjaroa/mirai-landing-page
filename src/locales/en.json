@@ -80,7 +80,14 @@
           "className": "button",
           "target": "pop-ups-calendar",
           "icon": "",
-          "title": "schedule"
+          "title": "Schedule"
+        },
+        {
+          "type": "drawer",
+          "className": "button",  
+          "target": "pop-ups-history",
+          "icon": "calendar-days",
+          "title": "History"
         }
       ]
     }
