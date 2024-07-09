@@ -15,6 +15,7 @@ export type UniversalComponent = {
   key?: number;
   title?: string;
   className?: string;
+  metadata: Record<string, unknown>;
 };
 
 type ComponentType = "drawer" | "url" | "button";
@@ -25,6 +26,7 @@ type Link = {
   icon: string;
   title: string;
   type: ComponentType;
+  metadata: Record<string, unknown>;
 };
 
 export type Project = {
@@ -34,8 +36,8 @@ export type Project = {
   "img-scr": string;
 };
 
-export const getFallback = ({ key, title, className }: UniversalComponent) => (
-  <span key={key} className={className}>
+export const getFallback = ({ key, title, className, metadata }: UniversalComponent) => (
+  <span key={key} className={className} {...metadata}>
     {title}
   </span>
 );
@@ -45,8 +47,9 @@ export const getButton = ({
   target,
   title,
   className,
+  metadata,
 }: UniversalComponent) => (
-  <Button variant="outline" key={key} className={`${className}`}>
+  <Button variant="outline" key={key} className={`${className}`} {...metadata}>
     <a href={target}>
       <span className="w-full">{title}</span>
     </a>
@@ -61,7 +64,7 @@ export const getButton = ({
 // </a>
 
 export const getDrawer = (
-  { key, target, title, className }: UniversalComponent,
+  { key, target, title, className, metadata }: UniversalComponent,
   isDesktop: boolean
 ) => {
   // if (isDesktop) {
@@ -75,7 +78,7 @@ export const getDrawer = (
           <ScrollArea>
             <div className="container prose">
           <DialogClose asChild>
-            {isDesktop && <Button className="float-right" type="button" variant="secondary">
+            {isDesktop && <Button className="float-right" type="button" variant="secondary" {...metadata}>
             <X />
             </Button>}
           </DialogClose>
@@ -103,11 +106,12 @@ export const getDrawer = (
   // );
 };
 
-const getUrl = ({ key, target, title, className }: UniversalComponent) => (
+const getUrl = ({ key, target, title, className, metadata }: UniversalComponent) => (
   <a
     key={key}
     href={target}
     className={`${className} text-slate-400 hover:underline`}
+    {...metadata}
   >
     {title}
   </a>
@@ -120,11 +124,11 @@ export const typesMap = {
 };
 
 export const processLinks = (links: Link[], isDesktop = false) => {
-  return links.map(({ target, title, type, className }, key) => {
+  return links.map(({ target, title, type, className, metadata }, key) => {
     const component = typesMap[type] || getFallback;
     return (
       <span className="inline-block pr-3 py-1 mb-1" key={`span-${key}`}>
-        {component({ key, target, title, className }, isDesktop)}
+        {component({ key, target, title, className, metadata }, isDesktop)}
       </span>
     );
   });

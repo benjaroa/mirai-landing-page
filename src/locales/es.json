@@ -56,11 +56,17 @@
           "title": "Partners"
         },
         {
-          "type": "drawer",
+          "type": "button",
           "className": "button",
           "target": "seller-partners",
           "icon": "squirrel",
-          "title": "¿Eres mayorista?"
+          "title": "¿Mayorista? Contáctanos",
+          "metadata": {
+            "data-tally-open": "mBBBaY",
+            "data-tally-emoji-text": "🍜",
+            "data-tally-emoji-animation": "wave",
+            "data-tally-auto-close":"5000"
+          }
         }
       ]
     },
