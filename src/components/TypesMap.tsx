@@ -145,6 +145,7 @@ export const typesMap = {
   button: getButton,
 };
 
+
 export const processLinks = (links: Link[], isDesktop = false) => {
   return links.map(({ target, title, type, className }, key) => {
     const component = typesMap[type] || getFallback;
