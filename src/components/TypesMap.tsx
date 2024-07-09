@@ -1,20 +1,25 @@
 import { Suspense } from "react";
 import { I18nMarkdown } from "./I18nMarkdown";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogClose,
-} from "./ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogClose } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { ScrollArea } from "./ui/scroll-area";
-import { X } from "lucide-react"
+import {
+  X,
+  Globe,
+  CookingPot,
+  Store,
+  Handshake,
+  Squirrel,
+  Play,
+  Calendar,
+} from "lucide-react";
 
 export type UniversalComponent = {
   target: string;
   key?: number;
   title?: string;
   className?: string;
+  icon?: string;
 };
 
 type ComponentType = "drawer" | "url" | "button";
@@ -60,25 +65,46 @@ export const getButton = ({
 //   <span className="w-full">{title}</span>
 // </a>
 
+const iconMap: Record<string, typeof Globe> = {
+  globe: Globe,
+  "cooking-pot": CookingPot,
+  store: Store,
+  handshak: Handshake,
+  squirrel: Squirrel,
+  play: Play,
+  calendar: Calendar,
+};
+
 export const getDrawer = (
-  { key, target, title, className }: UniversalComponent,
+  { key, target, title, className, icon }: UniversalComponent,
   isDesktop: boolean
 ) => {
+  const IconComponent = icon ? iconMap[icon] : ;
   // if (isDesktop) {
   return (
     <Suspense key={key} fallback="loading...">
       <Dialog modal={true}>
         <DialogTrigger asChild>
-          {className === "button" ?<Button variant="outline">{title}</Button>:<button>{title}</button>}
+          {className === "button" ? (
+            <Button variant="outline"><iconComponent/>{title}</Button>
+          ) : (
+            <button>{title}</button>
+          )}
         </DialogTrigger>
         <DialogContent className="max-w-screen h-screen">
           <ScrollArea>
             <div className="container prose">
-          <DialogClose asChild>
-            {isDesktop && <Button className="float-right" type="button" variant="secondary">
-            <X />
-            </Button>}
-          </DialogClose>
+              <DialogClose asChild>
+                {isDesktop && (
+                  <Button
+                    className="float-right"
+                    type="button"
+                    variant="secondary"
+                  >
+                    <X />
+                  </Button>
+                )}
+              </DialogClose>
               <I18nMarkdown className={className} filename={target} />
             </div>
           </ScrollArea>

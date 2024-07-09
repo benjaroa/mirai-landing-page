@@ -24,15 +24,15 @@
           "type": "drawer",
           "className": "button",
           "target": "location",
-          "icon": "",
-          "title": "ubicación y horario"
+          "icon": "globe",
+          "title": "Sucursales"
         },
         {
           "type": "button",
           "className": "",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
-          "icon": "",
-          "title": "carta"
+          "icon": "cooking-pot",
+          "title": "Carta"
         }
       ]
     },
@@ -45,22 +45,22 @@
           "type": "button",
           "className": "",
           "target": "https://tienda.miraifoodlab.cl",
-          "icon": "",
-          "title": "tienda"
+          "icon": "store",
+          "title": "Tienda"
         },
         {
           "type": "drawer",
           "className": "button",
           "target": "where-you-can-find-us",
-          "icon": "",
-          "title": "dónde encontrarlos"
+          "icon": "handshake",
+          "title": "Partners"
         },
         {
           "type": "drawer",
           "className": "button",
           "target": "seller-partners",
-          "icon": "",
-          "title": "¿eres mayorista?"
+          "icon": "squirrel",
+          "title": "¿Eres mayorista?"
         }
       ]
     },
@@ -73,8 +73,15 @@
           "type": "drawer",
           "className": "button",  
           "target": "pop-ups-calendar",
-          "icon": "",
-          "title": "agenda"
+          "icon": "play",
+          "title": "Agenda"
+        },
+        {
+          "type": "drawer",
+          "className": "button",  
+          "target": "pop-ups-history",
+          "icon": "calendar-days",
+          "title": "Historial"
         }
       ]
     }
