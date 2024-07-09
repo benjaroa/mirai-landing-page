@@ -51,7 +51,7 @@
         {
           "type": "drawer",
           "className": "button",
-          "target": "where-you-can-find-us",
+          "target": "partners",
           "icon": "handshake",
           "title": "Partners"
         },

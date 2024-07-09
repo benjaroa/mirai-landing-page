@@ -25,14 +25,14 @@
           "className": "button",
           "target": "location",
           "icon": "",
-          "title": "location and hours"
+          "title": "Location and hours"
         },
         {
           "type": "button",
           "className": "",
           "target": "https://drive.google.com/file/d/1HObkRmPBJER54NUDRSCNjIesqHiW7BpK/edit",
           "icon": "",
-          "title": "menu"
+          "title": "Menu"
         }
       ]
     },
@@ -46,21 +46,27 @@
           "className": "",
           "target": "https://tienda.miraifoodlab.cl",
           "icon": "",
-          "title": "shop"
+          "title": "Online shop"
         },
         {
           "type": "drawer",
           "className": "button",
-          "target": "where-you-can-find-us",
+          "target": "partners",
           "icon": "",
-          "title": "where you can find us"
+          "title": "Partners"
         },
         {
-          "type": "drawer",
+          "type": "button",
           "className": "button",
           "target": "seller-partners",
           "icon": "",
-          "title": "are you a wholesaler?"
+          "title": "¿wholesaler? Contact us",
+          "metadata": {
+            "data-tally-open": "mBBBaY",
+            "data-tally-emoji-text": "🍜",
+            "data-tally-emoji-animation": "wave",
+            "data-tally-auto-close":"5000"
+          }
         }
       ]
     },
