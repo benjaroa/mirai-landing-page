@@ -8,6 +8,7 @@ import { TopButtons } from "./TopButtons.tsx";
 import { ScrollToTop } from './ScrollToTop.tsx';
 
 const Home = () => {
+
   return (
     <main className="">
       <TopButtons activateDarkMode={false} />
