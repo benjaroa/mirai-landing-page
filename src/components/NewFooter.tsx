@@ -30,12 +30,12 @@ export const NewFooter = () => {
             <p className="mb-4">
               {getDrawer({ key: 1, target: "work-and-stage-with-us", title: t("footer.work-and-stage-with-us") }, isDesktop)}
             </p>
-            <p className="mb-4">
+            {/*<p className="mb-4">
               <a href="#!">Prensa</a>
             </p>
             <p>
               <a href="#!">Quiénes somos</a>
-            </p>
+            </p>*/}
           </div>
         </div>
       </div>
