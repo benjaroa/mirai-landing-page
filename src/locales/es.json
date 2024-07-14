@@ -2,7 +2,11 @@
   "navbar": {
     "about": "Acerca de",
     "who-we-are": "Quiénes somos",
-    "services": "Servicios"
+    "services": "Servicios",
+    "alert-bar": {
+      "text": "🤓 Visita la tienda y recibe nuestros productos directo en tu casa",
+      "link": "https://tienda.miraifoodlab.cl"
+    }
   },
   "theme-mode-toggle": {
     "light": "Claro",

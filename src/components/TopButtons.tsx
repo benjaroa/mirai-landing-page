@@ -4,6 +4,7 @@ import { TikTokIcon } from "./TikTokIcon";
 import { LocaleToggle } from "./LocalesToggle";
 import { ModeButton } from "./ModeButton";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 type TopButtonsProps = {
   activateDarkMode?: boolean;
@@ -14,6 +15,7 @@ export const TopButtons = ({
   activateDarkMode,
   showTopAlertMessage,
 }: TopButtonsProps) => {
+  const { t } = useTranslation();
   return (
     <div className="z-10 sticky bg-white top-0 shadow-lg overflow-hidden">
       <header className="container">
@@ -39,8 +41,7 @@ export const TopButtons = ({
       {showTopAlertMessage && (
         <div className="bg-mirai text-white">
           <div className="container py-4 text-right">
-            🤓 Vista la tienda y recibe nuestros 
-            productos directo en tu casa <a href="https://tienda.miraifoodlab.cl">
+            {t("navbar.alert-bar.text")} <a href={t("navbar.alert-bar.link")}>
               <Button variant="secondary" size="icon">
                 <ArrowRight className="h-4 w-4" />
               </Button>
