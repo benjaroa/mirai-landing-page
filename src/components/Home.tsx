@@ -6,12 +6,12 @@ import { HeroCarousel } from "./HeroCarousel.tsx";
 import { DescriptionCard } from "./DescriptionCard.tsx";
 import { TopButtons } from "./TopButtons.tsx";
 import { ScrollToTop } from "./ScrollToTop.tsx";
-import { Dialog, DialogContent, DialogTitle } from "./ui/dialog.tsx";
+// import { Dialog, DialogContent, DialogTitle } from "./ui/dialog.tsx";
 
 const Home = () => {
   return (
     <main className="">
-      { /* */ }
+      { /* / /}
       <Dialog defaultOpen={true}>
         <DialogContent>
           <DialogTitle>Nueva tienda</DialogTitle>
@@ -19,7 +19,7 @@ const Home = () => {
         </DialogContent>
       </Dialog>
       { /* */ }
-      <TopButtons activateDarkMode={false} />
+      <TopButtons activateDarkMode={false} showTopAlertMessage={true} />
       <HeroCarousel />
       <div className="my-20" />
       <DescriptionCard />

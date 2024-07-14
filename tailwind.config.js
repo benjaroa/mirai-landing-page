@@ -19,6 +19,7 @@ export default {
     },
     extend: {
       colors: {
+        mirai: "#F1592A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
