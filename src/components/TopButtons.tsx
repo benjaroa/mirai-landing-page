@@ -39,9 +39,12 @@ export const TopButtons = ({
       {showTopAlertMessage && (
         <div className="bg-mirai text-white">
           <div className="container py-4 text-right">
-            🤓 Vista la tienda y recibe nuestros productos directo en tu casa <Button variant="secondary" size="icon">
-              <ArrowRight className="h-4 w-4" />
-            </Button>
+            🤓 Vista la tienda y recibe nuestros 
+            productos directo en tu casa <a href="https://tienda.miraifoodlab.cl">
+              <Button variant="secondary" size="icon">
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </a>
           </div>
         </div>
       )}
