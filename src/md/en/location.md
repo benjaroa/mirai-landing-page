@@ -2,7 +2,7 @@
 
 ## Factoría Franklin
 
-📍Franklin 741, local A2, Santiago
+📍Franklin 741, local B20, Santiago
 
 Our ramen shop and small factory is located in Factoría Fanklin, an ancient drug factory that has many projects like ours.
 

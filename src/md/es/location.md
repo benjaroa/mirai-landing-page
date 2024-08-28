@@ -2,7 +2,7 @@
 
 ## Factoría Franklin
 
-📍Franklin 741, local A2, Santiago
+📍Franklin 741, local B20, Santiago
 
 Nuestro restaurant está ubicado en la Factoría Franklin, una antigua fábrica de medicamentos que hoy aloja a emprendimientos como el nuestro.
 
