@@ -56,7 +56,7 @@ export type Item = {
   color?: string;
   description?: string;
   properties?: MenuRestrictions | Record<string, string>;
-  children?: Record<keyof Lang, Omit<Item, "type">>;
+  children?: Record<string, Omit<Item, "type">>;
 };
 
 export type Business = {
