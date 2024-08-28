@@ -54,6 +54,12 @@ const menu: Menu = {
       name: 'Home',
       type: 'heading',
       description: '',
+      children: {
+        es: {
+          name: 'Inicio',
+          description: ''
+        }
+      }
     },
   ]
 }

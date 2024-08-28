@@ -24,12 +24,24 @@ type OpeningHours = {
   exceptions?: Record<IsoDate, HourAndMinutes[]>;
 };
 
+type Lang =
+  "es" |
+  "en" |
+  "de" |
+  "br";
+
+type Currency =
+  "CLP" |
+  "ARS" |
+  "MXN" |
+  "USD";
+
 export type Item = {
   name: string;
   type:
     | "single-item"
     | "heading"
-    | "subheading"
+    | "sub-heading"
     | "image"
     | "text"
     | "promotion"
@@ -44,7 +56,7 @@ export type Item = {
   color?: string;
   description?: string;
   properties?: MenuRestrictions | Record<string, string>;
-  children?: Item[];
+  children?: Record<keyof Lang, Omit<Item, "type">>;
 };
 
 export type Business = {
@@ -91,8 +103,8 @@ export type Business = {
     isTakeAwayAvailable?: boolean;
   };
   localeConfiguration?: {
-    currency: string;
-    language: string;
+    currency: Currency;
+    language: Lang;
     decimalSeparator: string;
     thousandSeparator: string;
     dateFormat: string;
@@ -118,6 +130,7 @@ export type GeneralOptions = {
   colors?: {
     primary?: string;
     secondary?: string;
+    accent?: string;
     background?: string;
     text?: string;
   };
