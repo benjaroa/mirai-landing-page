@@ -12,7 +12,8 @@ export const MainContent = () => {
         ({ title, description, links, "img-scr": imgSrc }, index: number) => (
           <div
             key={`project-${index}`}
-            className="rounded-lg overflow-hidden shadow-lg dark:outline-1 dark:outline dark:outline-white flex flex-col z-0">
+            className="rounded-lg overflow-hidden shadow-lg dark:outline-1 dark:outline dark:outline-white flex flex-col z-0"
+          >
             <picture className="overflow-hidden block">
               <img
                 className="w-full transition-all hover:scale-110 ease-in duration-150"

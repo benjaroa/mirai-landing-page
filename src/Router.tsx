@@ -1,6 +1,7 @@
 import Home from "./components/Home";
 import { Route, Switch } from "wouter";
 import { MenuComponent } from "./components/menu/Menu";
+import { Page404 } from './components/404';
 
 export const Router = () => {
   return (
@@ -13,7 +14,7 @@ export const Router = () => {
         <MenuComponent />
       </Route>
 
-      <Route>404: Not Found</Route>
+      <Route><Page404 /></Route>
     </Switch>
   );
 };

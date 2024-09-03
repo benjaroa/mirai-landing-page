@@ -8,8 +8,11 @@ type MenuRestrictions = {
   isCold?: boolean;
 };
 
+type HexColor = `#${string}`;
+
 type HourAndMinutes =
   `${number}${number}:${number}${number}`;
+
 type IsoDate =
   `${number}${number}${number}${number}-${number}${number}-${number}${number}`;
 
@@ -25,18 +28,18 @@ type OpeningHours = {
 };
 
 type Lang =
-  "es" |
-  "en" |
-  "de" |
-  "br";
+  | "es"
+  | "en"
+  | "de"
+  | "br";
 
 type Currency =
-  "CLP" |
-  "ARS" |
-  "MXN" |
-  "USD";
+  | "CLP"
+  | "ARS"
+  | "MXN"
+  | "USD";
 
-export type Item = {
+export type Brick = {
   name: string;
   type:
     | "single-item"
@@ -50,13 +53,24 @@ export type Item = {
     | "logo"
     | "button";
   order?: number;
+  role?:
+    | "header"
+    | "footer"
+    | "content"
+    | "paragraph"
+    | "text"
+    | "box"
+    | "logo"
+    | "button";
   className?: string;
   style?: Record<string, string>;
   icon?: string;
   color?: string;
   description?: string;
-  properties?: MenuRestrictions | Record<string, string>;
-  children?: Record<string, Omit<Item, "type">>;
+  properties?:
+    | MenuRestrictions
+    | Record<string, string>;
+  children?: Record<string, Omit<Brick, "type">>;
 };
 
 export type Business = {
@@ -67,10 +81,16 @@ export type Business = {
     managerName?: string;
     phone?: string;
     whatsapp?: string;
+    telegram?: string;
+    linkTree?: string;
     email?: string;
     website?: string;
     socialMedia?: {
       facebook?: string;
+      tiktok?: string;
+      googleMaps?: string;
+      yelp?: string;
+      tripadvisor?: string;
       instagram?: string;
       twitter?: string;
     };
@@ -101,9 +121,11 @@ export type Business = {
     hasParking?: boolean;
     isAlcoholServed?: boolean;
     isTakeAwayAvailable?: boolean;
+    isWheelchairAccessible?: boolean;
   };
   localeConfiguration?: {
     currency: Currency;
+    currencySymbol: string;
     language: Lang;
     decimalSeparator: string;
     thousandSeparator: string;
@@ -111,7 +133,7 @@ export type Business = {
     timeFormat: string;
     numberOfDecimals: number;
   };
-  defaultButtons?: {
+  ctaButtons?: {
     showShareButton: boolean;
     showCallButton: boolean;
     showInstagramIcon: boolean;
@@ -128,11 +150,11 @@ export type GeneralOptions = {
     | "classic"
     | "retro";
   colors?: {
-    primary?: string;
-    secondary?: string;
-    accent?: string;
-    background?: string;
-    text?: string;
+    primary?: HexColor;
+    secondary?: HexColor;
+    accent?: HexColor;
+    background?: HexColor;
+    text?: HexColor;
   };
   typography?: {
     fontFamily?: string;
@@ -145,6 +167,6 @@ export type GeneralOptions = {
 
 export type Menu = {
   business: Business;
-  items: Item[];
+  bricks: Brick[];
   options?: GeneralOptions;
 };

@@ -7,5 +7,5 @@ export const languageDetector = {
     cb(['es', 'en'].includes(language) ? language : 'es');
   },
   init: () => { },
-  cacheUserLanguage: () => {},
+  cacheUserLanguage: () => { },
 };
