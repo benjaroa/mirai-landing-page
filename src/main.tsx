@@ -14,7 +14,7 @@ const ogData = {
   title: 'Mirai Food Lab',
   description: description.es,
   url: 'https://www.miraifoodlab.cl',
-  image: 'https://miraifoodlab.cl/assets/ig-1.jpg',
+  image: 'https://www.miraifoodlab.cl/assets/ig-1.jpg',
   siteName: 'Mirai Food Lab',
 };
 
