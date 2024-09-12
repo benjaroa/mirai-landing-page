@@ -20,6 +20,8 @@ export const MetaTags = () => {
 
   return (
     <Helmet>
+      <meta name="description" content={description[language]} />
+      
       <meta property="og:locale" content={language} />"
       <meta property="og:description" lang={language} content={description[language]} />
       <meta property="og:title" content={ogData.title} />
