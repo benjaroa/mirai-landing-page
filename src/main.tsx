@@ -14,7 +14,7 @@ const ogData = {
   title: 'Mirai Food Lab',
   description: description.es,
   url: 'https://www.miraifoodlab.cl',
-  image: 'https://www.yourwebsite.cl/assets/ig-1.jpg',
+  image: 'https://miraifoodlab.cl/assets/ig-1.jpg',
   siteName: 'Mirai Food Lab',
 };
 
@@ -28,6 +28,13 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <meta property="og:url" content={ogData.url} />
       <meta property="og:image" content={ogData.image} />
       <meta property="og:site_name" content={ogData.siteName} />
+      <meta property="og:type" content="business.business" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={ogData.title} />
+      <meta name="twitter:description" lang="es" content={description.es} />
+      <meta name="twitter:description" lang="en" content={description.en} />
+      <meta name="twitter:image" content={ogData.image} />
     </Helmet>
     <Router />
   </React.StrictMode>
