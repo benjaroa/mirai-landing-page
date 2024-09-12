@@ -29,7 +29,10 @@ export const Router = () => {
       ))}
 
       <Route path="/:locale?/page/:target">
-        {(params) => <JsonPage target={params.target} />}
+        {({ target }) => {
+          if (!target) return (<Page404 pageName="" />);
+          return (<JsonPage target={target} />)
+        }}
       </Route>
 
       <Route path="/:locale?/menu">
