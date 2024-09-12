@@ -11,11 +11,12 @@ const description = {
 };
 
 const ogData = {
-  title: 'Mirai Food Lab',
+  title: "Mirai Food Lab",
   description: description.es,
-  url: 'https://www.miraifoodlab.cl',
-  image: 'https://www.miraifoodlab.cl/assets/ig-1.jpg',
-  siteName: 'Mirai Food Lab',
+  url: "https://www.miraifoodlab.cl",
+  image: "https://www.miraifoodlab.cl/assets/ig-1.jpg",
+  siteName: "Mirai Food Lab",
+  logoUrl: "https://miraifoodlab.cl/assets/mirai-i-DZE5yT14.png"
 };
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <meta property="og:title" content={ogData.title} />
       <meta property="og:url" content={ogData.url} />
       <meta property="og:image" content={ogData.image} />
+      <meta property="og:logo" content={ogData.logoUrl} />
       <meta property="og:site_name" content={ogData.siteName} />
       <meta property="og:type" content="business.business" />
 
