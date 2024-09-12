@@ -1,7 +1,17 @@
-import Home from "./components/Home";
 import { Route, Switch } from "wouter";
-import { MenuComponent } from "./components/menu/Menu";
-import { Page404 } from './components/404';
+import { Home } from "./pages/Home";
+import { MenuComponent } from "./pages/menu/Menu";
+import { Page404 } from "./pages/404";
+import { JsonPage } from "./pages/JsonPage";
+
+const externalUrls: Record<string, string> = {
+  menu: "https://drive.google.com/file/d/1Ik6jZQVMnC6R5BzDAfOVFPIONkEXryWA/",
+  shop: "https://tienda.miraifoodlab.cl",
+};
+const redirectTo = (name: string) => {
+  const url = externalUrls[name] || "/";
+  return (window.location.href = url);
+};
 
 export const Router = () => {
   return (
@@ -10,11 +20,25 @@ export const Router = () => {
         <Home />
       </Route>
 
+      {Object.keys(externalUrls).map((name) => (
+        <Route
+          key={name}
+          path={`/:locale?/page/${name}`}
+          component={() => redirectTo(name)}
+        />
+      ))}
+
+      <Route path="/:locale?/page/:target">
+        {(params) => <JsonPage target={params.target} />}
+      </Route>
+
       <Route path="/:locale?/menu">
         <MenuComponent />
       </Route>
 
-      <Route><Page404 /></Route>
+      <Route path="*">
+        {(params) => <Page404 pageName={params["*"]} />}
+      </Route>
     </Switch>
   );
 };

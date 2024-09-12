@@ -1,14 +1,14 @@
 import "../App.css";
-import { MainContent } from "./MainContent.tsx";
-import { NewFooter } from "./NewFooter.tsx";
-import { IntagramCarrousel } from "./InstagramGallery.tsx";
-import { HeroCarousel } from "./HeroCarousel.tsx";
-import { DescriptionCard } from "./DescriptionCard.tsx";
-import { TopButtons } from "./TopButtons.tsx";
-import { ScrollToTop } from "./ScrollToTop.tsx";
+import { MainContent } from "../components/MainContent.tsx";
+import { NewFooter } from "../components/NewFooter.tsx";
+import { IntagramCarrousel } from "../components/InstagramGallery.tsx";
+import { HeroCarousel } from "../components/HeroCarousel.tsx";
+import { DescriptionCard } from "../components/DescriptionCard.tsx";
+import { TopButtons } from "../components/TopButtons.tsx";
+import { ScrollToTop } from "../components/ScrollToTop.tsx";
 // import { Dialog, DialogContent, DialogTitle } from "./ui/dialog.tsx";
 
-const Home = () => {
+export const Home = () => {
   return (
     <main className="">
       { /* / /}
@@ -33,5 +33,3 @@ const Home = () => {
     </main>
   );
 };
-
-export default Home;

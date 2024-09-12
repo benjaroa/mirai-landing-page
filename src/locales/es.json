@@ -25,16 +25,14 @@
       "description": "Carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
       "links": [
         {
-          "type": "drawer",
           "className": "button",
           "target": "location",
           "icon": "globe",
           "title": "Sucursales"
         },
         {
-          "type": "button",
           "className": "",
-          "target": "https://drive.google.com/file/d/1Ik6jZQVMnC6R5BzDAfOVFPIONkEXryWA/",
+          "target": "menu",
           "icon": "cooking-pot",
           "title": "Carta"
         }
@@ -46,49 +44,43 @@
       "description": "Fermentación tradicional y moderna en productos de alta calidad: kombuchas, misos, koji y más.",
       "links": [
         {
-          "type": "button",
           "className": "",
-          "target": "https://tienda.miraifoodlab.cl",
+          "target": "shop",
           "icon": "store",
           "title": "Tienda"
         },
         {
-          "type": "drawer",
           "className": "button",
           "target": "partners",
           "icon": "handshake",
           "title": "Partners"
         },
         {
-          "type": "button",
           "className": "button",
-          "target": "seller-partners",
           "icon": "squirrel",
           "title": "¿Mayorista? Contáctanos",
           "metadata": {
             "data-tally-open": "mBBBaY",
             "data-tally-emoji-text": "🍜",
             "data-tally-emoji-animation": "wave",
-            "data-tally-auto-close":"5000"
+            "data-tally-auto-close": "5000"
           }
         }
       ]
     },
     {
       "title": "Colaboraciones 👯",
-      "img-scr": "ig-7.jpg",
+      "img-scr": "ig-10.jpg",
       "description": "Colaboraciones con otros restaurantes para llevar nuestra propuesta a nuevos espacios, experimentar y aprender de otros.",
       "links": [
         {
-          "type": "drawer",
-          "className": "button",  
+          "className": "button",
           "target": "pop-ups-calendar",
           "icon": "play",
           "title": "Agenda"
         },
         {
-          "type": "drawer",
-          "className": "button",  
+          "className": "button",
           "target": "pop-ups-history",
           "icon": "calendar-days",
           "title": "Historial"

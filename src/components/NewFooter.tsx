@@ -1,11 +1,9 @@
 import logo from "@/assets/mirai-i.png";
-import { getDrawer } from './TypesMap';
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import { Link } from "wouter";
 
 export const NewFooter = () => {
-  const { t } = useTranslation();
-  const isDesktop = useMediaQuery("(min-width: 768px)"); // https://ui.shadcn.com/docs/components/drawer
+  const { t, i18n: { language } } = useTranslation();
 
   return (
     <footer className="container text-center">
@@ -28,7 +26,9 @@ export const NewFooter = () => {
               </a>
             </p>
             <p className="mb-4">
-              {getDrawer({ key: 1, target: "work-and-stage-with-us", title: t("footer.work-and-stage-with-us") }, isDesktop)}
+              <Link to={`/${language}/page/work-and-stage-with-us`}>
+                {t("footer.work-and-stage-with-us")}
+              </Link>
             </p>
             {/*<p className="mb-4">
               <a href="#!">Prensa</a>

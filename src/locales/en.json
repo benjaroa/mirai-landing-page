@@ -25,16 +25,14 @@
       "description": "Reduced menu of Japanese tapas and ramen, with a focus on the quality of ingredients and preparation techniques.",
       "links": [
         {
-          "type": "drawer",
           "className": "button",
           "target": "location",
           "icon": "",
           "title": "Location and hours"
         },
         {
-          "type": "button",
           "className": "",
-          "target": "https://drive.google.com/file/d/1Ik6jZQVMnC6R5BzDAfOVFPIONkEXryWA/",
+          "target": "menu",
           "icon": "",
           "title": "Menu"
         }
@@ -46,49 +44,42 @@
       "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
       "links": [
         {
-          "type": "button",
-          "className": "",
-          "target": "https://tienda.miraifoodlab.cl",
+          "target": "tienda",
           "icon": "",
           "title": "Online shop"
         },
         {
-          "type": "drawer",
           "className": "button",
           "target": "partners",
           "icon": "",
           "title": "Partners"
         },
         {
-          "type": "button",
           "className": "button",
-          "target": "seller-partners",
           "icon": "",
           "title": "¿wholesaler? Contact us",
           "metadata": {
             "data-tally-open": "mBBBaY",
             "data-tally-emoji-text": "🍜",
             "data-tally-emoji-animation": "wave",
-            "data-tally-auto-close":"5000"
+            "data-tally-auto-close": "5000"
           }
         }
       ]
     },
     {
       "title": "Pop-ups 👯",
-      "img-scr": "ig-7.jpg",
+      "img-scr": "ig-10.jpg",
       "description": "Working in collaboration with other restaurants to expand our proposal to new spaces, experiment, and learn from others.",
       "links": [
         {
-          "type": "drawer",
           "className": "button",
           "target": "pop-ups-calendar",
           "icon": "",
           "title": "Schedule"
         },
         {
-          "type": "drawer",
-          "className": "button",  
+          "className": "button",
           "target": "pop-ups-history",
           "icon": "calendar-days",
           "title": "History"

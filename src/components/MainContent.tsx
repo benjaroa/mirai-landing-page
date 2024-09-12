@@ -1,10 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { processLinks, type Project } from "./TypesMap";
-import { useMediaQuery } from "@/hooks/use-media-query";
 
 export const MainContent = () => {
-  const { t } = useTranslation();
-  const isDesktop = useMediaQuery("(min-width: 768px)"); // https://ui.shadcn.com/docs/components/drawer
+  const { t, i18n: { language } } = useTranslation();
 
   return (
     <div className="container grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -25,7 +23,7 @@ export const MainContent = () => {
               <p className="text-slate-600 text-base">{description}</p>
             </div>
             <div className="px-6 pt-4 pb-4 flex flex-wrap mt-auto">
-              {processLinks(links, isDesktop)}
+              {processLinks(links, language)}
             </div>
           </div>
         )
