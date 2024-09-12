@@ -21,10 +21,9 @@ const ogData = {
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Helmet>
-      <meta name="description" lang="en" content={description.en} />
-      <meta name="description" lang="es" content={description.es} />
+      <meta property="og:description" lang="en" content={description.en} />
+      <meta property="og:description" lang="es" content={description.es} />
       <meta property="og:title" content={ogData.title} />
-      <meta property="og:description" content={ogData.description} />
       <meta property="og:url" content={ogData.url} />
       <meta property="og:image" content={ogData.image} />
       <meta property="og:site_name" content={ogData.siteName} />
