@@ -26,14 +26,12 @@
       "links": [
         {
           "className": "button",
-          "target": "location",
-          "icon": "",
+          "target": "location-and-hours",
           "title": "Location and hours"
         },
         {
           "className": "",
           "target": "menu",
-          "icon": "",
           "title": "Menu"
         }
       ]
@@ -44,19 +42,16 @@
       "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
       "links": [
         {
-          "target": "tienda",
-          "icon": "",
+          "target": "shop",
           "title": "Online shop"
         },
         {
           "className": "button",
           "target": "partners",
-          "icon": "",
           "title": "Partners"
         },
         {
           "className": "button",
-          "icon": "",
           "title": "¿wholesaler? Contact us",
           "metadata": {
             "data-tally-open": "mBBBaY",
@@ -74,9 +69,9 @@
       "links": [
         {
           "className": "button",
-          "target": "pop-ups-calendar",
+          "target": "pop-ups",
           "icon": "",
-          "title": "Schedule"
+          "title": "Calendar"
         },
         {
           "className": "button",
@@ -88,7 +83,7 @@
     }
   ],
   "footer": {
-    "work-and-stage-with-us": "Work and stage with us",
+    "stage-and-applications": "Internships and applications",
     "contact-link": "Contact"
   }
 }

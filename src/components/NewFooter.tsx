@@ -26,8 +26,8 @@ export const NewFooter = () => {
               </a>
             </p>
             <p className="mb-4">
-              <Link to={`/${language}/page/work-and-stage-with-us`}>
-                {t("footer.work-and-stage-with-us")}
+              <Link to={`/${language}/page/stage-and-applications`}>
+                {t("footer.stage-and-applications")}
               </Link>
             </p>
             {/*<p className="mb-4">

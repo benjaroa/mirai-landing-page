@@ -1,4 +1,4 @@
-# Ubicación y horario
+# Sucursales y horarios
 
 ## Factoría Franklin
 
@@ -10,8 +10,8 @@ Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en 
 
 ### Horarios
 
-- Viernes: 12:15 a 16:30 hrs.
-- Sábado y Domingo: 12:15 a 17:30 hrs.
+- Viernes: 12:30 a 16:30 hrs.
+- Sábado y Domingo: 12:30 a 17:30 hrs.
 
 ### Mapas
 
@@ -23,6 +23,6 @@ Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en 
 - Metro Bío Bío, Línea 6, está a solo un par de pasos
 - La Factoría tiene estacionamientos con acceso por [San Francisco 2038](https://maps.app.goo.gl/Lgqmkhjei6zsHfDv9) [temporalmente fuera de servicio]
 
-## Mercado Urbano Tobalaba / MUT
+## MUT
 
 PROXIMAMENTE!

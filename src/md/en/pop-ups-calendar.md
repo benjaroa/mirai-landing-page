@@ -1,3 +1,0 @@
-# Pop-ups
-
-## Comming soon

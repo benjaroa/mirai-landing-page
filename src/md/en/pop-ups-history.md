@@ -1,3 +1,3 @@
 # History
 
-Comming soon!
+Coming soon!

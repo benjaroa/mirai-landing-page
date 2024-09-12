@@ -26,12 +26,11 @@
       "links": [
         {
           "className": "button",
-          "target": "location",
+          "target": "location-and-hours",
           "icon": "globe",
-          "title": "Sucursales"
+          "title": "Sucursales y horarios"
         },
         {
-          "className": "",
           "target": "menu",
           "icon": "cooking-pot",
           "title": "Carta"
@@ -44,9 +43,7 @@
       "description": "Fermentación tradicional y moderna en productos de alta calidad: kombuchas, misos, koji y más.",
       "links": [
         {
-          "className": "",
           "target": "shop",
-          "icon": "store",
           "title": "Tienda"
         },
         {
@@ -75,9 +72,9 @@
       "links": [
         {
           "className": "button",
-          "target": "pop-ups-calendar",
+          "target": "pop-ups",
           "icon": "play",
-          "title": "Agenda"
+          "title": "Calendario"
         },
         {
           "className": "button",
@@ -89,7 +86,7 @@
     }
   ],
   "footer": {
-    "work-and-stage-with-us": "Trabaja con nosotros / Pasantías",
+    "stage-and-applications": "Pasantías y postulaciones",
     "contact-link": "Contacto"
   }
 }
