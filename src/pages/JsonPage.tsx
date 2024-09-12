@@ -16,7 +16,7 @@ const goBack = () => {
 
 export const JsonPage = ({ target }: { target: string }) => {
   return (
-    <div className="container relative h-dvh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+    <div className="container p-0 relative h-dvh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2">
       <div className="relative hidden h-full flex-col bg-muted text-white dark:border-r lg:flex">
         <img
           src={currentImage}
@@ -24,8 +24,8 @@ export const JsonPage = ({ target }: { target: string }) => {
           className="w-screen h-screen object-cover top-0"
         />
       </div>
-      <ScrollArea className="p-2 lg:p-4 h-full">
-        <div className="mx-auto sm:p-8 flex w-full flex-col justify-center">
+      <ScrollArea className="py-2 lg:py-4 h-full">
+        <div className="mx-auto sm:py-8 flex w-full flex-col justify-center">
           <div className="container mb-4 flex flex-row-reverse">
             <a
               href="#"
