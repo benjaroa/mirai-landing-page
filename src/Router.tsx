@@ -30,7 +30,7 @@ export const Router = () => {
       ))}
 
       {/*<Route path="/:locale?/page/partners">*/}
-      <Route path="/:locale?/page/partners2">
+      <Route path="/:locale?/page/partners">
         <Partners />
       </Route>
 
