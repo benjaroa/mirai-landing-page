@@ -8,8 +8,8 @@ import jsonPartnersList from "../assets/partners.json";
 import { Dispatch, SetStateAction, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
-import { SquareMinus, SquarePlus, Triangle } from "lucide-react";
-import { useTransition, animated } from "react-spring";
+import { SquareMinus, SquarePlus } from "lucide-react";
+// import { useTransition } from "react-spring";
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const getRandomIndex = (min: number, max: number) =>
@@ -86,11 +86,11 @@ export const Partners = () => {
     return true;
   });
 
-  const transition = useTransition(partnersList, {
-    from: { opacity: 0, marginTop: 5 },
-    enter: { opacity: 1, maxHeight: 50, marginTop: 5 },
-    leave: { opacity: 0, maxHeight: 0, marginTop: 0 }
-  });
+  // const transition = useTransition(partnersList, {
+  //   from: { opacity: 0, marginTop: 5 },
+  //   enter: { opacity: 1, maxHeight: 50, marginTop: 5 },
+  //   leave: { opacity: 0, maxHeight: 0, marginTop: 0 }
+  // });
 
   return (
     <div className="container p-0 relative h-dvh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2">
