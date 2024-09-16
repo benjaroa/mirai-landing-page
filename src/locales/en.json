@@ -15,14 +15,16 @@
   },
   "hero": {
     "title": "Ramen + Fermentation",
-    "main-text": "We use traditional, fine dining and fermentation techniques to fuse contemporary Japanese ramen with the flavors and ingredients of the Latin American cuisine.",
-    "secondary-text": "We are a fermented products factory, we are an experimental ramen bar, we are a team that is not afraid to experiment, make mistakes and try new things."
+    "old-main-text": "We use traditional, fine dining and fermentation techniques to fuse contemporary Japanese ramen with the flavors and ingredients of the Latin American cuisine.",
+    "main-text": "We use traditional techniques from fine dining and the world of fermentation to fuse contemporary Japanese ramen with the flavors and ingredients of the South American cuisine.",
+    "secondary-text": "We are an experimental ramen bar, we are a factory of fermented products, we are a team that isn't afraid to explore, make mistakes, or try out new things; we are: Mirai Food Lab."
   },
   "projects": [
     {
-      "title": "Ramen Shop 🍜",
+      "title": "Ramen Bar 🍜",
       "img-scr": "ig-1.jpg",
-      "description": "Reduced menu of Japanese tapas and ramen, with a focus on the quality of ingredients and preparation techniques.",
+      "old-description": "Reduced menu of Japanese tapas and ramen, with a focus on the quality of ingredients and preparation techniques.",
+      "description": "A curated menu of Japanese tapas and ramen, emphasizing the quality of our ingredients and preparation techniques.",
       "links": [
         {
           "className": "button",
@@ -39,7 +41,8 @@
     {
       "title": "Products 📦",
       "img-scr": "ig-12.jpg",
-      "description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
+      "old-description": "High-quality products such as kombuchas, misos, koji, and more are made using traditional and modern fermentation techniques.",
+      "description": "Traditional and modern fermentation techniques in high-quality products: kombuchas, misos, koji, and more.",
       "links": [
         {
           "target": "shop",
@@ -52,7 +55,7 @@
         },
         {
           "className": "button",
-          "title": "¿wholesaler? Contact us",
+          "title": "Wholesaler? Contact us",
           "metadata": {
             "data-tally-open": "mBBBaY",
             "data-tally-emoji-text": "🍜",
@@ -65,7 +68,8 @@
     {
       "title": "Pop-ups 👯",
       "img-scr": "ig-10.jpg",
-      "description": "Working in collaboration with other restaurants to expand our proposal to new spaces, experiment, and learn from others.",
+      "old-description": "Working in collaboration with other restaurants to expand our proposal to new spaces, experiment, and learn from others.",
+      "description": "Collaborating with other restaurants to bring our concept to new spaces, explore novel ideas, and grow through shared experiences.",
       "links": [
         {
           "className": "button",
