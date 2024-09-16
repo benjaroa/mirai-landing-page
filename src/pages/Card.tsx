@@ -49,16 +49,9 @@ export const CustomCard = (input: CustomCardType) => {
         </div>
       </CardHeader>
       <CardContent className="flex space-x-4 items-end justify-end text-sm text-muted-foreground">
-        {/*<Badge variant="secondary">{input.district}</Badge>*/}
-        <Button variant="outline">
-          <MapPin className="h-4 w-4" />
-        </Button>
-        <Button variant="outline">
-          <Link className="h-4 w-4" />
-        </Button>
-        <Button variant="outline">
-          <InstagramLogoIcon className="h-4 w-4" />
-        </Button>
+          {input.address && <Button title={`${input.address}, ${input.district}`} variant="outline"><a href={`https://www.google.com/maps?q=${input.address.replace(/ /g, "+")},+${input.district}`} target="_blank"><MapPin className="h-4 w-4" /></a></Button>}
+          {input.website && <Button title={`${input.website}`} variant="outline"><a href={`${input.website}`} target="_blank"><Link className="h-4 w-4" /></a></Button>}
+          {input.instagram && <Button title={`@${input.instagram}`} variant="outline"><a href={`https://instagram.com/${input.instagram}`} target="_blank"><InstagramLogoIcon className="h-4 w-4" /></a></Button>}
       </CardContent>
     </Card>
   );

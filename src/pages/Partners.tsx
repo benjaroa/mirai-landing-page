@@ -8,7 +8,8 @@ import jsonPartnersList from "../assets/partners.json";
 import { Dispatch, SetStateAction, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Triangle } from "lucide-react";
+import { SquareMinus, SquarePlus, Triangle } from "lucide-react";
+import { useTransition, animated } from "react-spring";
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const getRandomIndex = (min: number, max: number) =>
@@ -85,6 +86,12 @@ export const Partners = () => {
     return true;
   });
 
+  const transition = useTransition(partnersList, {
+    from: { opacity: 0, marginTop: 5 },
+    enter: { opacity: 1, maxHeight: 50, marginTop: 5 },
+    leave: { opacity: 0, maxHeight: 0, marginTop: 0 }
+  });
+
   return (
     <div className="container p-0 relative h-dvh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2">
       <div className="relative hidden h-full flex-col bg-muted text-white dark:border-r lg:flex">
@@ -109,14 +116,15 @@ export const Partners = () => {
             <h1 className="mb-4">Partners</h1>
             <div>
               <button onClick={() => setShowFilters(!showFilters)}>
-                <h2 className="text-xl mt-0 flex flex-row items-center	 space-x-4">
-                  <Triangle className={`h-4 w-4 rotate-${showFilters ? '180' : '90'}`} />
+                <h2 className="text-xl mt-0 mb-2 flex items-center">
+                  {showFilters && <SquareMinus className={`h-4 w-4 mr-2`} />}
+                  {!showFilters && <SquarePlus className={`h-4 w-4 mr-2`} />}
                   Filtros
                 </h2>
               </button>
-              <div className={`columns-2 m-4 ${showFilters ? '' : 'hidden'}`}>
+              <div className={`columns-2 m-2 ${showFilters ? '' : 'hidden'}`}>
                 {Object.entries(filterOptions).map(([key, vals]) => (
-                    <div className="card m-0 break-after-column">
+                    <div className="m-0 break-after-column">
                       <h4 className="mt-0 text-base">{stateMap[key].title}</h4>
                       {vals.map((val) => (
                         <div
