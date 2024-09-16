@@ -3,6 +3,7 @@ import { Home } from "./pages/Home";
 import { MenuComponent } from "./pages/menu/Menu";
 import { Page404 } from "./pages/404";
 import { JsonPage } from "./pages/JsonPage";
+import { Partners } from "./pages/Partners";
 
 const externalUrls: Record<string, string> = {
   menu: "https://drive.google.com/file/d/1Ik6jZQVMnC6R5BzDAfOVFPIONkEXryWA/",
@@ -27,6 +28,11 @@ export const Router = () => {
           component={() => redirectTo(name)}
         />
       ))}
+
+      {/*<Route path="/:locale?/page/partners">*/}
+      <Route path="/:locale?/page/partners2">
+        <Partners />
+      </Route>
 
       <Route path="/:locale?/page/:target">
         {({ target }) => {
