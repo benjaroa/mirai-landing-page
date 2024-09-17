@@ -8,6 +8,24 @@
       "link": "https://tienda.miraifoodlab.cl"
     }
   },
+  "back-button-label": "back 👉",
+  "partners": {
+    "title": "Partners",
+    "description": "Selection of partners that usually offer our products, the availability or variety of products may vary in each case.",
+    "filter": {
+      "label": "Filters",
+      "clear-label": "Clear",
+      "keys": {
+        "district": "District",
+        "type": "Type"
+      },
+      "footer": {
+        "showing": "Showing",
+        "of": "of",
+        "partners": "partners"
+      }
+    }
+  },
   "theme-mode-toggle": {
     "light": "Light",
     "dark": "Dark",

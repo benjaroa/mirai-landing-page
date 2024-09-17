@@ -8,6 +8,23 @@
       "link": "https://tienda.miraifoodlab.cl"
     }
   },
+  "partners": {
+    "title": "Partners",
+    "description": "Selección de partners que suelen ofrecer nuestros productos, la disponibilidad o variedad de productos puede variar en cada caso.",
+    "filter": {
+      "label": "Filtros",
+      "clear-label": "Limpiar",
+      "keys": {
+        "district": "Comuna",
+        "type": "Tipo"
+      },
+      "footer": {
+        "showing": "Mostrando",
+        "of": "de",
+        "partners": "partners"
+      }
+    }
+  },
   "theme-mode-toggle": {
     "light": "Claro",
     "dark": "Oscuro",

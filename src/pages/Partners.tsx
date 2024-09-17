@@ -10,7 +10,15 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { SquareMinus, SquarePlus } from "lucide-react";
 import { animated, useTransition } from "react-spring";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const getRandomIndex = (min: number, max: number) =>
@@ -76,6 +84,7 @@ const addOrRemove = (array: string[], value: string) => {
 };
 
 export const Partners = () => {
+  const { t } = useTranslation();
   const [districtFilter, setDistrictFilter] = useState<string[]>([]);
   const [typeFilter, setTypeFilter] = useState<string[]>([]);
   const [showFilters, setShowFilters] = useState<boolean>(false);
@@ -88,11 +97,15 @@ export const Partners = () => {
     }
   > = {
     districts: {
-      title: "Comunas",
+      title: t("partners.filter.keys.district"),
       setFn: setDistrictFilter,
       state: districtFilter,
     },
-    labels: { title: "Tipo", setFn: setTypeFilter, state: typeFilter },
+    labels: {
+      title: t("partners.filter.keys.type"),
+      setFn: setTypeFilter,
+      state: typeFilter,
+    },
   };
 
   const filteredPartnersList = partnersListParsed.filter(
@@ -146,29 +159,49 @@ export const Partners = () => {
               onClick={goBack}
               className="bg-mirai text-white rounded-lg mb-6 p-4inline-flex items-center px-5 py-2.5 text-sm font-medium text-center hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
-              volver 👉
+              {t("back-button-label")}
             </a>
           </div>
           <div className="container prose">
-            <h1 className="mb-4">Partners</h1>
+            <h1 className="mb-4">{t("partners.title")}</h1>
+            <p>{t("partners.description")}</p>
             <Card className="mb-4">
               <CardHeader>
-                <CardTitle className="mt-0 mb-2 text-xl">
+                <CardTitle className="mt-0 mb-0 text-xl flex justify-between">
                   <button onClick={() => setShowFilters(!showFilters)}>
                     <span className="flex items-center">
-                      {showFilters && <SquareMinus className={`h-4 w-4 mr-2`} />}
-                      {!showFilters && <SquarePlus className={`h-4 w-4 mr-2`} />}
-                      Filtros
+                      {showFilters && (
+                        <SquareMinus className={`h-4 w-4 mr-2`} />
+                      )}
+                      {!showFilters && (
+                        <SquarePlus className={`h-4 w-4 mr-2`} />
+                      )}
+                      {t("partners.filter.label")}
                     </span>
                   </button>
+                  <Button
+                    variant="outline"
+                    className="rounded-lg p-4inline-flex items-center px-5 py-2.5 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    onClick={() => {
+                      setDistrictFilter([]);
+                      setTypeFilter([]);
+                    }}
+                  >
+                    {t("partners.filter.clear-label")}
+                  </Button>
                 </CardTitle>
               </CardHeader>
-              <CardContent className={`columns-2 m-2 ${showFilters ? "" : "hidden"}`}>
+              <CardContent
+                className={`columns-2 m-2 ${showFilters ? "" : "hidden"}`}
+              >
                 {Object.entries(filterOptions).map(([key, vals]) => (
                   <div className="m-0 break-after-column">
                     <h4 className="mt-0 text-base">{stateMap[key].title}</h4>
                     {vals.map((val) => (
-                      <div key={`${name}-${val}`} className="flex items-center space-y-2">
+                      <div
+                        key={`${name}-${val}`}
+                        className="flex items-center space-y-2"
+                      >
                         <Checkbox
                           className="mr-2"
                           id={`chbox-${name}-${val}`}
@@ -190,18 +223,11 @@ export const Partners = () => {
                   </div>
                 ))}
               </CardContent>
-              <CardFooter className={`columns-2 m-2 ${showFilters ? "" : "hidden"}`}>
-                <button
-                  className="bg-mirai text-white rounded-lg p-4inline-flex items-center px-5 py-2.5 text-sm font-medium text-center hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-blue-300"
-                  onClick={() => {
-                    setDistrictFilter([]);
-                    setTypeFilter([]);
-                  }}
-                >
-                  Limpiar filtros
-                </button>
+              <CardFooter className="bg-slate-100 text-sm">
+                <p className="mb-0">
+                  {t("partners.filter.footer.showing")} {filteredPartnersList.length} {t("partners.filter.footer.of")} {partnersListParsed.length} {t("partners.filter.footer.partners")}
+                </p>
               </CardFooter>
-
             </Card>
             <div className="grid grid-cols-0 gap-4 sm:grid-cols-2">
               {partnersList}

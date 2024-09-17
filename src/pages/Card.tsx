@@ -43,15 +43,46 @@ export const CustomCard = (input: CustomCardType) => {
                 <Badge key={label} variant="secondary" title={label}>
                   {partnerTypeIcons[label]}
                 </Badge>
-              ))
-            }
+              ))}
           </div>
         </div>
+        <span className="font-thin">{input.district}</span>
       </CardHeader>
       <CardContent className="flex space-x-4 items-end justify-end text-sm text-muted-foreground">
-          {input.address && <Button title={`${input.address}, ${input.district}`} variant="outline"><a href={`https://www.google.com/maps?q=${input.address.replace(/ /g, "+")},+${input.district}`} target="_blank"><MapPin className="h-4 w-4" /></a></Button>}
-          {input.website && <Button title={`${input.website}`} variant="outline"><a href={`${input.website}`} target="_blank"><Link className="h-4 w-4" /></a></Button>}
-          {input.instagram && <Button title={`@${input.instagram}`} variant="outline"><a href={`https://instagram.com/${input.instagram}`} target="_blank"><InstagramLogoIcon className="h-4 w-4" /></a></Button>}
+        {input.address && (
+          <Button
+            className="m-0"
+            title={`${input.address}, ${input.district}`}
+            variant="outline"
+          >
+            <a
+              href={`https://www.google.com/maps?q=${input.address.replace(
+                / /g,
+                "+"
+              )},+${input.district}`}
+              target="_blank"
+            >
+              <MapPin className="h-4 w-4" />
+            </a>
+          </Button>
+        )}
+        {input.website && (
+          <Button title={`${input.website}`} variant="outline">
+            <a href={`${input.website}`} target="_blank">
+              <Link className="h-4 w-4" />
+            </a>
+          </Button>
+        )}
+        {input.instagram && (
+          <Button title={`@${input.instagram}`} variant="outline">
+            <a
+              href={`https://instagram.com/${input.instagram}`}
+              target="_blank"
+            >
+              <InstagramLogoIcon className="h-4 w-4" />
+            </a>
+          </Button>
+        )}
       </CardContent>
     </Card>
   );
