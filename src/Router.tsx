@@ -17,7 +17,7 @@ const redirectTo = (name: string) => {
 export const Router = () => {
   return (
     <Switch>
-      <Route path="/:locale?/:show-testimonials">
+      <Route path="/:locale?/:show-testimonials?">
         {(params) => {
           const st = params["show-testimonials"] === "show-testimonials";
           return (<Home show-testimonials={st} />)
