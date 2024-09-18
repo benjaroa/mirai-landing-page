@@ -9,6 +9,13 @@
     }
   },
   "back-button-label": "volver 👉",
+  "testimonials": {
+    "title": "Testimonios",
+    "description": "Lo que dicen de nosotros",
+    "read-more": "Leer más",
+    "read-less": "Leer menos",
+    "review-button-label": "Déjanos tu opinión en Google"
+  },
   "partners": {
     "title": "Partners",
     "description": "Selección de partners que suelen ofrecer nuestros productos, la disponibilidad o variedad de productos puede variar en cada caso.",

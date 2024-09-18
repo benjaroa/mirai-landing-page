@@ -6,9 +6,10 @@ import { HeroCarousel } from "../components/HeroCarousel.tsx";
 import { DescriptionCard } from "../components/DescriptionCard.tsx";
 import { TopButtons } from "../components/TopButtons.tsx";
 import { ScrollToTop } from "../components/ScrollToTop.tsx";
+import { Testimonials } from "@/components/Testimonials.tsx";
 // import { Dialog, DialogContent, DialogTitle } from "./ui/dialog.tsx";
 
-export const Home = () => {
+export const Home = ({ "show-testimonials": st }: { "show-testimonials"?: boolean }) => {
   return (
     <main className="">
       { /* / /}
@@ -26,6 +27,7 @@ export const Home = () => {
       <div className="my-20" />
       <MainContent />
       <div className="my-20" />
+      {st && (<><Testimonials /><div className="my-20" /></>)}
       <IntagramCarrousel />
       <div className="my-20" />
       <NewFooter />
