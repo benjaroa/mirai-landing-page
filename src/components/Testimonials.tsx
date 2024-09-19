@@ -6,9 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { buttonVariants } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import { MessageSquareQuote, Star } from "lucide-react";
 import { GoogleLogo } from "../assets/google-logo";
 
 interface TestimonialProps {
