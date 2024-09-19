@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 import { GoogleLogo } from "../assets/google-logo";
+import { Star } from "lucide-react";
 
 interface TestimonialProps {
   image?: string;
