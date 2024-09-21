@@ -9,6 +9,15 @@
     }
   },
   "back-button-label": "back 👉",
+  "testimonials": {
+    "title": "Testimonios",
+    "description": "Lo que dicen de nosotros",
+    "review-button-label": "Déjanos tu opinión en Google",
+    "google": {
+      "rate": 4.8,
+      "count": 152
+    }
+  },
   "partners": {
     "title": "Partners",
     "description": "Selection of partners that usually offer our products, the availability or variety of products may vary in each case.",

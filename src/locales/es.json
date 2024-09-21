@@ -12,9 +12,11 @@
   "testimonials": {
     "title": "Testimonios",
     "description": "Lo que dicen de nosotros",
-    "read-more": "Leer más",
-    "read-less": "Leer menos",
-    "review-button-label": "Déjanos tu opinión en Google"
+    "review-button-label": "Déjanos tu opinión en Google",
+    "google": {
+      "rate": 4.8,
+      "count": 152
+    }
   },
   "partners": {
     "title": "Partners",

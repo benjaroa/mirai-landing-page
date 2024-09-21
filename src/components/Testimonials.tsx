@@ -146,6 +146,15 @@ const testimonials: TestimonialProps[] = [
   },
 ];
 
+const CustomStar = (
+  { extraClass, size, color, key }: { extraClass?: string, size?: number, color?: string, key?: string }
+) => {
+  const currentColor = color || "rgb(250 204 21)";
+  return (
+    <Star key={key} fill={currentColor} color={currentColor} className={`h-${size} w-${size} ${extraClass}`} />
+  )
+};  
+
 export const Testimonials = () => {
   const {
     t,
@@ -153,9 +162,9 @@ export const Testimonials = () => {
   } = useTranslation();
   return (
     <section id="testimonials" className="container">
-      <h2 className="text-3xl md:text-4xl font-bold">Testimonios</h2>
+      <h2 className="text-3xl md:text-4xl font-bold">{t("testimonials.title")}</h2>
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lo que dicen nuestros clientes
+        {t("testimonials.description")}
       </p>
 
       <Card className="mb-6">
@@ -164,14 +173,15 @@ export const Testimonials = () => {
         </CardHeader>
         <CardContent className="flex justify-between">
           <div className="flex flex-row content-center items-center">
-            4,8{" "}
-            <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-6 w-6 ml-2" />
-            <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-6 w-6" />
-            <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-6 w-6" />
-            <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-6 w-6" />
-            <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-6 w-6 mr-2" />{" "}
-            <span className="text-sm font-light">(152 reviews)</span>
+            {`${t("testimonials.google.rate")} `}
+            <CustomStar extraClass="ml-2" />
+            <CustomStar />
+            <CustomStar />
+            <CustomStar />
+            <CustomStar extraClass="mr-2" />{" "}
+            <span className="text-sm font-light">({t("testimonials.google.count")} reviews)</span>
           </div>
+
           {/* <div className="flex flex-col items-center">
             <div className="flex gap-2 items-end ">
               <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
@@ -203,7 +213,7 @@ export const Testimonials = () => {
             >
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
-                  <AvatarImage alt="" src={image} />
+                  <AvatarImage alt={`${name} avatar`} src={image} />
                   <AvatarFallback>
                     {name.charAt(0).toUpperCase()}
                   </AvatarFallback>
@@ -211,16 +221,16 @@ export const Testimonials = () => {
 
                 <div className="flex flex-col">
                   <CardTitle className="text-lg">{name}</CardTitle>
-                  {/* <CardDescription>{userName}</CardDescription> */}
                   <CardDescription className="flex flex-row">
                     {Array.from({ length: 5 }).map((_, index) => {
+                      const key = `star-${name}-${index}`;
                       if (index < starsAmount) {
                         return (
-                          <Star key={`star-${name}-${index}`} fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-3 w-3" />
+                          <CustomStar key={key} size={3} />
                         );
                       }
                       return (
-                        <Star key={`star-${name}-${index}`} fill="gray" color="gray" className="h-3 w-3 opacity-50" />
+                        <CustomStar key={key} size={3} color="gray" extraClass="opacity-90" />
                       );
                     })}
                   </CardDescription>
