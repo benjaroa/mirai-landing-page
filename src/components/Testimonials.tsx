@@ -10,12 +10,114 @@ import { useTranslation } from "react-i18next";
 import { GoogleLogo } from "../assets/google-logo";
 import { Star } from "lucide-react";
 
-interface TestimonialProps {
+type TestimonialProps = {
   image?: string;
   name: string;
   comment: Record<string, string>;
   starsAmount: number;
 }
+
+const CustomStar = (
+  { extraClass, size, color, key }: { extraClass?: string, size?: number, color?: string, key?: string }
+) => {
+  const currentColor = color || "rgb(250 204 21)";
+  return (
+    <Star key={key} fill={currentColor} color={currentColor} className={`h-${size} w-${size} ${extraClass}`} />
+  )
+};  
+
+export const Testimonials = () => {
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  return (
+    <section id="testimonials" className="container">
+      <h2 className="text-3xl md:text-4xl font-bold">{t("testimonials.title")}</h2>
+      <p className="text-xl text-muted-foreground pt-4 pb-8">
+        {t("testimonials.description")}
+      </p>
+
+      <Card className="mb-6">
+        <CardHeader className="text-xl pb-0 flex flex-row content-baseline">
+          <GoogleLogo className="h-8 mr-2" viewBox="0 0 85 36" /> reviews
+        </CardHeader>
+        <CardContent className="flex justify-between">
+          <div className="flex flex-row content-center items-center">
+            {`${t("testimonials.google.rate")} `}
+            <CustomStar extraClass="ml-2" />
+            <CustomStar />
+            <CustomStar />
+            <CustomStar />
+            <CustomStar extraClass="mr-2" />{" "}
+            <span className="text-sm font-light">({t("testimonials.google.count")} reviews)</span>
+          </div>
+
+          {/* <div className="flex flex-col items-center">
+            <div className="flex gap-2 items-end ">
+              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
+              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-7 w-7 mb-3" />
+              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-12 w-12 mb-3" />
+              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-7 w-7 mb-3" />
+              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
+            </div>
+            <p className="text-8xl font-semibold">4,8</p>
+            <p className="text-xl mt-1">de 152 reviews</p>
+          </div> */}
+
+          <a
+            className={`text-pretty rounded-lg text-white hover:text-white bg-blue-700 hover:bg-blue-900 items-center px-5 py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-blue-300`}
+            href="https://g.page/r/Cbvg1ZWlo1_zEBM/review"
+            target="_blank"
+          >
+            {t("testimonials.review-button-label")}
+          </a>
+        </CardContent>
+      </Card>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+        {testimonials.map(
+          ({ image, name, comment, starsAmount }: TestimonialProps) => (
+            <Card
+              key={name}
+              className="max-w-md md:break-inside-avoid overflow-hidden"
+            >
+              <CardHeader className="flex flex-row items-center gap-4 pb-2">
+                <Avatar>
+                  <AvatarImage alt={`${name} avatar`} src={image} />
+                  <AvatarFallback>
+                    {name.charAt(0).toUpperCase()}
+                  </AvatarFallback>
+                </Avatar>
+
+                <div className="flex flex-col">
+                  <CardTitle className="text-lg">{name}</CardTitle>
+                  <CardDescription className="flex flex-row">
+                    {Array.from({ length: 5 }).map((_, index) => {
+                      const key = `star-${name}-${index}`;
+                      if (index < starsAmount) {
+                        return (
+                          <CustomStar key={key} size={3} />
+                        );
+                      }
+                      return (
+                        <CustomStar key={key} size={3} color="gray" extraClass="opacity-90" />
+                      );
+                    })}
+                  </CardDescription>
+                </div>
+              </CardHeader>
+
+              <CardContent className="text-slate-600 text-base">
+                { comment[language] }
+              </CardContent>
+            </Card>
+          )
+        )}
+      </div>
+    </section>
+  );
+};
 
 const testimonials: TestimonialProps[] = [
   {
@@ -145,105 +247,3 @@ const testimonials: TestimonialProps[] = [
     },
   },
 ];
-
-const CustomStar = (
-  { extraClass, size, color, key }: { extraClass?: string, size?: number, color?: string, key?: string }
-) => {
-  const currentColor = color || "rgb(250 204 21)";
-  return (
-    <Star key={key} fill={currentColor} color={currentColor} className={`h-${size} w-${size} ${extraClass}`} />
-  )
-};  
-
-export const Testimonials = () => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation();
-  return (
-    <section id="testimonials" className="container">
-      <h2 className="text-3xl md:text-4xl font-bold">{t("testimonials.title")}</h2>
-      <p className="text-xl text-muted-foreground pt-4 pb-8">
-        {t("testimonials.description")}
-      </p>
-
-      <Card className="mb-6">
-        <CardHeader className="text-xl pb-0 flex flex-row content-baseline">
-          <GoogleLogo className="h-8 mr-2" viewBox="0 0 85 36" /> reviews
-        </CardHeader>
-        <CardContent className="flex justify-between">
-          <div className="flex flex-row content-center items-center">
-            {`${t("testimonials.google.rate")} `}
-            <CustomStar extraClass="ml-2" />
-            <CustomStar />
-            <CustomStar />
-            <CustomStar />
-            <CustomStar extraClass="mr-2" />{" "}
-            <span className="text-sm font-light">({t("testimonials.google.count")} reviews)</span>
-          </div>
-
-          {/* <div className="flex flex-col items-center">
-            <div className="flex gap-2 items-end ">
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-7 w-7 mb-3" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-12 w-12 mb-3" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-7 w-7 mb-3" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
-            </div>
-            <p className="text-8xl font-semibold">4,8</p>
-            <p className="text-xl mt-1">de 152 reviews</p>
-          </div> */}
-
-          <a
-            className={`text-pretty rounded-lg text-white hover:text-white bg-blue-700 hover:bg-blue-900 items-center px-5 py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-blue-300`}
-            href="https://g.page/r/Cbvg1ZWlo1_zEBM/review"
-            target="_blank"
-          >
-            {t("testimonials.review-button-label")}
-          </a>
-        </CardContent>
-      </Card>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
-        {testimonials.map(
-          ({ image, name, comment, starsAmount }: TestimonialProps) => (
-            <Card
-              key={name}
-              className="max-w-md md:break-inside-avoid overflow-hidden"
-            >
-              <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                <Avatar>
-                  <AvatarImage alt={`${name} avatar`} src={image} />
-                  <AvatarFallback>
-                    {name.charAt(0).toUpperCase()}
-                  </AvatarFallback>
-                </Avatar>
-
-                <div className="flex flex-col">
-                  <CardTitle className="text-lg">{name}</CardTitle>
-                  <CardDescription className="flex flex-row">
-                    {Array.from({ length: 5 }).map((_, index) => {
-                      const key = `star-${name}-${index}`;
-                      if (index < starsAmount) {
-                        return (
-                          <CustomStar key={key} size={3} />
-                        );
-                      }
-                      return (
-                        <CustomStar key={key} size={3} color="gray" extraClass="opacity-90" />
-                      );
-                    })}
-                  </CardDescription>
-                </div>
-              </CardHeader>
-
-              <CardContent className="text-slate-600 text-base">
-                { comment[language] }
-              </CardContent>
-            </Card>
-          )
-        )}
-      </div>
-    </section>
-  );
-};

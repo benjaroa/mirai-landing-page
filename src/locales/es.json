@@ -11,11 +11,11 @@
   "back-button-label": "volver 👉",
   "testimonials": {
     "title": "Testimonios",
-    "description": "Lo que dicen de nosotros",
+    "description": "Lo que dicen sobre nosotros",
     "review-button-label": "Déjanos tu opinión en Google",
     "google": {
       "rate": 4.8,
-      "count": 152
+      "count": 157
     }
   },
   "partners": {

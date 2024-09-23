@@ -17,14 +17,8 @@ const redirectTo = (name: string) => {
 export const Router = () => {
   return (
     <Switch>
-      {/* <Route path="/:locale?/">
+      <Route path="/:locale?/">
         <Home />
-      </Route> */}
-      <Route path="/:locale?/:extra-param?">
-        {(params) => {
-          const st = params["extra-param"] === "show-testimonials";
-          return (<Home show-testimonials={st} />)
-        }}
       </Route>
 
       {Object.keys(externalUrls).map((name) => (
@@ -35,15 +29,14 @@ export const Router = () => {
         />
       ))}
 
-      {/*<Route path="/:locale?/page/partners">*/}
       <Route path="/:locale?/page/partners">
         <Partners />
       </Route>
 
       <Route path="/:locale?/page/:target">
         {({ target }) => {
-          if (!target) return (<Page404 pageName="" />);
-          return (<JsonPage target={target} />)
+          if (!target) return <Page404 pageName="" />;
+          return <JsonPage target={target} />;
         }}
       </Route>
 

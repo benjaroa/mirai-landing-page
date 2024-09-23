@@ -9,7 +9,7 @@ import { ScrollToTop } from "../components/ScrollToTop.tsx";
 import { Testimonials } from "@/components/Testimonials.tsx";
 // import { Dialog, DialogContent, DialogTitle } from "./ui/dialog.tsx";
 
-export const Home = ({ "show-testimonials": st }: { "show-testimonials"?: boolean }) => {
+export const Home = () => {
   return (
     <main className="">
       { /* / /}
@@ -20,16 +20,12 @@ export const Home = ({ "show-testimonials": st }: { "show-testimonials"?: boolea
         </DialogContent>
       </Dialog>
       { /* */ }
-      <TopButtons activateDarkMode={false} showTopAlertMessage={true} />
-      <HeroCarousel />
-      <div className="my-20" />
-      <DescriptionCard />
-      <div className="my-20" />
-      <MainContent />
-      <div className="my-20" />
-      {st && (<><Testimonials /><div className="my-20" /></>)}
-      <IntagramCarrousel />
-      <div className="my-20" />
+      <TopButtons activateDarkMode={false} showTopAlertMessage={false} />
+      <HeroCarousel /><div className="my-20" />
+      <DescriptionCard /><div className="my-20" />
+      <MainContent /><div className="my-20" />
+      <Testimonials /><div className="my-20" />
+      <IntagramCarrousel /><div className="my-20" />
       <NewFooter />
       <ScrollToTop />
     </main>
