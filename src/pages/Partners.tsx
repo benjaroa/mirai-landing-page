@@ -152,7 +152,7 @@ export const Partners = () => {
         />
       </div>
       <ScrollArea className="py-2 lg:py-4 h-full">
-        <div className="mx-auto sm:py-8 flex w-full h-full flex-col justify-center">
+        <div className="mx-auto sm:py-8 flex w-full h-full flex-col justify-center mb-4">
           <div className="container mb-4 flex flex-row-reverse">
             <a
               href="#"

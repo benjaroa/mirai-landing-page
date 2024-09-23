@@ -13,7 +13,5 @@ export const I18nMarkdown = ({ filename }: I18nMarkdownProps) => {
   const markdownKey = `src/md/${lang}/${filename}.md`;
   const markdown = (mdI18n as any)[markdownKey];
 
-  return (
-      <ReactMarkdown children={markdown} />
-  );
+  return <ReactMarkdown className="mb-4" children={markdown} />;
 };
