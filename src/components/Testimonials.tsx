@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Card,
   CardContent,
@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
-import { GoogleLogo } from "../assets/google-logo";
+import { GoogleLogo } from "@/assets/google-logo";
 import { Star } from "lucide-react";
 
 type TestimonialProps = {
@@ -66,7 +66,7 @@ export const Testimonials = () => {
           </div> */}
 
           <a
-            className={`text-pretty rounded-lg text-white hover:text-white bg-blue-700 hover:bg-blue-900 items-center px-5 py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-blue-300`}
+            className={`text-pretty rounded-lg text-white hover:text-white bg-blue-700 hover:bg-blue-900 items-center p-2 ml-2 sm:px-5 sm:py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-blue-300`}
             href="https://g.page/r/Cbvg1ZWlo1_zEBM/review"
             target="_blank"
           >
