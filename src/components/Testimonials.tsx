@@ -46,11 +46,11 @@ export const Testimonials = () => {
           <div className="flex flex-row content-center items-center">
             {`${t("testimonials.google.rate")} `}
             <CustomStar extraClass="ml-2" />
-            <CustomStar />
-            <CustomStar />
-            <CustomStar />
-            <CustomStar extraClass="mr-2" />{" "}
-            <span className="text-sm font-light">({t("testimonials.google.count")} reviews)</span>
+            <CustomStar extraClass="hidden sm:block" />
+            <CustomStar extraClass="hidden sm:block" />
+            <CustomStar extraClass="hidden sm:block" />
+            <CustomStar extraClass="hidden sm:block" />{" "}
+            <span className="text-sm font-light ml-2">({t("testimonials.google.count")} reviews)</span>
           </div>
 
           {/* <div className="flex flex-col items-center">
