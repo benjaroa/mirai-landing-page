@@ -18,7 +18,7 @@
 
 ### Mareal x Mirai en Pichilemu / noviembre
 
-![image](/assets/popup-5.jpg)
+![image](/assets/popups-5.jpg)
 
 ### UMAMI / Mirai feat Yumcha / julio
 
