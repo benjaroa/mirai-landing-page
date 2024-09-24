@@ -13,29 +13,29 @@
 
 ![image](/assets/popups-6.jpg)
 
-- [Menu](https://drive.google.com/file/d/1F6DZdFU7QAjpW7v4JmX7FDP0nGkxzuI1/view?usp=sharing)
+- [Menú](https://drive.google.com/file/d/1F6DZdFU7QAjpW7v4JmX7FDP0nGkxzuI1/view?usp=sharing)
 - [Fotos](https://drive.google.com/drive/folders/1wlnKs71fTMz5S8mkt4aCGPVrD_e-4rLd)
 
 ### Mareal x Mirai en Pichilemu / noviembre
 
 ![image](/assets/popups-5.jpg)
 
-### UMAMI / Mirai feat Yumcha / julio
+### UMAMI / UMAMI - Mirai & Yum Cha / julio
 
 ![image](/assets/popup-4-mirai-feat-yumcha.png)
 
-- [Menu](https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing)
+- [Menú](https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing)
 - [Fotos en alta](https://drive.google.com/drive/folders/1zHPVNIVYGDWCJQtXOYu3cG9Dbb-gsNdO)
 
-### UMAMI / Yumcha feat Mirai / julio
+### UMAMI / UMAMI - Yum Cha & Mirai / julio
 
 ![image](/assets/popups-yumcha1.jpeg)
 
-### 7 tiempos + maridaje #3 / marzo
+### Cena de 7 tiempos / marzo
 
 ![image](/assets/popups-3.jpeg)
 
-### 7 tiempos + maridaje #2 / marzo
+### Cenas de degustación / marzo
 
 ![image](/assets/popups-2.png)
 
@@ -44,7 +44,7 @@
 - [Fotos](https://www.instagram.com/p/CpMKQu8ob8O/)
 - [Fotos en alta](https://drive.google.com/drive/folders/1311HvwtK3mtOCECCfOizZSZEDcicm9Y8)
 
-### 7 tiempos + maridaje #1 / febrero
+### 7 tiempos + maridaje / febrero
 
 ![image](/assets/popups-1.jpeg)
 
