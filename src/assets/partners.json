@@ -1,6 +1,7 @@
 [
   {
     "name": "Cabrita Alegre",
+    "isActive": "TRUE",
     "instagram": "cabritalegre",
     "website": "https://cabritaalegre.cl/",
     "district": "Ñuñoa",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Verde Sazón",
+    "isActive": "TRUE",
     "instagram": "verdesazonchile",
     "website": "https://verdesazon.cl/",
     "district": "Providencia",
@@ -17,6 +19,7 @@
   },
   {
     "name": "Rita Roux",
+    "isActive": "TRUE",
     "instagram": "ritarouxcafe",
     "website": "https://www.ritaroux.cl/",
     "district": "Vitacura",
@@ -25,6 +28,7 @@
   },
   {
     "name": "Pan de Villa",
+    "isActive": "TRUE",
     "instagram": "pan_devilla",
     "website": "",
     "district": "Santiago",
@@ -33,6 +37,7 @@
   },
   {
     "name": "Tienda Organica",
+    "isActive": "TRUE",
     "instagram": "organica_cafe_tienda",
     "website": "https://tiendaorganica.cl/",
     "district": "Providencia",
@@ -41,6 +46,7 @@
   },
   {
     "name": "Central Organica",
+    "isActive": "TRUE",
     "instagram": "centralorganica.cl",
     "website": "",
     "district": "Las Condes",
@@ -49,6 +55,7 @@
   },
   {
     "name": "La Pastora",
+    "isActive": "TRUE",
     "instagram": "lapastoracoffee",
     "website": "",
     "district": "Providencia",
@@ -56,15 +63,8 @@
     "labels": "café"
   },
   {
-    "name": "La Pastora",
-    "instagram": "lapastoracoffee",
-    "website": "",
-    "district": "Providencia",
-    "address": "Suecia 264",
-    "labels": "café"
-  },
-  {
     "name": "Felix Café",
+    "isActive": "TRUE",
     "instagram": "felixcafe.cl",
     "website": "",
     "district": "Providencia",
@@ -73,6 +73,7 @@
   },
   {
     "name": "Fabula Restaurant",
+    "isActive": "TRUE",
     "instagram": "fabulabysalvaje",
     "website": "",
     "district": "Santiago",
@@ -81,6 +82,7 @@
   },
   {
     "name": " Café Cabra Tostaduría ",
+    "isActive": "TRUE",
     "instagram": "cafecabra",
     "website": "",
     "district": "Maipú",
@@ -89,6 +91,7 @@
   },
   {
     "name": "Buen Campo",
+    "isActive": "TRUE",
     "instagram": "buencampo",
     "website": "https://buencampo.cl/",
     "district": "Providencia",
@@ -97,6 +100,7 @@
   },
   {
     "name": "Bakery To Go",
+    "isActive": "TRUE",
     "instagram": "bakerytogo_cl",
     "website": "https://www.bakerytogo.cl/",
     "district": "Providencia",
@@ -105,6 +109,7 @@
   },
   {
     "name": "Pulpería Santa Elvira ",
+    "isActive": "TRUE",
     "instagram": "pulperia.santa.elvira",
     "website": "https://www.pulperiasantaelvira.com/",
     "district": "Santiago",
@@ -112,15 +117,8 @@
     "labels": "restaurant"
   },
   {
-    "name": "Panadería Paula ",
-    "instagram": "panpaulapanaderias",
-    "website": "https://www.panpaula.cl/",
-    "district": "Providencia",
-    "address": "Av. Pedro de Valdivia 249",
-    "labels": "panadería"
-  },
-  {
     "name": "Le Boletó",
+    "isActive": "TRUE",
     "instagram": "leboleto",
     "website": "https://www.leboleto.cl/",
     "district": "Providencia",
@@ -129,6 +127,7 @@
   },
   {
     "name": "Bipolar Café",
+    "isActive": "TRUE",
     "instagram": "_bipolar_cafe",
     "website": "",
     "district": "Providencia",
@@ -136,23 +135,8 @@
     "labels": "café"
   },
   {
-    "name": "Pan Merced Amapolas",
-    "instagram": "panmerced",
-    "website": "https://www.panmerced.cl/",
-    "district": "Providencia",
-    "address": "Amapolas 1300",
-    "labels": "panadería"
-  },
-  {
-    "name": "Pan Merced Vergara",
-    "instagram": "panmerced",
-    "website": "https://www.panmerced.cl/",
-    "district": "Santiago",
-    "address": "Vergara 416",
-    "labels": "panadería"
-  },
-  {
     "name": "El Hornero Panadería",
+    "isActive": "TRUE",
     "instagram": "hornero.panaderia",
     "website": "",
     "district": "Maipú",
@@ -161,6 +145,7 @@
   },
   {
     "name": "Mayal Granel ",
+    "isActive": "TRUE",
     "instagram": "mayalgranel",
     "website": "https://mayalgranel.cl/",
     "district": "Maipú",
@@ -169,6 +154,7 @@
   },
   {
     "name": "Unclub Café",
+    "isActive": "TRUE",
     "instagram": "unclubcafe",
     "website": "",
     "district": "Providencia",
@@ -177,6 +163,7 @@
   },
   {
     "name": "Casa Pirita",
+    "isActive": "TRUE",
     "instagram": "casapirita.cl",
     "website": "",
     "district": "Providencia",
@@ -185,6 +172,7 @@
   },
   {
     "name": "El Poroto Gordo",
+    "isActive": "TRUE",
     "instagram": "elporotogordo",
     "website": "",
     "district": "Ñuñoa",
@@ -193,6 +181,7 @@
   },
   {
     "name": "Bar La Isla",
+    "isActive": "TRUE",
     "instagram": "barlaisla.scl",
     "website": "",
     "district": "Providencia",
@@ -201,6 +190,7 @@
   },
   {
     "name": "Pícara Pájara Pizzería",
+    "isActive": "TRUE",
     "instagram": "picarapajara",
     "website": "",
     "district": "San Miguel",
@@ -208,23 +198,8 @@
     "labels": "restaurant"
   },
   {
-    "name": "Perritos Chao",
-    "instagram": "perritos_chao",
-    "website": "https://www.perritoschao.cl/",
-    "district": "Ñuñoa",
-    "address": "Avenida Italia 1853",
-    "labels": "restaurant"
-  },
-  {
-    "name": "Barra de Pickles",
-    "instagram": "barradepickles",
-    "website": "https://www.barradepickles.cl/",
-    "district": "Ñuñoa",
-    "address": "San Eugenio 40 ",
-    "labels": "bar, restaurant"
-  },
-  {
     "name": "Veggie Lunch",
+    "isActive": "TRUE",
     "instagram": "veggielunchveg",
     "website": "https://www.veggielunch.cl/",
     "district": "Ñuñoa",
@@ -233,6 +208,7 @@
   },
   {
     "name": "Alma Vegan Food",
+    "isActive": "TRUE",
     "instagram": "almafood.cl",
     "website": "",
     "district": "Las Condes",
@@ -241,6 +217,7 @@
   },
   {
     "name": "Pandias Kitchen ",
+    "isActive": "TRUE",
     "instagram": "pandiaskitchen",
     "website": "https://www.pandiaskitchen.cl/",
     "district": "Providencia",
@@ -249,6 +226,7 @@
   },
   {
     "name": "Guksi",
+    "isActive": "TRUE",
     "instagram": "guksi_chile",
     "website": "",
     "district": "Providencia",
@@ -257,10 +235,20 @@
   },
   {
     "name": "Seis Siete Ocho",
+    "isActive": "TRUE",
     "instagram": "seis.siete.ocho",
     "website": "",
     "district": "Ñuñoa",
     "address": "Irarrazabal 3601, local 4",
+    "labels": "café"
+  },
+  {
+    "name": "Café Tsiluba",
+    "isActive": "TRUE",
+    "instagram": "cafetsiluba",
+    "website": "",
+    "district": "La Cisterna",
+    "address": "Av. Fernández Albano 196",
     "labels": "café"
   }
 ]

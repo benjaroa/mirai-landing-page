@@ -53,7 +53,7 @@ export const IntagramCarrousel = () => {
                 <img
                   className="h-auto max-w-full rounded-lg mb-4"
                   src={src}
-                  alt=""
+                  alt="Visita nuestro Instagram"
                 />
               </a>
             </CarouselItem>

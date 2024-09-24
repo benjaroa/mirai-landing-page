@@ -16,6 +16,7 @@ export const MainContent = () => {
               <img
                 className="w-full transition-all hover:scale-110 ease-in duration-150"
                 src={`/assets/${imgSrc}`}
+                alt={title}
               />
             </picture>
             <div className="px-6 py-4">
