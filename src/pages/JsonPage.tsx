@@ -27,9 +27,9 @@ export const JsonPage = ({ target }: { target: string }) => {
           className="w-screen h-screen object-cover top-0"
         />
       </div>
-      <ScrollArea className="py-2 lg:py-4 h-full">
+      <ScrollArea className="h-full">
         <div className="mx-auto sm:py-8 flex w-full flex-col justify-center">
-          <div className="container mb-4 flex flex-row-reverse">
+          <div className="py-2 lg:py-4 container mb-4 flex flex-row-reverse">
             <a
               href="#"
               onClick={goBack}
