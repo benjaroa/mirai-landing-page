@@ -20,14 +20,14 @@
 
 ![image](/assets/popups-5.jpg)
 
-### UMAMI / UMAMI - Mirai & Yum Cha / julio
+### UMAMI - Mirai & Yum Cha / julio
 
 ![image](/assets/popup-4-mirai-feat-yumcha.png)
 
 - [Menú](https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing)
 - [Fotos en alta](https://drive.google.com/drive/folders/1zHPVNIVYGDWCJQtXOYu3cG9Dbb-gsNdO)
 
-### UMAMI / UMAMI - Yum Cha & Mirai / julio
+### UMAMI - Yum Cha & Mirai / julio
 
 ![image](/assets/popups-yumcha1.jpeg)
 

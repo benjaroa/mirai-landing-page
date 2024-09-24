@@ -1,4 +1,4 @@
-# Historial
+# History
 
 ## 2023
 
@@ -20,14 +20,14 @@
 
 ![image](/assets/popups-5.jpg)
 
-### UMAMI / UMAMI - Mirai & Yum Cha / july
+### UMAMI - Mirai & Yum Cha / july
 
 ![image](/assets/popup-4-mirai-feat-yumcha.png)
 
 - [Menu](https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing)
 - [Photos HD](https://drive.google.com/drive/folders/1zHPVNIVYGDWCJQtXOYu3cG9Dbb-gsNdO)
 
-### UMAMI / UMAMI - Yum Cha & Mirai / july
+### UMAMI - Yum Cha & Mirai / july
 
 ![image](/assets/popups-yumcha1.jpeg)
 
