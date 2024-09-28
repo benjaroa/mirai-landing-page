@@ -4,6 +4,8 @@ import { MenuComponent } from "./pages/menu/Menu";
 import { Page404 } from "./pages/404";
 import { JsonPage } from "./pages/JsonPage";
 import { Partners } from "./pages/Partners";
+import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
 const externalUrls: Record<string, string> = {
   menu: "https://drive.google.com/file/d/1Ik6jZQVMnC6R5BzDAfOVFPIONkEXryWA/",
@@ -14,10 +16,16 @@ const redirectTo = (name: string) => {
   return (window.location.href = url);
 };
 
+const baseTitle = "Mirai Food Lab";
+
 export const Router = () => {
+  const { t } = useTranslation();
   return (
     <Switch>
       <Route path="/:locale?/">
+        <Helmet>
+          <title>{baseTitle}</title>
+        </Helmet>
         <Home />
       </Route>
 
@@ -30,22 +38,38 @@ export const Router = () => {
       ))}
 
       <Route path="/:locale?/page/partners">
+        <Helmet>
+          <title>{baseTitle} - Partners</title>
+        </Helmet>
         <Partners />
       </Route>
 
       <Route path="/:locale?/page/:target">
         {({ target }) => {
           if (!target) return <Page404 pageName="" />;
-          return <JsonPage target={target} />;
+          return (
+            <>
+              <Helmet>
+                <title>{baseTitle} - { t(`pages.${target}`) }</title>
+              </Helmet>
+              <JsonPage target={target} />
+            </>
+          );
         }}
       </Route>
 
       <Route path="/:locale?/menu">
+        <Helmet>{baseTitle} - { t("pages.menu") }</Helmet>
         <MenuComponent />
       </Route>
 
       <Route path="*">
-        {(params) => <Page404 pageName={params["*"]} />}
+        {(params) => (
+          <>
+            <Helmet>{baseTitle} - 404</Helmet>
+            <Page404 pageName={params["*"]} />
+          </>
+        )}
       </Route>
     </Switch>
   );

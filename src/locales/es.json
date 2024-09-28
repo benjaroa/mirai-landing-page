@@ -115,5 +115,12 @@
   "footer": {
     "stage-and-applications": "Pasantías y postulaciones",
     "contact-link": "Contacto"
+  },
+  "pages": {
+    "pop-ups-history": "Popups - Historial",
+    "pop-ups": "Popups",
+    "shop": "Tienda",
+    "menu": "Carta",
+    "location-and-hours": "Sucursales y horarios"
   }
 }

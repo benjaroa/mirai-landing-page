@@ -116,5 +116,12 @@
   "footer": {
     "stage-and-applications": "Internships and applications",
     "contact-link": "Contact"
+  },
+  "pages": {
+    "pop-ups-history": "Pop-ups - History",
+    "pop-ups": "Pop-ups",
+    "shop": "Online shop",
+    "menu": "Menu",
+    "location-and-hours": "Locations and hours"
   }
 }
