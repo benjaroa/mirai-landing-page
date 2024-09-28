@@ -121,6 +121,32 @@ export const Testimonials = () => {
 
 const testimonials: TestimonialProps[] = [
   {
+    name: "Takahiro Tanohara",
+    comment: {
+      es: "Primera vez que voy y me atendieron como si fuera un cliente habitual o un amigo. Son profesionales y gente muy muy amable, el servicio es tan bueno como su comida. Volveré pronto. El ramen karaage, tonkotsu y el postre estaban buenísimos",
+      en: "First time I go and they treated me as if I were a regular customer or a friend. They are professional and very very kind people, the service is as good as their food. I'll be back soon. karaage, tonkotsu ramen and the dessert were sooo delicious"
+    },
+    starsAmount: 5
+  },
+  {
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjXsPjaq4gemljPjIO0_bcCrDIlelYB3g7RJRTo-xNFrzFFz7qG2Bw=s36-c-rp-mo-ba3-br100",
+    name: "Astrid Pumar",
+    comment: {
+      es: "Increíble todo!!! Divina la comida, la buena onda y atención un 7/7, todo realmente excelente. Una experiencia maravillosa ❤️  Mis aplausos para el equipo. Felicidades y que sigan los éxitos. Es el mejor ramen que he probado en Santiago",
+      en: "Everything is incredible!!! Divine food, good vibes and 7/7 service, everything really excellent. A wonderful experience ❤️ My applause for the team. Congratulations and continued success. It is the best ramen I have had in Santiago"
+    },
+    starsAmount: 5
+  },
+  {
+    name: "Barbara Huinca",
+    comment: {
+      es: "he venido alrededor de 6 veces, y puedo decir que no me aburre ni me aburrirá comer ramen acá, unos de mis locales favoritos, amo que tengan kimchi y kombucha, hace que sea muy original y entretenido. 1000/10 jaja 🫶🏻",
+      en: "I have been here about 6 times, and I can say that I am not bored nor will I be bored eating ramen here, one of my favorite places, I love that they have kimchi and kombucha, it makes it very original and entertaining. 1000/10 haha🫶🏻"
+    },
+    starsAmount: 5,
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjVSyJbqLqSXFbl7BrKoiumq0OR4MXUPPChWiC-RSOBu1N36oDU=s36-c-rp-mo-br100"
+  },
+  {
     image:
       "https://lh3.googleusercontent.com/a-/ALV-UjWe3J8_Rjgcjrr_OiVZODZlGpUNXXLoyrfkyQNLoacHASKS77S2=s36-c-rp-mo-ba2-br100",
     name: "Céline Assémat",
@@ -233,7 +259,7 @@ const testimonials: TestimonialProps[] = [
       "https://lh3.googleusercontent.com/a-/ALV-UjWmuDMVAc9cC1aJyfrMHJCgcKladU26A0Ld2yEooh4x_iuutVI1=s36-c-rp-mo-ba4-br100",
     comment: {
       es: "Los mejores baos que he comido, sabores fuera de lo esperado! Y el ramen también muy distinto a todo lo que había probado antes, pero exquisito! La kombucha de eucalipto también muy distinta! No es económico pero tampoco caro, y el lugar es la factoría franklin que es perfecto para pasear mientras esperas una mesa!",
-      en: "Los mejores baos que he comido, sabores fuera de lo esperado! Y el ramen también muy distinto a todo lo que había probado antes, pero exquisito! La kombucha de eucalipto también muy distinta! No es económico pero tampoco caro, y el lugar es la factoría franklin que es perfecto para pasear mientras esperas una mesa!",
+      en: "The best baos I've ever eaten, flavors beyond expectations! And the ramen was also very different from anything I had tried before, but exquisite! The eucalyptus kombucha is also very different! It's not cheap but it's not expensive either, and the place is the Franklin Factory which is perfect for walking around while you wait for a table!",
     },
   },
   {
@@ -243,7 +269,7 @@ const testimonials: TestimonialProps[] = [
       "https://lh3.googleusercontent.com/a-/ALV-UjWY0HeN5SNabxLtXqAKzhEIpsQ4NkTqow4XysLirf43zPEKqWk=s36-c-rp-mo-ba3-br100",
     comment: {
       es: "De lo mejor que he probado. La atención muy cordial desde un inicio a pesar de estar con mucha gente esperando. Comencé con una kombucha de eucalipto fenomenal, muy refrescante y balanceada, hecha por ellos mismos, hay otras opciones interesantes como kombucha lavanda y más tradicionales como limón gengibre. Luego de fondo, un tantanmen vegetariano... increíble! Generosa porción, la calidad de los fideos, el sabor cremoso y picante de la base , la firmeza del tofu (podrían marinar un poco más el tofu para más sabor, pequeña sugerencia) y las verduras encurtidas le dieron un toque de frescura y acidez delicioso, y en conjunto un deleite sensorial. Además la meticulosa preparación y presentacion , todo frente a uno, se agradece y felicita.. volvería? Definitivamente! Muy recomendado",
-      en: "De lo mejor que he probado. La atención muy cordial desde un inicio a pesar de estar con mucha gente esperando. Comencé con una kombucha de eucalipto fenomenal, muy refrescante y balanceada, hecha por ellos mismos, hay otras opciones interesantes como kombucha lavanda y más tradicionales como limón gengibre. Luego de fondo, un tantanmen vegetariano... increíble! Generosa porción, la calidad de los fideos, el sabor cremoso y picante de la base , la firmeza del tofu (podrían marinar un poco más el tofu para más sabor, pequeña sugerencia) y las verduras encurtidas le dieron un toque de frescura y acidez delicioso, y en conjunto un deleite sensorial. Además la meticulosa preparación y presentacion , todo frente a uno, se agradece y felicita.. volvería? Definitivamente! Muy recomendado",
+      en: "The best I've ever tried. Very cordial attention from the beginning despite having many people waiting. I started with a phenomenal eucalyptus kombucha, very refreshing and balanced, made by themselves, there are other interesting options like lavender kombucha and more traditional ones like lemon ginger. Then in the background, a vegetarian tantanmen... incredible! Generous portion, the quality of the noodles, the creamy and spicy flavor of the base, the firmness of the tofu (they could marinate the tofu a little more for more flavor, small suggestion) and the pickled vegetables gave it a delicious touch of freshness and acidity , and overall a sensory delight. In addition, the meticulous preparation and presentation, all in front of you, is appreciated and congratulated.. Would I return? Definitely! Highly recommended",
     },
   },
 ];
