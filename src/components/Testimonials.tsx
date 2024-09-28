@@ -75,12 +75,12 @@ export const Testimonials = () => {
         </CardContent>
       </Card>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
           ({ image, name, comment, starsAmount }: TestimonialProps) => (
             <Card
               key={name}
-              className="max-w-md md:break-inside-avoid overflow-hidden"
+              className="md:break-inside-avoid overflow-hidden"
             >
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
