@@ -1,4 +1,6 @@
 User-agent: *
+
+# Disallows
 Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
