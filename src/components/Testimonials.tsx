@@ -157,24 +157,6 @@ const testimonials: TestimonialProps[] = [
     starsAmount: 5,
   },
   {
-    name: "Rod tap ma",
-    comment: {
-      es: "Siempre es una buena experiencia.",
-      en: "It's always a good experience.",
-    },
-    starsAmount: 5,
-  },
-  {
-    image:
-      "https://lh3.googleusercontent.com/a-/ALV-UjWptLPLPpJI93Gczfqjvwjf2JNA-lCVo0fznJHxdqyBxyTc51SHAA=s36-c-rp-mo-br100",
-    name: "Julio Muñoz",
-    comment: {
-      es: "En general estaba bien, buen sabor y buena atención, solo que el caldo estaba algo frío",
-      en: "In general it was good, good flavor and good service, only the broth was a little cold",
-    },
-    starsAmount: 4,
-  },
-  {
     image:
       "https://lh3.googleusercontent.com/a-/ALV-UjV7tpLcRFewpWOYi4y0wpLCC3dBWBvoqg7dxGGu8ZSXFpByHDEH=s36-c-rp-mo-br100",
     name: "Nicole Vilches",

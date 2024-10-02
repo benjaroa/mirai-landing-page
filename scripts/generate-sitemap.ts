@@ -56,7 +56,13 @@ const sitemap = new SitemapStream({ hostname });
 const writeStream = createWriteStream("./public/sitemap.xml");
 sitemap.pipe(writeStream);
 
-sitemap.write({ url: "/", links: [{ lang: "es", url: `${hostname}/es`}, { lang: "en", url: `${hostname}/en`}] });
+sitemap.write({
+  url: "/",
+  links: [
+    { lang: "es", url: `${hostname}/es`},
+    { lang: "en", url: `${hostname}/en`}
+  ]
+});
 writeUrlInSitemap(pages, langagues).forEach((url) => {
   sitemap.write(url);
 });

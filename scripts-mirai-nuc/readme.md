@@ -26,7 +26,22 @@ ssh miraiprintserver@192.168.2.116
 ### Revisar estado de las impresoras
 
 ```sh
-~/Documents/check-printers.sh
+/usr/local/bin/check-printers.sh
+```
+
+### Configurar para arrancar firefox al abrir el pecé
+
+Crear un desktop-entry file en el archivo `~/.config/autostart`:
+
+```sh
+[Desktop Entry]
+Name=Fudo
+Comment=Fudo
+Exec=firefox -new-tab 'https://app-v2.fu.do/app/'
+# Exec=sh -c "/usr/local/bin/check-printers.sh & firefox -new-tab 'https://app-v2.fu.do/app/'"
+Type=Application
+Terminal=true
+Categories=Test
 ```
 
 ## Fake monitor

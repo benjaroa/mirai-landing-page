@@ -8,6 +8,7 @@ import { TopButtons } from "@/components/TopButtons.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop.tsx";
 import { Testimonials } from "@/components/Testimonials.tsx";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog.tsx";
+// import { OnlineShopCTA } from "@/components/online-shop-CTA";
 
 const dialog = {
   isDialogActive: false,
@@ -33,6 +34,7 @@ export const Home = () => {
       <Testimonials /><div className="my-20" />
       <IntagramCarrousel /><div className="my-20" />
       <NewFooter />
+      {/* <OnlineShopCTA /> */}
       <ScrollToTop />
     </main>
   );
