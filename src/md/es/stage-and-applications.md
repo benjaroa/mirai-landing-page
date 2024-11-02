@@ -3,7 +3,7 @@
 Entendemos nuestra cocina como un lugar abierto, no nos gustan los secretismos y no nos incomoda para nada compartir
 las formas que tenemos de trabajar, nuestros procesos y las conclusiones que hemos ido sacando.
 
-La receta la heredamos y, asimismo, la compartimos sin recelo: por eso el scoby siempre será gratis en Mirai. Creemos que la diferencia está en la sazón, técnica, dedicación, paladar y en la puesta en práctica... todas cosas que van más allá de la receta.
+La receta la heredamos y, asimismo, la compartimos sin recelo: por eso el scoby siempre será gratis en Mirai. Creemos que la diferencia está en la sazón, técnica, dedicación, paladar y en la puesta en práctica.
 
 ## Pasantías
 

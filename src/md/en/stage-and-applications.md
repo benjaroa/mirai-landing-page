@@ -3,7 +3,7 @@
 We understand our kitchen as an open place, we don't like secrecy and it doesn't bother us at all to share.
 the ways we work, our processes and the conclusions we have drawn.
 
-We inherited the recipe and, likewise, we share it without any hesitation: that's why the scoby will always be free at Mirai. We believe that the difference is in the seasoning, technique, dedication, palate and in the implementation... none related to the recipe.
+We inherited the recipe and, likewise, we share it without any hesitation: that's why the scoby will always be free at Mirai. We believe that the difference is in the seasoning, technique, dedication, palate and in the implementation.
 
 ## Internships
 
