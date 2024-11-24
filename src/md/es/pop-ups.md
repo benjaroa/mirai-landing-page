@@ -8,8 +8,8 @@
 
 Pop-up con ida y vuelta:
 
-- 11 de diciembre en Yum Cha
-- 12 de diciembre en Mirai
+- 11 de diciembre at Yum Cha's
+- 12 de diciembre at Mirai's
 
 No serán dos fechas iguales, adaptaremos la propuestas a la identidad de cada uno: en yum cha, será un menú de 10 tiempos con todo el fine dining que mirai trae de vidas pasadas; y, en mirai, podrás experimentar un concepto más informal, platos para compartir y todo a la carta.
 
