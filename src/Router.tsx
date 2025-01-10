@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 const externalUrls: Record<string, string> = {
-  menu: "https://drive.google.com/file/d/1Ik6jZQVMnC6R5BzDAfOVFPIONkEXryWA/",
+  menu: "https://drive.google.com/file/d/1MWVQdxEC-IH4ylTcNCiIiVpdROAz8Aci/view",
   shop: "https://tienda.miraifoodlab.cl",
 };
 const redirectTo = (name: string) => {

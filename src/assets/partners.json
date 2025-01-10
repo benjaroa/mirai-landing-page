@@ -198,6 +198,15 @@
     "labels": "restaurant"
   },
   {
+    "name": "Perritos Chao",
+    "isActive": "TRUE",
+    "instagram": "perritos_chao",
+    "website": "https://www.perritoschao.cl/",
+    "district": "Ñuñoa",
+    "address": "Avenida Italia 1853",
+    "labels": "restaurant"
+  },
+  {
     "name": "Veggie Lunch",
     "isActive": "TRUE",
     "instagram": "veggielunchveg",
@@ -234,21 +243,102 @@
     "labels": "restaurant"
   },
   {
-    "name": "Seis Siete Ocho",
-    "isActive": "TRUE",
-    "instagram": "seis.siete.ocho",
-    "website": "",
-    "district": "Ñuñoa",
-    "address": "Irarrazabal 3601, local 4",
-    "labels": "café"
-  },
-  {
     "name": "Café Tsiluba",
     "isActive": "TRUE",
     "instagram": "cafetsiluba",
     "website": "",
     "district": "La Cisterna",
     "address": "Av. Fernández Albano 196",
+    "labels": "café"
+  },
+  {
+    "name": "Huggo comedor",
+    "isActive": "TRUE",
+    "instagram": "huggocomedor",
+    "website": "",
+    "district": "Providencia",
+    "address": "Dr. Luis Middleton 1698",
+    "labels": "restaurant"
+  },
+  {
+    "name": "Tostaduría Dulce Vida",
+    "isActive": "TRUE",
+    "instagram": "tostaduriadulcevida",
+    "website": "",
+    "district": "Ñuñoa",
+    "address": "Av. Irarrazaval 1520-B",
+    "labels": "tienda"
+  },
+  {
+    "name": "Bask sushi",
+    "isActive": "TRUE",
+    "instagram": "basksushi",
+    "website": "",
+    "district": "Santiago",
+    "address": "Padre Luis de Valdivia 327",
+    "labels": "restaurant"
+  },
+  {
+    "name": "Café Magnolia",
+    "isActive": "TRUE",
+    "instagram": "cafemagnolia.cl",
+    "website": "",
+    "district": "San Miguel",
+    "address": "Magdalena Vicuña 1399",
+    "labels": "café"
+  },
+  {
+    "name": "Greenbook café",
+    "isActive": "TRUE",
+    "instagram": "cafe_greenbook",
+    "website": "",
+    "district": "Santiago",
+    "address": "Huerfanos 669",
+    "labels": "café"
+  },
+  {
+    "name": "La Compañía ",
+    "isActive": "TRUE",
+    "instagram": "lacompania_cl",
+    "website": "https://la-compania.cl/",
+    "district": "Providencia",
+    "address": "Pedro Lautaro Ferrer 3460",
+    "labels": "café"
+  },
+  {
+    "name": "Aliwen",
+    "isActive": "TRUE",
+    "instagram": "emporioaliwen",
+    "website": "",
+    "district": "Valparaíso",
+    "address": "Los Aromos 329 Llo-lleo",
+    "labels": "tienda"
+  },
+  {
+    "name": "Black Mamba",
+    "isActive": "TRUE",
+    "instagram": "cafeblackmamba",
+    "website": "",
+    "district": "Providencia",
+    "address": "Por confirmar",
+    "labels": "café"
+  },
+  {
+    "name": "Panadería Madeleine",
+    "isActive": "TRUE",
+    "instagram": "madeleine.panaderia",
+    "website": "",
+    "district": "Ñuñoa",
+    "address": "Condell 1636",
+    "labels": "panadería"
+  },
+  {
+    "name": "El Rezo Café",
+    "isActive": "TRUE",
+    "instagram": "el_rezo_cafe",
+    "website": "",
+    "district": "Pichilemu",
+    "address": "Punta de lobos",
     "labels": "café"
   }
 ]
