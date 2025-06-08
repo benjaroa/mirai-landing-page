@@ -15,7 +15,7 @@ Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en 
 
 ### Mapas
 
-- [Google Maps](https://maps.app.goo.gl/YsvKtehdg6tZDyj37)
+- [Google Maps](https://maps.app.goo.gl/wvaB3fmgrUKCrKzy7)
 - [Waze](waze://?ll=-33.4728439,-70.6430923&navigate=yes)
 
 ### Cómo llegar y dónde estacionar
@@ -25,4 +25,20 @@ Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en 
 
 ## MUT
 
-PROXIMAMENTE!
+📍 Av. Apoquindo 2730, piso -2, Las Condes, Santiago
+
+Pequeña carta de ramen al paso. Cuenta, además, con una pequeña barra para cinco personas con vista abierta a la cocina.
+
+### Horarios
+
+Lunes a domingo, 12 a 20:30 hrs.
+
+### Mapas
+
+- [Google Maps](https://maps.app.goo.gl/YsvKtehdg6tZDyj37)
+- [Waze](waze://?ll=-33.4176811,-70.6024588&navigate=yes)
+
+### Cómo llegar y dónde estacionar
+
+- Metro Tobalaba, líneas 1 y 4
+- Estacionamientos del mismo MUT. Accesos por Encomenderos y Roger De Flor

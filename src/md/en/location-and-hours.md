@@ -10,12 +10,12 @@ We attend only by order of arrival, we do not take reservations. If you want to 
 
 ### Hours
 
-- Friday: 12:30 a 16:30 hrs.
-- Saturday and Sunday: 12:30 a 17:30 hrs.
+- Friday: 12:30 / 16:30 hrs.
+- Saturday and Sunday: 12:30 / 17:30 hrs.
 
 ### Maps
 
-- [Google Maps](https://maps.app.goo.gl/YsvKtehdg6tZDyj37)
+- [Google Maps](https://maps.app.goo.gl/wvaB3fmgrUKCrKzy7)
 - [Waze](waze://?ll=-33.4728439,-70.6430923&navigate=yes)
 
 ### How to get here and where to park
@@ -25,4 +25,20 @@ We attend only by order of arrival, we do not take reservations. If you want to 
 
 ## MUT
 
-COMING SOON!
+📍 Av. Apoquindo 2730, piso -2, Las Condes, Santiago
+
+Small ramen menu. It also has a small bar for five people with open view to the kitchen.
+
+### Hours
+
+Monday to Sunday, 12 / 20:30 hrs.
+
+### Maps
+
+- [Google Maps](https://maps.app.goo.gl/YsvKtehdg6tZDyj37)
+- [Waze](waze://?ll=-33.4176811,-70.6024588&navigate=yes)
+
+### How to get here and where to park
+
+- Tobalaba subway station (Metro), lines 1 and 4
+- Estacionamientos del mismo MUT. Accesos por Encomenderos y Roger De Flor
