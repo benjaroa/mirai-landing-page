@@ -58,9 +58,14 @@
           "title": "Sucursales y horarios"
         },
         {
-          "target": "menu",
+          "target": "menu-franklin",
           "icon": "cooking-pot",
-          "title": "Carta"
+          "title": "Carta Franklin"
+        },
+        {
+          "target": "menu-mut",
+          "icon": "cooking-pot",
+          "title": "Carta MUT"
         }
       ]
     },
@@ -121,7 +126,7 @@
     "pop-ups": "Popups",
     "shop": "Tienda",
     "menu": "Carta",
-    "stage-and-applications":"Pasantías y postulaciones",
+    "stage-and-applications": "Pasantías y postulaciones",
     "location-and-hours": "Sucursales y horarios"
   }
 }

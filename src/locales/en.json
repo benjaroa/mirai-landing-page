@@ -60,8 +60,13 @@
         },
         {
           "className": "",
-          "target": "menu",
-          "title": "Menu"
+          "target": "menu-franklin",
+          "title": "Menu Franklin"
+        },
+        {
+          "className": "",
+          "target": "menu-mut",
+          "title": "Menu MUT"
         }
       ]
     },
@@ -120,7 +125,7 @@
   "pages": {
     "pop-ups-history": "Pop-ups - History",
     "pop-ups": "Pop-ups",
-    "stage-and-applications":"Pasantías y postulaciones",
+    "stage-and-applications": "Pasantías y postulaciones",
     "shop": "Online shop",
     "menu": "Menu",
     "location-and-hours": "Locations and hours"

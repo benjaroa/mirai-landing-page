@@ -8,7 +8,9 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 const externalUrls: Record<string, string> = {
-  menu: "https://drive.google.com/file/d/1MWVQdxEC-IH4ylTcNCiIiVpdROAz8Aci/view",
+  "menu": "https://drive.google.com/file/d/1MWVQdxEC-IH4ylTcNCiIiVpdROAz8Aci/view",
+  "menu-franklin": "https://drive.google.com/file/d/1MWVQdxEC-IH4ylTcNCiIiVpdROAz8Aci/view",
+  "menu-mut": "https://gour.media/mirai-mut",
   shop: "https://tienda.miraifoodlab.cl",
 };
 const redirectTo = (name: string) => {
@@ -60,6 +62,14 @@ export const Router = () => {
 
       <Route path="/:locale?/menu">
         <Helmet>{baseTitle} - { t("pages.menu") }</Helmet>
+        <MenuComponent />
+      </Route>
+      <Route path="/:locale?/menu-franklin">
+        <Helmet>{baseTitle} - { t("pages.menu-franklin") }</Helmet>
+        <MenuComponent />
+      </Route>
+      <Route path="/:locale?/menu-mut">
+        <Helmet>{baseTitle} - { t("pages.menu-mut") }</Helmet>
         <MenuComponent />
       </Route>
 
