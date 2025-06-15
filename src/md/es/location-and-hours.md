@@ -24,6 +24,7 @@ Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en 
 
 - Metro Bío Bío, Línea 6, está a solo un par de pasos
 - La Factoría tiene estacionamientos con acceso por [San Francisco 2038](https://maps.app.goo.gl/Lgqmkhjei6zsHfDv9) [temporalmente fuera de servicio]
+- Es posible estacionar en calles aledañas o en estacionamientos pagados cercanos (como [este](https://g.co/kgs/j1AEuF5) o [este](https://maps.app.goo.gl/ZXfXWwyKcEefgYCT9))
 
 ## MUT
 
@@ -45,4 +46,4 @@ Lunes a domingo, 12 a 20:30 hrs.
 ### Cómo llegar y dónde estacionar
 
 - Metro Tobalaba, líneas 1 y 4
-- Estacionamientos del mismo MUT. Accesos por Encomenderos y Roger De Flor
+- Estacionamientos del mismo MUT. Accesos por [Encomenderos](https://maps.app.goo.gl/cPww4GBv1vy47hms9) y [Roger De Flor](https://maps.app.goo.gl/Tfu5mPXqwrQ2wW4u9)

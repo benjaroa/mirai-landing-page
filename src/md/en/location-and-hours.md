@@ -24,6 +24,7 @@ We attend only by order of arrival, we do not take reservations. If you want to 
 
 - Metro Bío Bío, Línea 6, really close
 - Factoría has a parking lot at [San Francisco 2038](https://maps.app.goo.gl/Lgqmkhjei6zsHfDv9) [temporarily out of service]
+= Parking is available on adjacent streets or in paid parking lots (like [this](https://g.co/kgs/j1AEuF5) or [this](https://maps.app.goo.gl/ZXfXWwyKcEefgYCT9))
 
 ## MUT
 
@@ -45,4 +46,4 @@ Monday to Sunday, 12 / 20:30 hrs.
 ### How to get here and where to park
 
 - Tobalaba subway station (Metro), lines 1 and 4
-- Estacionamientos del mismo MUT. Accesos por Encomenderos y Roger De Flor
+- MUT has a huge parking lot. Access via [Encomenderos St](https://maps.app.goo.gl/cPww4GBv1vy47hms9) and [Roger De Flor St](https://maps.app.goo.gl/Tfu5mPXqwrQ2wW4u9)
