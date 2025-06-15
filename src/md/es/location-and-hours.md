@@ -4,6 +4,8 @@
 
 📍Franklin 741, local B20, Santiago
 
+🍜 [Menu](https://miraifoodlab.cl/es/page/menu-franklin)
+
 Nuestro restaurant está ubicado en la Factoría Franklin, una antigua fábrica de medicamentos que hoy aloja a emprendimientos como el nuestro.
 
 Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en un grupo grande, te recomendamos no tomar desayuno y llegar temprano.
@@ -26,6 +28,8 @@ Atendemos solo por orden de llegada, no aceptamos reservas. Si quieres venir en 
 ## MUT
 
 📍 Av. Apoquindo 2730, piso -2, Las Condes, Santiago
+
+🍜 [Menu](https://miraifoodlab.cl/es/page/menu-mut)
 
 Pequeña carta de ramen al paso. Cuenta, además, con una pequeña barra para cinco personas con vista abierta a la cocina.
 
