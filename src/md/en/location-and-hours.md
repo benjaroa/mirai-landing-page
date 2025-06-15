@@ -4,6 +4,8 @@
 
 📍Franklin 741, local B20, Santiago
 
+🍜 [Menu](https://miraifoodlab.cl/es/page/menu-franklin)
+
 Our ramen shop and small factory is located in Factoría Fanklin, an ancient drug factory that has many projects like ours.
 
 We attend only by order of arrival, we do not take reservations. If you want to come in a big group, we recommend you not to have breakfast and get here early.
@@ -26,6 +28,8 @@ We attend only by order of arrival, we do not take reservations. If you want to 
 ## MUT
 
 📍 Av. Apoquindo 2730, piso -2, Las Condes, Santiago
+
+🍜 [Menu](https://gour.media/mirai-mut)
 
 Small ramen menu. It also has a small bar for five people with open view to the kitchen.
 
