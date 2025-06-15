@@ -29,7 +29,7 @@ We attend only by order of arrival, we do not take reservations. If you want to 
 
 📍 Av. Apoquindo 2730, piso -2, Las Condes, Santiago
 
-🍜 [Menu](https://gour.media/mirai-mut)
+🍜 [Menu](https://miraifoodlab.cl/es/page/menu-mut)
 
 Small ramen menu. It also has a small bar for five people with open view to the kitchen.
 
