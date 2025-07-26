@@ -8,8 +8,8 @@ import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 const externalUrls: Record<string, string> = {
-  "menu": "https://drive.google.com/file/d/1MWVQdxEC-IH4ylTcNCiIiVpdROAz8Aci/view",
-  "menu-franklin": "https://drive.google.com/file/d/1MWVQdxEC-IH4ylTcNCiIiVpdROAz8Aci/view",
+  "menu": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view",
+  "menu-franklin": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view",
   "menu-mut": "https://gour.media/mirai-mut",
   shop: "https://tienda.miraifoodlab.cl",
 };
