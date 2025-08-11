@@ -36,7 +36,7 @@ Small ramen menu. It also has a small bar for five people with open view to the 
 
 ### Hours
 
-Monday to Sunday, 12 / 20:30 hrs.
+Monday to Sunday, 12:30 / 20:30 hrs.
 
 ### Maps
 

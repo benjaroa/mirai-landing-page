@@ -36,7 +36,7 @@ Pequeña carta de ramen al paso. Cuenta, además, con una pequeña barra para ci
 
 ### Horarios
 
-Lunes a domingo, 12 a 20:30 hrs.
+Lunes a domingo, 12:30 a 20:30 hrs.
 
 ### Mapas
 
