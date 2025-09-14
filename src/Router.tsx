@@ -6,6 +6,7 @@ import { JsonPage } from "./pages/JsonPage";
 import { Partners } from "./pages/Partners";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { Transferencia } from "./pages/Transferencia";
 
 const externalUrls: Record<string, string> = {
   "menu": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view",
@@ -24,6 +25,14 @@ export const Router = () => {
   const { t } = useTranslation();
   return (
     <Switch>
+
+      <Route path="/transferencia">
+        <Helmet>
+          <title>{baseTitle} - Transferencia</title>
+        </Helmet>
+        <Transferencia />
+      </Route>
+
       <Route path="/:locale?/">
         <Helmet>
           <title>{baseTitle}</title>
@@ -52,7 +61,7 @@ export const Router = () => {
           return (
             <>
               <Helmet>
-                <title>{baseTitle} - { t(`pages.${target}`) }</title>
+                <title>{baseTitle} - {t(`pages.${target}`)}</title>
               </Helmet>
               <JsonPage target={target} />
             </>
@@ -61,15 +70,15 @@ export const Router = () => {
       </Route>
 
       <Route path="/:locale?/menu">
-        <Helmet>{baseTitle} - { t("pages.menu") }</Helmet>
+        <Helmet>{baseTitle} - {t("pages.menu")}</Helmet>
         <MenuComponent />
       </Route>
       <Route path="/:locale?/menu-franklin">
-        <Helmet>{baseTitle} - { t("pages.menu-franklin") }</Helmet>
+        <Helmet>{baseTitle} - {t("pages.menu-franklin")}</Helmet>
         <MenuComponent />
       </Route>
       <Route path="/:locale?/menu-mut">
-        <Helmet>{baseTitle} - { t("pages.menu-mut") }</Helmet>
+        <Helmet>{baseTitle} - {t("pages.menu-mut")}</Helmet>
         <MenuComponent />
       </Route>
 
