@@ -79,11 +79,13 @@ ${bankingData.email}`;
       </div>
       <ScrollArea className="py-2 lg:py-4 h-full">
         <div className="mx-auto sm:py-8 flex w-full h-full flex-col justify-center mb-4">
+          <div className="container mb-4 flex flex-row-reverse"></div>
+          <div className="container mb-4 flex flex-row-reverse"></div>
           <div className="container prose max-w-2xl">
             <div className="text-center mb-8">
               <h1 className="mb-4 text-3xl font-bold text-gray-900">Transferencias</h1>
               <p className="text-lg text-gray-600">
-                Puedes copiar estos datos y usarlos para transferirnos directamente.
+                Al hacer clic en "Copiar Datos" se copiarán todos los datos bancarios a tu portapapeles para que puedas pegarlos y transferirnos fácilmente.
               </p>
             </div>
 
@@ -91,18 +93,16 @@ ${bankingData.email}`;
             <div className="flex flex-col items-center my-8">
               <Card className="w-full max-w-lg mb-6 bg-gradient-to-br from-slate-50 to-slate-100 border-2 border-slate-200 shadow-lg">
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-center text-xl font-bold text-gray-800">
+                  <CardTitle className="text-center mt-1 text-xl font-bold text-gray-800">
                     Datos Bancarios
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3 text-center">
-                  <div className="text-lg font-semibold text-gray-900">{bankingData.company}</div>
-                  <div className="text-gray-700 font-medium">{bankingData.rut}</div>
-                  <div className="text-gray-700">{bankingData.bank}</div>
-                  <div className="text-gray-700">{bankingData.accountType}</div>
-                  <div className="font-mono text-xl font-bold text-blue-700 bg-blue-50 py-2 px-4 rounded-lg mx-4">
-                    {bankingData.accountNumber}
-                  </div>
+                <CardContent className="text-center text-gray-700">
+                  <div>{bankingData.company}</div>
+                  <div>{bankingData.rut}</div>
+                  <div>{bankingData.bank}</div>
+                  <div>{bankingData.accountType}</div>
+                  <div>{bankingData.accountNumber}</div>
                   <div className="text-blue-600 font-medium break-all">{bankingData.email}</div>
                 </CardContent>
               </Card>
@@ -125,11 +125,6 @@ ${bankingData.email}`;
                   </div>
                 )}
               </Button>
-
-              {/* Mensaje de ayuda */}
-              <p className="text-sm text-gray-500 mt-4 text-center max-w-md">
-                Al hacer clic en "Copiar Datos" se copiarán todos los datos bancarios a tu portapapeles para que puedas pegarlos fácilmente.
-              </p>
             </div>
           </div>
         </div>
