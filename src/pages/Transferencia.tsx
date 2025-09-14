@@ -30,8 +30,13 @@ const bankingData = {
 
 export const Transferencia = () => {
   const [copied, setCopied] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const copyBankingData = async () => {
+    if (isLoading) return;
+    
+    setIsLoading(true);
+    
     const dataText = 
 `${bankingData.company}
 ${bankingData.rut}
@@ -43,18 +48,23 @@ ${bankingData.email}`;
     try {
       await navigator.clipboard.writeText(dataText);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // Resetea el estado después de 2 segundos
+      setTimeout(() => setCopied(false), 3000); // 3 segundos para mejor UX
     } catch (err) {
       console.error('Error al copiar:', err);
       // Fallback para navegadores que no soportan clipboard API
       const textArea = document.createElement('textarea');
       textArea.value = dataText;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
       document.body.appendChild(textArea);
       textArea.select();
+      textArea.setSelectionRange(0, 99999); // Para móviles
       document.execCommand('copy');
       document.body.removeChild(textArea);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setTimeout(() => setCopied(false), 3000);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -63,54 +73,63 @@ ${bankingData.email}`;
       <div className="relative hidden h-full flex-col bg-muted text-white dark:border-r lg:flex">
         <img
           src={currentImage}
-          alt="Mirai"
+          alt="Mirai Ramen - Imagen de fondo"
           className="w-screen h-screen object-cover top-0"
         />
       </div>
       <ScrollArea className="py-2 lg:py-4 h-full">
         <div className="mx-auto sm:py-8 flex w-full h-full flex-col justify-center mb-4">
-          <div className="container mb-4 flex flex-row-reverse">
-            
-          </div>
-          <div className="container prose">
-            <h1 className="mb-4">Transferencias</h1>
-            <p>Puedes copiar estos datos y usarlos para transferirnos directamente.</p>
+          <div className="container prose max-w-2xl">
+            <div className="text-center mb-8">
+              <h1 className="mb-4 text-3xl font-bold text-gray-900">Transferencias</h1>
+              <p className="text-lg text-gray-600">
+                Puedes copiar estos datos y usarlos para transferirnos directamente.
+              </p>
+            </div>
 
             {/* Sección de Datos Bancarios */}
             <div className="flex flex-col items-center my-8">
-              <Card className="w-full max-w-md mb-4 bg-slate-50 border-2">
-                <CardHeader>
-                  <CardTitle className="text-center text-lg font-semibold">
+              <Card className="w-full max-w-lg mb-6 bg-gradient-to-br from-slate-50 to-slate-100 border-2 border-slate-200 shadow-lg">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-center text-xl font-bold text-gray-800">
                     Datos Bancarios
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2 text-center">
-                  <div className="font-medium">{bankingData.company}</div>
-                  <div>{bankingData.rut}</div>
-                  <div>{bankingData.bank}</div>
-                  <div>{bankingData.accountType}</div>
-                  <div className="font-mono text-lg font-semibold">{bankingData.accountNumber}</div>
-                  <div className="text-blue-600">{bankingData.email}</div>
+                <CardContent className="space-y-3 text-center">
+                  <div className="text-lg font-semibold text-gray-900">{bankingData.company}</div>
+                  <div className="text-gray-700 font-medium">{bankingData.rut}</div>
+                  <div className="text-gray-700">{bankingData.bank}</div>
+                  <div className="text-gray-700">{bankingData.accountType}</div>
+                  <div className="font-mono text-xl font-bold text-blue-700 bg-blue-50 py-2 px-4 rounded-lg mx-4">
+                    {bankingData.accountNumber}
+                  </div>
+                  <div className="text-blue-600 font-medium break-all">{bankingData.email}</div>
                 </CardContent>
               </Card>
               
               <Button 
                 onClick={copyBankingData}
-                className="w-full max-w-md bg-mirai hover:bg-mirai/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
-                disabled={copied}
+                className="w-full max-w-lg bg-mirai hover:bg-mirai/90 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                disabled={copied || isLoading}
+                aria-label={copied ? "Datos copiados al portapapeles" : "Copiar datos bancarios al portapapeles"}
               >
                 {copied ? (
-                  <>
-                    <Check className="h-5 w-5 mr-2" />
-                    ¡Copiado!
-                  </>
+                  <div className="flex items-center justify-center">
+                    <Check className="h-6 w-6 mr-3 animate-pulse" />
+                    <span className="text-lg">¡Copiado al portapapeles!</span>
+                  </div>
                 ) : (
-                  <>
-                    <Copy className="h-5 w-5 mr-2" />
-                    Copiar
-                  </>
+                  <div className="flex items-center justify-center">
+                    <Copy className="h-6 w-6 mr-3" />
+                    <span className="text-lg">Copiar Datos</span>
+                  </div>
                 )}
               </Button>
+
+              {/* Mensaje de ayuda */}
+              <p className="text-sm text-gray-500 mt-4 text-center max-w-md">
+                Al hacer clic en "Copiar Datos" se copiarán todos los datos bancarios a tu portapapeles para que puedas pegarlos fácilmente.
+              </p>
             </div>
           </div>
         </div>
