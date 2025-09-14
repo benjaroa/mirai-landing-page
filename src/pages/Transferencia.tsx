@@ -11,17 +11,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const getRandomIndex = (min: number, max: number) =>
   Math.floor(Math.random() * (max - min) + min);
 const currentImage = images[getRandomIndex(0, images.length)];
-
-const goBack = () => {
-  return window.history.back();
-};
 
 // Datos bancarios
 const bankingData = {
@@ -34,7 +29,6 @@ const bankingData = {
 };
 
 export const Transferencia = () => {
-  const { t } = useTranslation();
   const [copied, setCopied] = useState<boolean>(false);
 
   const copyBankingData = async () => {
@@ -76,13 +70,7 @@ ${bankingData.email}`;
       <ScrollArea className="py-2 lg:py-4 h-full">
         <div className="mx-auto sm:py-8 flex w-full h-full flex-col justify-center mb-4">
           <div className="container mb-4 flex flex-row-reverse">
-            <a
-              href="#"
-              onClick={goBack}
-              className="bg-mirai text-white rounded-lg mb-6 p-4inline-flex items-center px-5 py-2.5 text-sm font-medium text-center hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-blue-300"
-            >
-              {t("back-button-label")}
-            </a>
+            
           </div>
           <div className="container prose">
             <h1 className="mb-4">Transferencias</h1>
