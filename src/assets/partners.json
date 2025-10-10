@@ -27,15 +27,6 @@
     "labels": "café"
   },
   {
-    "name": "Pan de Villa",
-    "isActive": "TRUE",
-    "instagram": "pan_devilla",
-    "website": "",
-    "district": "Santiago",
-    "address": "Paris 834",
-    "labels": "panadería"
-  },
-  {
     "name": "Tienda Organica",
     "isActive": "TRUE",
     "instagram": "organica_cafe_tienda",
@@ -108,15 +99,6 @@
     "labels": "panadería"
   },
   {
-    "name": "Pulpería Santa Elvira ",
-    "isActive": "TRUE",
-    "instagram": "pulperia.santa.elvira",
-    "website": "https://www.pulperiasantaelvira.com/",
-    "district": "Santiago",
-    "address": "Santa Elvira 475",
-    "labels": "restaurant"
-  },
-  {
     "name": "Le Boletó",
     "isActive": "TRUE",
     "instagram": "leboleto",
@@ -159,15 +141,6 @@
     "website": "",
     "district": "Providencia",
     "address": "Ramón Carnicer 65",
-    "labels": "café"
-  },
-  {
-    "name": "Casa Pirita",
-    "isActive": "TRUE",
-    "instagram": "casapirita.cl",
-    "website": "",
-    "district": "Providencia",
-    "address": "Marchant Pereira 433",
     "labels": "café"
   },
   {
@@ -231,15 +204,6 @@
     "website": "https://www.pandiaskitchen.cl/",
     "district": "Providencia",
     "address": "Los Leones 0156",
-    "labels": "restaurant"
-  },
-  {
-    "name": "Guksi",
-    "isActive": "TRUE",
-    "instagram": "guksi_chile",
-    "website": "",
-    "district": "Providencia",
-    "address": "Los Leones 0140",
     "labels": "restaurant"
   },
   {
@@ -340,5 +304,185 @@
     "district": "Pichilemu",
     "address": "Punta de lobos",
     "labels": "café"
+  },
+  {
+    "name": "La Popular Infante",
+    "isActive": "TRUE",
+    "instagram": "@lapopularpizzaypan",
+    "website": "",
+    "district": "Providencia",
+    "address": "José Manuel Infanta 1232",
+    "labels": "restaurant, panadería, tienda"
+  },
+  {
+    "name": "La Popular Bilbao",
+    "isActive": "TRUE",
+    "instagram": "@lapopularpizzaypan",
+    "website": "",
+    "district": "Providencia",
+    "address": "Av Francisco Bilbao 2793",
+    "labels": "tienda, panadería, restaurant"
+  },
+  {
+    "name": "Drip Café",
+    "isActive": "TRUE",
+    "instagram": "@drip.cafe.scl",
+    "website": "",
+    "district": "Santiago",
+    "address": "Arturo Pratt 33",
+    "labels": "café"
+  },
+  {
+    "name": "Café Planta",
+    "isActive": "TRUE",
+    "instagram": "@plantacafe__",
+    "website": "",
+    "district": "Santiago",
+    "address": "Maipú 330",
+    "labels": "café"
+  },
+  {
+    "name": "Justicia Café",
+    "isActive": "TRUE",
+    "instagram": "@justiciacafe",
+    "website": "",
+    "district": "Santiago",
+    "address": "1er piso Biblioteca Nacional.",
+    "labels": "café"
+  },
+  {
+    "name": "Infiltrados",
+    "isActive": "TRUE",
+    "instagram": "@infiltrados_coffee",
+    "website": "",
+    "district": "San Fernando",
+    "address": "Rancagua 709",
+    "labels": "café"
+  },
+  {
+    "name": "Dulce Espiga",
+    "isActive": "TRUE",
+    "instagram": "@dulceespiga.cl",
+    "website": "",
+    "district": "San José del Maipo",
+    "address": "Camino el volcán 10751",
+    "labels": "panadería"
+  },
+  {
+    "name": "Halteros",
+    "isActive": "TRUE",
+    "instagram": "@centro_entrenamiento_halteros",
+    "website": "",
+    "district": "San Miguel",
+    "address": "Curiñaca 843",
+    "labels": "gimnasio"
+  },
+  {
+    "name": "Cazta Delicatasen",
+    "isActive": "TRUE",
+    "instagram": "@lacastadelicatessen",
+    "website": "",
+    "district": "La Reina",
+    "address": "Av. Larraín 5972",
+    "labels": "tienda"
+  },
+  {
+    "name": "Tienda Granjero La Concepcíón",
+    "isActive": "TRUE",
+    "instagram": "@granjerocl",
+    "website": "",
+    "district": "Providencia",
+    "address": "La Concepción 167",
+    "labels": "tienda"
+  },
+  {
+    "name": "Tienda Granjero Pedro de Valdivia",
+    "isActive": "TRUE",
+    "instagram": "@granjerocl",
+    "website": "",
+    "district": "Providencia",
+    "address": "Av. Providencia 1986",
+    "labels": "tienda"
+  },
+  {
+    "name": "Tienda Granjero Bilbao",
+    "isActive": "TRUE",
+    "instagram": "@granjerocl",
+    "website": "",
+    "district": "Providencia",
+    "address": "Av. Francisco Bilbao 721",
+    "labels": "tienda"
+  },
+  {
+    "name": "Panadería La Semilla",
+    "isActive": "TRUE",
+    "instagram": "@pansemilla",
+    "website": "",
+    "district": "Ñuñoa",
+    "address": "Hamburgo  1035",
+    "labels": "panadería"
+  },
+  {
+    "name": "Mirlo",
+    "isActive": "TRUE",
+    "instagram": "@mirlo_scl",
+    "website": "",
+    "district": "Providencia",
+    "address": "Bravo 960",
+    "labels": "café"
+  },
+  {
+    "name": "Esencia Organica",
+    "isActive": "TRUE",
+    "instagram": "@esen.organica",
+    "website": "",
+    "district": "Providencia",
+    "address": "Amapolas 1515, local 3",
+    "labels": "tienda"
+  },
+  {
+    "name": "Café Nuk",
+    "isActive": "TRUE",
+    "instagram": "@cafenuk",
+    "website": "",
+    "district": "Providencia",
+    "address": "Las Urbinas 31",
+    "labels": "café"
+  },
+  {
+    "name": "Emporio Organika",
+    "isActive": "TRUE",
+    "instagram": "@emporioorganika",
+    "website": "",
+    "district": "Melipilla",
+    "address": "Arturo Pratt 678",
+    "labels": "tienda"
+  },
+  {
+    "name": "Microcafé",
+    "isActive": "TRUE",
+    "instagram": "@lamicrocafe",
+    "website": "",
+    "district": "Peñalolén",
+    "address": "Comunidad ecológica",
+    "labels": "café"
+  },
+  {
+    "name": "Fase 4",
+    "isActive": "TRUE",
+    "instagram": "@fase.cuatro",
+    "website": "",
+    "district": "Recoleta",
+    "address": "Capitán Ignacio Carrera Pinto 1223",
+    "labels": "bar"
+  },
+  {
+    "name": "Wallys",
+    "isActive": "TRUE",
+    "instagram": "@wallyschile.",
+    "website": "",
+    "district": "Providencia",
+    "address": "Pérez Valenzuela 1231",
+    "labels": "restaurant"
   }
 ]
