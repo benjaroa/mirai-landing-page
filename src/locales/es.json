@@ -6,7 +6,18 @@
     "alert-bar": {
       "text": "🤓 Visita la tienda y recibe nuestros productos directo en tu casa",
       "link": "https://tienda.miraifoodlab.cl"
+    },
+    "promo-banner": {
+      "text": "¡Visita nuestra tienda y recibe nuestros productos directo a tu casa!",
+      "button": "Comprar ahora"
     }
+  },
+  "where-to-find-us": {
+    "title": "NUESTRAS BARRAS DE RAMEN",
+    "description": "Visítanos en nuestros dos restaurantes ubicados en Santiago. Prueba nuestra carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
+    "menu": "Menú",
+    "info": "Info",
+    "directions": "Cómo llegar"
   },
   "back-button-label": "volver 👉",
   "testimonials": {

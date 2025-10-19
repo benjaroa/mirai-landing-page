@@ -36,7 +36,7 @@ export const HeroCarousel = () => {
       <div className="container">
         <div className="absolute bottom-0 py-20">
           <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-10xl font-bold text-white">
-            MIRAI FOOD LAB
+            MIRAI <br />FOOD LAB
           </h1>
         </div>
       </div>

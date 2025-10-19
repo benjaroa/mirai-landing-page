@@ -6,7 +6,18 @@
     "alert-bar": {
       "text": "🤓 Visit the store and receive our products directly at your home.",
       "link": "https://tienda.miraifoodlab.cl"
+    },
+    "promo-banner": {
+      "text": "Visit our store and receive our products directly at your home!",
+      "button": "Buy now"
     }
+  },
+  "where-to-find-us": {
+    "title": "WHERE TO FIND US",
+    "description": "Visit us at our two restaurants located in Santiago",
+    "menu": "Menu",
+    "info": "Info",
+    "directions": "Get Directions"
   },
   "back-button-label": "back 👉",
   "testimonials": {

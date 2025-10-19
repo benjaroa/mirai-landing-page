@@ -7,6 +7,7 @@ import { DescriptionCard } from "@/components/DescriptionCard.tsx";
 import { TopButtons } from "@/components/TopButtons.tsx";
 import { ScrollToTop } from "@/components/ScrollToTop.tsx";
 import { Testimonials } from "@/components/Testimonials.tsx";
+import { WhereToFindUs } from "@/components/WhereToFindUs.tsx";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog.tsx";
 // import { OnlineShopCTA } from "@/components/online-shop-CTA";
 
@@ -30,6 +31,7 @@ export const Home = () => {
       <TopButtons activateDarkMode={false} showTopAlertMessage={false} />
       <HeroCarousel /><div className="my-20" />
       <DescriptionCard /><div className="my-20" />
+      <WhereToFindUs /><div className="my-20" />
       <MainContent /><div className="my-20" />
       <Testimonials /><div className="my-20" />
       <IntagramCarrousel /><div className="my-20" />
