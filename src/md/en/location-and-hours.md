@@ -24,7 +24,7 @@ We attend only by order of arrival, we do not take reservations. If you want to 
 
 - Metro Bío Bío, Línea 6, walking distance, really close
 - Factoría has a parking lot at [San Francisco 2038](https://maps.app.goo.gl/Lgqmkhjei6zsHfDv9) [temporarily out of service]
-= Parking is available on adjacent streets or in paid parking lots (like [this](https://g.co/kgs/j1AEuF5) or [this](https://maps.app.goo.gl/ZXfXWwyKcEefgYCT9))
+- Parking is available on adjacent streets or in paid parking lots (like [this](https://g.co/kgs/j1AEuF5) or [this](https://maps.app.goo.gl/ZXfXWwyKcEefgYCT9))
 
 ## MUT
 
