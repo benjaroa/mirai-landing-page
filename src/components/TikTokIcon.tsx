@@ -1,11 +1,18 @@
 import { useTheme } from "./theme-provider";
+import { cn } from "@/lib/utils";
 
-export const TikTokIcon = () => {
-  const { theme  } = useTheme();
-  const color = theme === 'dark' ? '#ffffff' : '#000000'
+interface TikTokIconProps {
+  className?: string;
+}
+
+export const TikTokIcon = ({ className }: TikTokIconProps) => {
+  const { theme } = useTheme();
+  const defaultClass = theme === 'dark' ? 'fill-white' : 'fill-black';
+  const finalClassName = className || defaultClass;
+  
   return (
     <svg
-      fill={color}
+      className={cn("", finalClassName)}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"
       width="100%"
