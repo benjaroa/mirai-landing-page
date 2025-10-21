@@ -13,7 +13,8 @@
     }
   },
   "where-to-find-us": {
-    "title": "NUESTRAS BARRAS DE RAMEN",
+    "title": "Nuestras ",
+    "title-highlight": "barras de ramen",
     "description": "Visítanos en nuestros dos restaurantes ubicados en Santiago. Prueba nuestra carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
     "menu": "Menú",
     "info": "Info",
@@ -21,8 +22,9 @@
   },
   "back-button-label": "volver 👉",
   "testimonials": {
-    "title": "Testimonios",
-    "description": "Lo que dicen sobre nosotros",
+    "title": "Ellos lo cuentan ",
+    "title-highlight": "mejor que nosotros",
+    "description": "Spoiler: les gustó ;)",
     "review-button-label": "Déjanos tu opinión en Google",
     "google": {
       "rate": 4.8,
@@ -52,7 +54,9 @@
     "system": "Sistema"
   },
   "hero": {
-    "title": "Ramen + Fermentación",
+    "title": "Ramen ",
+    "title-highlight": "+",
+    "title-end": " Fermentación",
     "main-text": "Utilizamos técnicas tradicionales, del fine dining y del mundo de la fermentación, para fusionar el ramen japonés contemporáneo con los sabores e ingredientes del paladar sudamericano.",
     "secondary-text": "Somos una barra de ramen experimental, somos una fábrica de productos fermentados, somos un equipo que no tiene miedo de experimentar, equivocarse y probar cosas nuevas; somos Mirai Food Lab."
   },

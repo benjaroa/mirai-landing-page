@@ -18,6 +18,8 @@ export const DescriptionCard = () => {
       <div className="text-right w-auto lg:w-3/4 relative z-10">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl uppercase">
           {t("hero.title")}
+          <span className="text-mirai">{t("hero.title-highlight")}</span>
+          {t("hero.title-end")}
         </h1>
         <p className="mt-6 leading-8 text-xl text-gray-600">
           {t("hero.main-text")}

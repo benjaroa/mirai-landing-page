@@ -82,7 +82,7 @@ export const TopButtons = ({
                 size="lg"
                 variant="link"
                 className={`  underline hover:no-underline ${
-                  isScrolled ? 'text-orange-600' : 'text-white'
+                  isScrolled ? 'text-mirai' : 'text-white'
                 }`}
               >
                 <ArrowRight className="h-4 w-4 mr-1" />
@@ -183,7 +183,7 @@ export const TopButtons = ({
             size="lg"
             variant="link"
             className={`w-full underline hover:no-underline ${
-              isScrolled ? 'text-orange-600' : 'text-white'
+              isScrolled ? 'text-mirai' : 'text-white'
             }`}
           >
             <ArrowRight className="h-4 w-4 mr-1" />

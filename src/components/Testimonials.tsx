@@ -33,87 +33,135 @@ export const Testimonials = () => {
   } = useTranslation();
   return (
     <section id="testimonials" className="container">
-      <h2 className="text-3xl md:text-4xl font-bold">{t("testimonials.title")}</h2>
-      <p className="text-xl text-muted-foreground pt-4 pb-8">
-        {t("testimonials.description")}
-      </p>
+      <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            {t("testimonials.title")}
+            <span className="text-mirai">{t("testimonials.title-highlight")}</span>
+          </h2>
+          <p className="text-xl text-muted-foreground pt-4">
+            {t("testimonials.description")}
+          </p>
+        </div>
 
-      <Card className="mb-6">
-        <CardHeader className="text-xl pb-0 flex flex-row content-baseline">
-          <GoogleLogo className="h-8 mr-2" viewBox="0 0 85 36" /> reviews
-        </CardHeader>
-        <CardContent className="flex justify-between">
-          <div className="flex flex-row content-center items-center">
-            {`${t("testimonials.google.rate")} `}
-            <CustomStar extraClass="ml-2" />
-            <CustomStar extraClass="hidden sm:block" />
-            <CustomStar extraClass="hidden sm:block" />
-            <CustomStar extraClass="hidden sm:block" />
-            <CustomStar extraClass="hidden sm:block" />{" "}
-            <span className="text-sm font-light ml-2">({t("testimonials.google.count")} reviews)</span>
+        {/* Google Reviews info discreta en la esquina superior derecha */}
+        <div className="flex items-center gap-2 text-sm mt-4">
+          <div className="flex items-center gap-2">
+            <GoogleLogo className="h-6" viewBox="0 0 85 36" />
           </div>
+          <div className="flex items-center gap-1">
+            <span className="font-semibold">{t("testimonials.google.rate")}/5</span>
+          </div>
+          <span className="text-xs text-muted-foreground">
+            ({t("testimonials.google.count")} opiniones)
+          </span>
+        </div>
+      </div>
 
-          {/* <div className="flex flex-col items-center">
-            <div className="flex gap-2 items-end ">
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-7 w-7 mb-3" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-12 w-12 mb-3" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-7 w-7 mb-3" />
-              <Star fill="rgb(250 204 21)" color="rgb(250 204 21)" className="h-5 w-5" />
-            </div>
-            <p className="text-8xl font-semibold">4,8</p>
-            <p className="text-xl mt-1">de 152 reviews</p>
-          </div> */}
+      <div className="relative overflow-hidden max-h-[400px]">
+        {/* Difuminado superior */}
+        <div className="absolute left-0 right-0 top-0 h-32 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none" />
+        
+        {/* Difuminado inferior */}
+        <div className="absolute left-0 right-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
+        
+        {/* Contenedor con animación infinita vertical */}
+        <div className="animate-scroll-vertical">
+          {/* Primera serie de testimonios */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+            {testimonials.map(
+              ({ image, name, comment, starsAmount }: TestimonialProps, index: number) => (
+                <Card
+                  key={`${name}-1-${index}`}
+                  className="md:break-inside-avoid overflow-hidden shadow-none"
+                >
+                  <CardHeader className="flex flex-row items-center gap-4 pb-2">
+                    <Avatar>
+                      <AvatarImage alt={`${name} avatar`} src={image} />
+                      <AvatarFallback>
+                        {name.charAt(0).toUpperCase()}
+                      </AvatarFallback>
+                    </Avatar>
 
-          <a
-            className={`text-pretty rounded-lg text-white hover:text-white bg-blue-700 hover:bg-blue-900 items-center p-2 ml-2 sm:px-5 sm:py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-blue-300`}
-            href="https://g.page/r/Cbvg1ZWlo1_zEBM/review"
-            target="_blank"
-          >
-            {t("testimonials.review-button-label")}
-          </a>
-        </CardContent>
-      </Card>
+                    <div className="flex flex-col">
+                      <CardTitle className="text-lg">{name}</CardTitle>
+                      <CardDescription className="flex flex-row">
+                        {Array.from({ length: 5 }).map((_, starIndex) => {
+                          const key = `star-${name}-1-${index}-${starIndex}`;
+                          if (starIndex < starsAmount) {
+                            return (
+                              <CustomStar color="#d1383a" key={key} size={3} />
+                            );
+                          }
+                          return (
+                            <CustomStar key={key} size={3} color="#d1383a" extraClass="opacity-90" />
+                          );
+                        })}
+                      </CardDescription>
+                    </div>
+                  </CardHeader>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
-        {testimonials.map(
-          ({ image, name, comment, starsAmount }: TestimonialProps) => (
-            <Card
-              key={name}
-              className="md:break-inside-avoid overflow-hidden"
-            >
-              <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                <Avatar>
-                  <AvatarImage alt={`${name} avatar`} src={image} />
-                  <AvatarFallback>
-                    {name.charAt(0).toUpperCase()}
-                  </AvatarFallback>
-                </Avatar>
+                  <CardContent className="text-slate-600 text-base">
+                    { comment[language] }
+                  </CardContent>
+                </Card>
+              )
+            )}
+          </div>
+          
+          {/* Segunda serie de testimonios (duplicada para loop infinito) */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6 mt-4 lg:mt-6">
+            {testimonials.map(
+              ({ image, name, comment, starsAmount }: TestimonialProps, index: number) => (
+                <Card
+                  key={`${name}-2-${index}`}
+                  className="md:break-inside-avoid overflow-hidden"
+                >
+                  <CardHeader className="flex flex-row items-center gap-4 pb-2">
+                    <Avatar>
+                      <AvatarImage alt={`${name} avatar`} src={image} />
+                      <AvatarFallback>
+                        {name.charAt(0).toUpperCase()}
+                      </AvatarFallback>
+                    </Avatar>
 
-                <div className="flex flex-col">
-                  <CardTitle className="text-lg">{name}</CardTitle>
-                  <CardDescription className="flex flex-row">
-                    {Array.from({ length: 5 }).map((_, index) => {
-                      const key = `star-${name}-${index}`;
-                      if (index < starsAmount) {
-                        return (
-                          <CustomStar key={key} size={3} />
-                        );
-                      }
-                      return (
-                        <CustomStar key={key} size={3} color="gray" extraClass="opacity-90" />
-                      );
-                    })}
-                  </CardDescription>
-                </div>
-              </CardHeader>
+                    <div className="flex flex-col">
+                      <CardTitle className="text-lg">{name}</CardTitle>
+                      <CardDescription className="flex flex-row">
+                        {Array.from({ length: 5 }).map((_, starIndex) => {
+                          const key = `star-${name}-2-${index}-${starIndex}`;
+                          if (starIndex < starsAmount) {
+                            return (
+                              <CustomStar key={key} size={3} />
+                            );
+                          }
+                          return (
+                            <CustomStar key={key} size={3} color="gray" extraClass="opacity-90" />
+                          );
+                        })}
+                      </CardDescription>
+                    </div>
+                  </CardHeader>
 
-              <CardContent className="text-slate-600 text-base">
-                { comment[language] }
-              </CardContent>
-            </Card>
-          )
-        )}
+                  <CardContent className="text-slate-600 text-base">
+                    { comment[language] }
+                  </CardContent>
+                </Card>
+              )
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Botón para dejar reseña debajo de los testimonios */}
+      <div className="flex justify-center mt-8">
+        <a
+          className="text-pretty rounded-lg text-white hover:text-white bg-mirai hover:bg-mirai-dark items-center px-6 py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-mirai/30 transition-colors"
+          href="https://g.page/r/Cbvg1ZWlo1_zEBM/review"
+          target="_blank"
+        >
+          {t("testimonials.review-button-label")}
+        </a>
       </div>
     </section>
   );

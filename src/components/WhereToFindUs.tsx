@@ -45,6 +45,7 @@ export const WhereToFindUs = () => {
         <div className="text-left mb-16">
           <h2 className="sm:text-5xl text-4xl font-bold mb-4">
             {t("where-to-find-us.title")}
+            <span className="text-mirai">{t("where-to-find-us.title-highlight")}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl">
             {t("where-to-find-us.description")}
@@ -111,7 +112,7 @@ export const WhereToFindUs = () => {
                   
                   <Button
                     asChild
-                    className="flex items-center justify-center bg-white hover:bg-orange-700 text-orange-700 hover:text-white"
+                    className="flex items-center justify-center bg-white hover:bg-mirai text-mirai hover:text-white"
                   >
                     <a 
                       href={restaurant.mapsUrl}

@@ -12,6 +12,8 @@ export default function HeroSectionCentredWithImage() {
           <div className="max-w-2xl text-center mx-auto">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
               {t('hero.title')}
+              <span className="text-mirai">{t('hero.title-highlight')}</span>
+              {t('hero.title-end')}
             </h1>
             <p className="mt-3 text-xl text-muted-foreground">
               {t('hero.main-text')}
