@@ -56,7 +56,7 @@ export const WhereToFindUs = () => {
           {restaurants.map((restaurant, index) => (
             <div 
               key={index} 
-              className="relative rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-96"
+              className="relative rounded-lg overflow-hidden h-96"
               style={{
                 backgroundImage: `url(${restaurant.backgroundImage})`,
                 backgroundSize: 'cover',

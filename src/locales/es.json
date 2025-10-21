@@ -143,5 +143,23 @@
     "menu": "Carta",
     "stage-and-applications": "Pasantías y postulaciones",
     "location-and-hours": "Sucursales y horarios"
+  },
+  "shop-categories": {
+    "main-title": "¡Llegamos hasta ",
+    "main-title-highlight": "tu casa!",
+    "main-description": "Te llevamos directo a tu casa nuestra selección de productos artesanales, desde kombuchas fermentadas y hasta merch exclusivo.",
+    "kombuchas": {
+      "title": "Kombuchas",
+      "description": "Bebidas fermentadas naturalmente con sabores únicos. Probióticos vivos para tu bienestar."
+    },
+    "de-la-casa": {
+      "title": "De la Casa",
+      "description": "Productos artesanales hechos en nuestro laboratorio: misos, kojis, salsas y más."
+    },
+    "merch": {
+      "title": "Merch",
+      "description": "Poleras, gorros y accesorios exclusivos de Mirai. Lleva nuestro estilo contigo."
+    },
+    "cta-button": "Ver productos"
   }
 }

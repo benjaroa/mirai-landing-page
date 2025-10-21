@@ -35,7 +35,7 @@ export const Testimonials = () => {
     <section id="testimonials" className="container">
       <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="sm:text-5xl text-4xl font-bold">
             {t("testimonials.title")}
             <span className="text-mirai">{t("testimonials.title-highlight")}</span>
           </h2>
@@ -156,7 +156,7 @@ export const Testimonials = () => {
       {/* Botón para dejar reseña debajo de los testimonios */}
       <div className="flex justify-center mt-8">
         <a
-          className="text-pretty rounded-lg text-white hover:text-white bg-mirai hover:bg-mirai-dark items-center px-6 py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-mirai/30 transition-colors"
+          className="text-pretty rounded-lg text-white hover:text-white bg-mirai hover:bg-mirai-light items-center px-6 py-3 text-sm font-medium text-center focus:ring-4 focus:outline-none focus:ring-mirai/30 transition-colors"
           href="https://g.page/r/Cbvg1ZWlo1_zEBM/review"
           target="_blank"
         >
