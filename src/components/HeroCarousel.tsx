@@ -39,7 +39,7 @@ export const HeroCarousel = () => {
   const currentSlideData = slides[currentSlide];
 
   return (
-    <section id="photos-hero" className={`w-full h-screen relative`}>
+    <section id="photos-hero" className={`w-full h-screen-mobile relative`}>
       <Carousel
         setApi={setApi}
         opts={{ align: "start", loop: true, slidesToScroll: 1, watchDrag: false }}
@@ -52,7 +52,7 @@ export const HeroCarousel = () => {
               <img
                 src={slide.image}
                 alt="Mirai"
-                className="w-screen h-screen object-cover top-0"
+                className="w-screen h-screen-mobile object-cover top-0"
               />
             </CarouselItem>
           ))}

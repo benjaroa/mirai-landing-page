@@ -1,3 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Solución para h-screen en móviles - usa dynamic viewport height */
+.h-screen-mobile {
+  height: 100vh; /* Fallback para navegadores antiguos */
+  height: 100dvh; /* Dynamic viewport height - se ajusta a la barra del navegador */
+}
