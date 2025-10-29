@@ -5,7 +5,7 @@ export const DescriptionCard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="container flex flex-row-reverse relative overflow-hidden">
+    <div className="container flex flex-row-reverse relative overflow-hidden" id="about">
       {/* Logo de fondo */}
       <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/4 z-0">
         <img 

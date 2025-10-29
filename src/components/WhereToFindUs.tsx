@@ -40,7 +40,7 @@ export const WhereToFindUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50" id="locations">
       <div className="container">
         <div className="text-left mb-16">
           <h2 className="sm:text-5xl text-4xl font-bold mb-4">

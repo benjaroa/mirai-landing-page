@@ -1,4 +1,4 @@
-import logo from "@/assets/mirai-i.png";
+import logo from "@/assets/mirai-i-v2.png";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
 

@@ -61,6 +61,30 @@
     "main-text": "We use traditional techniques from fine dining and the world of fermentation to fuse contemporary Japanese ramen with the flavors and ingredients of the South American cuisine.",
     "secondary-text": "We are an experimental ramen bar, we are a factory of fermented products, we are a team that isn't afraid to explore, make mistakes, or try out new things; we are: Mirai Food Lab."
   },
+  "hero-carousel": {
+    "slides": [
+      {
+        "title": "FRESH AND AUTHENTIC PRODUCTS",
+        "ctaText": "Shop Now",
+        "ctaUrl": "https://tienda.miraifoodlab.cl/"
+      },
+      {
+        "title": "DISCOVER OUR ARTISANAL RAMEN",
+        "ctaText": "Discover our menu",
+        "ctaUrl": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view"
+      },
+      {
+        "title": "UNIQUE ASIAN CUISINE EXPERIENCE",
+        "ctaText": "View locations",
+        "ctaUrl": "#locations"
+      },
+      {
+        "title": "FLAVORS THAT TRANSCEND BORDERS",
+        "ctaText": "About us",
+        "ctaUrl": "#about"
+      }
+    ]
+  },
   "projects": [
     {
       "title": "Ramen Bar 🍜",

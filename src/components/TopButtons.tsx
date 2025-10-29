@@ -5,7 +5,7 @@ import { TikTokIcon } from "./TikTokIcon";
 import { ModeButton } from "./ModeButton";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import logoI from "@/assets/mirai-i.png";
+import logoI from "@/assets/mirai-i-v2.png";
 import { PromoBanner } from "./PromoBanner";
 
 type TopButtonsProps = {

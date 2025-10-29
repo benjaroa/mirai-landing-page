@@ -60,6 +60,30 @@
     "main-text": "Utilizamos técnicas tradicionales, del fine dining y del mundo de la fermentación, para fusionar el ramen japonés contemporáneo con los sabores e ingredientes del paladar sudamericano.",
     "secondary-text": "Somos una barra de ramen experimental, somos una fábrica de productos fermentados, somos un equipo que no tiene miedo de experimentar, equivocarse y probar cosas nuevas; somos Mirai Food Lab."
   },
+  "hero-carousel": {
+    "slides": [
+      {
+        "title": "PRODUCTOS FRESCOS Y AUTÉNTICOS",
+        "ctaText": "Compra Ahora",
+        "ctaUrl": "https://tienda.miraifoodlab.cl/"
+      },
+      {
+        "title": "DESCUBRE NUESTRO RAMEN ARTESANAL",
+        "ctaText": "Descubre nuestra carta",
+        "ctaUrl": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view"
+      },
+      {
+        "title": "EXPERIENCIA ÚNICA DE COCINA ASIÁTICA",
+        "ctaText": "Ver locales",
+        "ctaUrl": "#locations"
+      },
+      {
+        "title": "SABORES QUE TRASCIENDEN FRONTERAS",
+        "ctaText": "Quienes somos",
+        "ctaUrl": "#about"
+      }
+    ]
+  },
   "projects": [
     {
       "title": "Barra de Ramen 🍜",
