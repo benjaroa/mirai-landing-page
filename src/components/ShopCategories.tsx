@@ -6,6 +6,7 @@ import { ShoppingCart, ArrowRight } from "lucide-react";
 import illustrationKombucha from "@/assets/illustration-kombucha.jpg";
 import illustrationRamen from "@/assets/illustration-ramen.jpg";
 import illustrationMerch from "@/assets/illustration-mirai.jpg";
+import pajaro2 from "@/assets/pajaro_3.svg";
 
 interface Category {
   id: string;
@@ -46,13 +47,16 @@ export const ShopCategories = () => {
   const currentCategory = categories[selectedCategory];
 
   return (
-    <section className="pt-10 pb-20 bg-gray-50">
+    <section className="pt-10 pb-32 bg-gray-50">
       <div className="container">
         <div className="text-left mb-16">
+        <div className="flex items-center gap-4 mb-4">
+          <img src={pajaro2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
           <h2 className="sm:text-5xl text-4xl font-bold mb-4">
             {t("shop-categories.main-title")}
             <span className="text-mirai">{t("shop-categories.main-title-highlight")}</span>
           </h2>
+          </div>
           <p className="text-xl text-gray-600 max-w-4xl">
             {t("shop-categories.main-description")}
           </p>
@@ -62,6 +66,7 @@ export const ShopCategories = () => {
           {/* Card solo para el selector de categorías - con rotación */}
           <Card className="w-full md:w-1/4 bg-[#f7f0f1] shadow-none border-none md:rotate-[-2deg] md:z-10 transition-transform duration-300">
             <div className="p-6 md:p-8">
+              <h3 className="mb-6 text-2xl md:text-3xl font-bold text-mirai">Nuestros productos:</h3>
               <div className="space-y-3 md:space-y-4 flex flex-col items-start">
                 {categories.map((category, index) => (
                   <Button

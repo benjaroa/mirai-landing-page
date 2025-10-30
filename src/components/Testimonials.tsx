@@ -9,6 +9,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { GoogleLogo } from "@/assets/google-logo";
 import { Star } from "lucide-react";
+import pajaro2 from "@/assets/pajaro_2.svg";
 
 type TestimonialProps = {
   image?: string;
@@ -35,17 +36,20 @@ export const Testimonials = () => {
     <section id="testimonials" className="container">
       <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
         <div>
-          <h2 className="sm:text-5xl text-4xl font-bold">
-            {t("testimonials.title")}
-            <span className="text-mirai">{t("testimonials.title-highlight")}</span>
-          </h2>
+          <div className="flex items-center gap-4 mb-4">
+            <img src={pajaro2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
+            <h2 className="sm:text-5xl text-4xl font-bold">
+              {t("testimonials.title")}
+              <span className="text-mirai">{t("testimonials.title-highlight")}</span>
+            </h2>
+          </div>
           <p className="text-xl text-muted-foreground pt-4">
             {t("testimonials.description")}
           </p>
         </div>
 
         {/* Google Reviews info discreta en la esquina superior derecha */}
-        <div className="flex items-center gap-2 text-sm mt-4">
+        <div className="flex items-center gap-2 text-sm mt-4 lg:mt-12">
           <div className="flex items-center gap-2">
             <GoogleLogo className="h-6" viewBox="0 0 85 36" />
           </div>
@@ -58,7 +62,7 @@ export const Testimonials = () => {
         </div>
       </div>
 
-      <div className="relative overflow-hidden max-h-[400px]">
+      <div className="relative overflow-hidden max-h-[550px]">
         {/* Difuminado superior */}
         <div className="absolute left-0 right-0 top-0 h-32 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none" />
         

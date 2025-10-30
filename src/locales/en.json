@@ -186,5 +186,129 @@
       "description": "Exclusive Mirai t-shirts, hats and accessories. Take our style with you."
     },
     "cta-button": "View products"
+  },
+  "collaborations": {
+    "title": "Our ",
+    "title-highlight": "Collaborations",
+    "description": "Collaborating with other restaurants to bring our concept to new spaces, explore novel ideas, and grow through shared experiences.",
+    "items": [
+      {
+        "date": "December 2024",
+        "title": "mirai + yum cha",
+        "image": "/assets/pop-up-yumcha-12-2024.png",
+        "description": "Pop-up with two editions: December 11 at Yum Cha's and December 12 at Mirai's. We adapted the proposal to each identity: at yum cha, a 10-course menu with all the fine dining; at mirai, a more informal concept with dishes to share.",
+        "links": [
+          {
+            "label": "Instagram Yum Cha",
+            "url": "https://www.instagram.com/p/DC7dX2sufnu/"
+          }
+        ]
+      },
+      {
+        "date": "December 2023",
+        "title": "Izakaya Night",
+        "image": "/assets/popup-izakaya-nightv.jpg",
+        "description": "A special night transforming our space into an authentic Japanese izakaya, with tapas, sake and a unique atmosphere.",
+        "links": [
+          {
+            "label": "Menu",
+            "url": "https://drive.google.com/file/d/1G3Mz7pjzHU_6_zdIrFeSGbvci1kKETOK/view?usp=sharing"
+          },
+          {
+            "label": "Poster",
+            "url": "https://drive.google.com/file/d/1FdMlqr8RRyTIKWNHKLElXWHK_IsyptG1/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "date": "November 2023",
+        "title": "Mareal x Mirai - Santiago",
+        "image": "/assets/popups-6.jpg",
+        "description": "Collaboration with Mareal bringing the flavors of the sea to our Japanese cuisine in Santiago.",
+        "links": [
+          {
+            "label": "Menu",
+            "url": "https://drive.google.com/file/d/1F6DZdFU7QAjpW7v4JmX7FDP0nGkxzuI1/view?usp=sharing"
+          },
+          {
+            "label": "Photos",
+            "url": "https://drive.google.com/drive/folders/1wlnKs71fTMz5S8mkt4aCGPVrD_e-4rLd"
+          }
+        ]
+      },
+      {
+        "date": "November 2023",
+        "title": "Mareal x Mirai - Pichilemu",
+        "image": "/assets/popups-5.jpg",
+        "description": "We brought our proposal to the coast, merging seafood products with our Japanese cuisine.",
+        "links": []
+      },
+      {
+        "date": "July 2023",
+        "title": "UMAMI - Mirai & Yum Cha",
+        "image": "/assets/popup-4-mirai-feat-yumcha.png",
+        "description": "Celebration of umami in collaboration with Yum Cha, exploring the fifth taste in every dish.",
+        "links": [
+          {
+            "label": "Menu",
+            "url": "https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing"
+          },
+          {
+            "label": "Photos HD",
+            "url": "https://drive.google.com/drive/folders/1zHPVNIVYGDWCJQtXOYu3cG9Dbb-gsNdO"
+          }
+        ]
+      },
+      {
+        "date": "July 2023",
+        "title": "UMAMI - Yum Cha & Mirai",
+        "image": "/assets/popups-yumcha1.jpeg",
+        "description": "Second edition of our UMAMI collaboration, this time at Yum Cha's space.",
+        "links": []
+      },
+      {
+        "date": "March 2023",
+        "title": "7-Course Dinner",
+        "image": "/assets/popups-3.jpeg",
+        "description": "Gastronomic tasting experience with a 7-course menu showcasing our best techniques.",
+        "links": []
+      },
+      {
+        "date": "March 2023",
+        "title": "Tasting Dinners",
+        "image": "/assets/popups-2.png",
+        "description": "Series of tasting dinners exploring different techniques and flavors.",
+        "links": [
+          {
+            "label": "Menu",
+            "url": "https://drive.google.com/file/d/14rTJE9iWxKMYoWpMUApjQ5k6twqJmOx8/view?usp=sharing"
+          },
+          {
+            "label": "Poster",
+            "url": "https://drive.google.com/file/d/162u9byc8BVNyBY4TNRFhG3He524x30Rn/view?usp=sharing"
+          },
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/p/CpMKQu8ob8O/"
+          },
+          {
+            "label": "Photos HD",
+            "url": "https://drive.google.com/drive/folders/1311HvwtK3mtOCECCfOizZSZEDcicm9Y8"
+          }
+        ]
+      },
+      {
+        "date": "February 2023",
+        "title": "7 courses + pairing",
+        "image": "/assets/popups-1.jpeg",
+        "description": "Complete 7-course experience paired with selected beverages.",
+        "links": [
+          {
+            "label": "Menu",
+            "url": "https://drive.google.com/file/d/157qiJCp36EeAx1LKWwBBat2SfKoCpuVY/view?usp=sharing"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -185,5 +185,129 @@
       "description": "Poleras, gorros y accesorios exclusivos de Mirai. Lleva nuestro estilo contigo."
     },
     "cta-button": "Ver productos"
+  },
+  "collaborations": {
+    "title": "Nuestras ",
+    "title-highlight": "Colaboraciones",
+    "description": "Colaboraciones con otros restaurantes para llevar nuestra propuesta a nuevos espacios, experimentar y aprender de otros.",
+    "items": [
+      {
+        "date": "Diciembre 2024",
+        "title": "mirai + yum cha",
+        "image": "/assets/pop-up-yumcha-12-2024.png",
+        "description": "Pop-up con ida y vuelta: 11 de diciembre at Yum Cha's y 12 de diciembre at Mirai's. Adaptamos la propuesta a la identidad de cada uno: en yum cha, un menú de 10 tiempos con todo el fine dining; en mirai, un concepto más informal con platos para compartir.",
+        "links": [
+          {
+            "label": "Instagram Yum Cha",
+            "url": "https://www.instagram.com/p/DC7dX2sufnu/"
+          }
+        ]
+      },
+      {
+        "date": "Diciembre 2023",
+        "title": "Izakaya Night",
+        "image": "/assets/popup-izakaya-nightv.jpg",
+        "description": "Una noche especial transformando nuestro espacio en un auténtico izakaya japonés, con tapas, sake y un ambiente único.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/1G3Mz7pjzHU_6_zdIrFeSGbvci1kKETOK/view?usp=sharing"
+          },
+          {
+            "label": "Afiche",
+            "url": "https://drive.google.com/file/d/1FdMlqr8RRyTIKWNHKLElXWHK_IsyptG1/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "date": "Noviembre 2023",
+        "title": "Mareal x Mirai - Santiago",
+        "image": "/assets/popups-6.jpg",
+        "description": "Colaboración con Mareal trayendo los sabores del mar a nuestra cocina japonesa en Santiago.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/1F6DZdFU7QAjpW7v4JmX7FDP0nGkxzuI1/view?usp=sharing"
+          },
+          {
+            "label": "Fotos",
+            "url": "https://drive.google.com/drive/folders/1wlnKs71fTMz5S8mkt4aCGPVrD_e-4rLd"
+          }
+        ]
+      },
+      {
+        "date": "Noviembre 2023",
+        "title": "Mareal x Mirai - Pichilemu",
+        "image": "/assets/popups-5.jpg",
+        "description": "Llevamos nuestra propuesta a la costa, fusionando productos del mar con nuestra cocina japonesa.",
+        "links": []
+      },
+      {
+        "date": "Julio 2023",
+        "title": "UMAMI - Mirai & Yum Cha",
+        "image": "/assets/popup-4-mirai-feat-yumcha.png",
+        "description": "Celebración del umami en colaboración con Yum Cha, explorando el quinto sabor en cada plato.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing"
+          },
+          {
+            "label": "Fotos en alta",
+            "url": "https://drive.google.com/drive/folders/1zHPVNIVYGDWCJQtXOYu3cG9Dbb-gsNdO"
+          }
+        ]
+      },
+      {
+        "date": "Julio 2023",
+        "title": "UMAMI - Yum Cha & Mirai",
+        "image": "/assets/popups-yumcha1.jpeg",
+        "description": "Segunda edición de nuestra colaboración UMAMI, esta vez en el espacio de Yum Cha.",
+        "links": []
+      },
+      {
+        "date": "Marzo 2023",
+        "title": "Cena de 7 tiempos",
+        "image": "/assets/popups-3.jpeg",
+        "description": "Experiencia gastronómica de degustación con menú de 7 tiempos mostrando nuestra mejor técnica.",
+        "links": []
+      },
+      {
+        "date": "Marzo 2023",
+        "title": "Cenas de degustación",
+        "image": "/assets/popups-2.png",
+        "description": "Serie de cenas de degustación explorando diferentes técnicas y sabores.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/14rTJE9iWxKMYoWpMUApjQ5k6twqJmOx8/view?usp=sharing"
+          },
+          {
+            "label": "Afiche",
+            "url": "https://drive.google.com/file/d/162u9byc8BVNyBY4TNRFhG3He524x30Rn/view?usp=sharing"
+          },
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/p/CpMKQu8ob8O/"
+          },
+          {
+            "label": "Fotos en alta",
+            "url": "https://drive.google.com/drive/folders/1311HvwtK3mtOCECCfOizZSZEDcicm9Y8"
+          }
+        ]
+      },
+      {
+        "date": "Febrero 2023",
+        "title": "7 tiempos + maridaje",
+        "image": "/assets/popups-1.jpeg",
+        "description": "Experiencia completa de 7 tiempos acompañada con maridaje de bebidas seleccionadas.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/157qiJCp36EeAx1LKWwBBat2SfKoCpuVY/view?usp=sharing"
+          }
+        ]
+      }
+    ]
   }
 }

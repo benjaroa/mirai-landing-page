@@ -59,7 +59,7 @@ export const HeroCarousel = () => {
         </CarouselContent>
       </Carousel>
       <div className="container absolute overflow-hidden inset-0 flex items-end pointer-events-none text-center md:text-left">
-        <div className="w-full max-w-3xl pb-8">
+        <div className="w-full max-w-3xl pb-48">
           <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 drop-shadow-2xl transition-all duration-500">
             {currentSlideData.title}
           </h1>
