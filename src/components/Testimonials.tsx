@@ -16,6 +16,7 @@ type TestimonialProps = {
   name: string;
   comment: Record<string, string>;
   starsAmount: number;
+  location: "Franklin" | "MUT";
 }
 
 const CustomStar = (
@@ -74,7 +75,7 @@ export const Testimonials = () => {
           {/* Primera serie de testimonios */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
             {testimonials.map(
-              ({ image, name, comment, starsAmount }: TestimonialProps, index: number) => (
+              ({ image, name, comment, starsAmount, location }: TestimonialProps, index: number) => (
                 <Card
                   key={`${name}-1-${index}`}
                   className="md:break-inside-avoid overflow-hidden shadow-none"
@@ -87,8 +88,13 @@ export const Testimonials = () => {
                       </AvatarFallback>
                     </Avatar>
 
-                    <div className="flex flex-col">
-                      <CardTitle className="text-lg">{name}</CardTitle>
+                    <div className="flex flex-col flex-1">
+                      <div className="flex items-center justify-between gap-2">
+                        <CardTitle className="text-lg">{name}</CardTitle>
+                        <span className="text-xs text-muted-foreground/60 font-normal">
+                          {location}
+                        </span>
+                      </div>
                       <CardDescription className="flex flex-row">
                         {Array.from({ length: 5 }).map((_, starIndex) => {
                           const key = `star-${name}-1-${index}-${starIndex}`;
@@ -116,7 +122,7 @@ export const Testimonials = () => {
           {/* Segunda serie de testimonios (duplicada para loop infinito) */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6 mt-4 lg:mt-6">
             {testimonials.map(
-              ({ image, name, comment, starsAmount }: TestimonialProps, index: number) => (
+              ({ image, name, comment, starsAmount, location }: TestimonialProps, index: number) => (
                 <Card
                   key={`${name}-2-${index}`}
                   className="md:break-inside-avoid overflow-hidden"
@@ -129,8 +135,13 @@ export const Testimonials = () => {
                       </AvatarFallback>
                     </Avatar>
 
-                    <div className="flex flex-col">
-                      <CardTitle className="text-lg">{name}</CardTitle>
+                    <div className="flex flex-col flex-1">
+                      <div className="flex items-center justify-between gap-2">
+                        <CardTitle className="text-lg">{name}</CardTitle>
+                        <span className="text-xs text-muted-foreground/60 font-normal">
+                          {location}
+                        </span>
+                      </div>
                       <CardDescription className="flex flex-row">
                         {Array.from({ length: 5 }).map((_, starIndex) => {
                           const key = `star-${name}-2-${index}-${starIndex}`;
@@ -178,7 +189,8 @@ const testimonials: TestimonialProps[] = [
       es: "Primera vez que voy y me atendieron como si fuera un cliente habitual o un amigo. Son profesionales y gente muy muy amable, el servicio es tan bueno como su comida. Volveré pronto. El ramen karaage, tonkotsu y el postre estaban buenísimos",
       en: "First time I go and they treated me as if I were a regular customer or a friend. They are professional and very very kind people, the service is as good as their food. I'll be back soon. karaage, tonkotsu ramen and the dessert were sooo delicious"
     },
-    starsAmount: 5
+    starsAmount: 5,
+    location: "Franklin"
   },
   {
     image: "https://lh3.googleusercontent.com/a-/ALV-UjXsPjaq4gemljPjIO0_bcCrDIlelYB3g7RJRTo-xNFrzFFz7qG2Bw=s36-c-rp-mo-ba3-br100",
@@ -187,7 +199,8 @@ const testimonials: TestimonialProps[] = [
       es: "Increíble todo!!! Divina la comida, la buena onda y atención un 7/7, todo realmente excelente. Una experiencia maravillosa ❤️  Mis aplausos para el equipo. Felicidades y que sigan los éxitos. Es el mejor ramen que he probado en Santiago",
       en: "Everything is incredible!!! Divine food, good vibes and 7/7 service, everything really excellent. A wonderful experience ❤️ My applause for the team. Congratulations and continued success. It is the best ramen I have had in Santiago"
     },
-    starsAmount: 5
+    starsAmount: 5,
+    location: "Franklin"
   },
   {
     name: "Barbara Huinca",
@@ -196,7 +209,8 @@ const testimonials: TestimonialProps[] = [
       en: "I have been here about 6 times, and I can say that I am not bored nor will I be bored eating ramen here, one of my favorite places, I love that they have kimchi and kombucha, it makes it very original and entertaining. 1000/10 haha🫶🏻"
     },
     starsAmount: 5,
-    image: "https://lh3.googleusercontent.com/a-/ALV-UjVSyJbqLqSXFbl7BrKoiumq0OR4MXUPPChWiC-RSOBu1N36oDU=s36-c-rp-mo-br100"
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjVSyJbqLqSXFbl7BrKoiumq0OR4MXUPPChWiC-RSOBu1N36oDU=s36-c-rp-mo-br100",
+    location: "Franklin"
   },
   {
     image:
@@ -207,6 +221,7 @@ const testimonials: TestimonialProps[] = [
       en: "The ramen is excellent, the kombuchas are very delicious with different original flavors such as rica rica, and the dessert is very original and delicious too. 100% recommended. Of the 3 dishes, 2 are vegetarian with the option to be vegan, the ramen I tried with tofu, egg, kimchi, peanuts, is super delicious.",
     },
     starsAmount: 5,
+    location: "Franklin"
   },
   {
     image:
@@ -217,6 +232,7 @@ const testimonials: TestimonialProps[] = [
       en: "Spectacular, food 100% recommended for those who want to try intense flavors and different from what we are used to",
     },
     starsAmount: 5,
+    location: "Franklin"
   },
   {
     image:
@@ -227,6 +243,7 @@ const testimonials: TestimonialProps[] = [
       en: "Super rich and very very well attended. It's worth it everywhere",
     },
     starsAmount: 5,
+    location: "Franklin"
   },
   {
     image:
@@ -237,6 +254,7 @@ const testimonials: TestimonialProps[] = [
       en: "The service is very good but the food is even better. Super rich and the owners are in all the details",
     },
     starsAmount: 5,
+    location: "Franklin"
   },
   {
     name: "Fabianni Duarte Oyanedel",
@@ -247,6 +265,7 @@ const testimonials: TestimonialProps[] = [
       es: "Debo ser honesto con ustedes, prueben esta maravilla pronto porque es el mejor ramen que jamás van a probar y dudo que permanezca en el barrio por mucho. Esa es mi impresión más sincera. Puedes ir sólo o acompañado, el sabor es una experiencia única que tomará cada paladar por sorpresa.",
       en: "I have to be honest with you, try this wonder soon because it is the best ramen you will ever try and I doubt it will stay in the neighborhood for long. That is my most sincere impression. You can go alone or accompanied, the flavor is a unique experience that will take each palate by surprise.",
     },
+    location: "Franklin"
   },
   {
     name: "Karla Pavez",
@@ -257,6 +276,7 @@ const testimonials: TestimonialProps[] = [
       en: "Excellent place to eat in Franklin. We ordered bahos and karaage as a starter and the main course was the tonkotsu ramen, which was very filling. To drink we ordered kombuchas, very good. We waited half an hour to be able to sit down to eat, but they served us very well. A very good experience.",
     },
     starsAmount: 5,
+    location: "Franklin"
   },
   {
     name: "Felipe Acuña Gonzalez",
@@ -265,6 +285,7 @@ const testimonials: TestimonialProps[] = [
       es: "Exquisito, el caldo con mucha textura y sabor. De mis lugares favoritos de ramen en Chile.",
       en: "Exquisite, the broth with a lot of texture and flavor. One of my favorite ramen places in Chile.",
     },
+    location: "Franklin"
   },
   {
     name: "Patricia Calderon",
@@ -275,6 +296,7 @@ const testimonials: TestimonialProps[] = [
       es: "Fuimos a probar los ramen, exquisito, super recomendado, buena atención y conversación con su dueño.volveremos",
       en: "We went to try the ramen, exquisite, highly recommended, good service and conversation with the owner. We will return",
     },
+    location: "Franklin"
   },
   {
     name: "Catalina Acevedo Latorre",
@@ -285,6 +307,7 @@ const testimonials: TestimonialProps[] = [
       es: "Este lugar es una experiencia culinaria completa. Me sorprendí con los sabores, el estilo y la buena atención de los dueños/garzones. Recomiendo llegar temprano porque hay una lista de espera larga, pero anotan tu teléfono y puedes dar vueltas mientras se desocupa una mesa. Increíble!!!",
       en: "This place is a complete culinary experience. I was surprised by the flavors, the style and the good attention of the owners/waitresses. I recommend arriving early because there is a long waiting list, but they take your phone number and you can wander around while a table becomes available. Incredible!!!",
     },
+    location: "Franklin"
   },
   {
     name: "Gabriela Barceló",
@@ -295,6 +318,7 @@ const testimonials: TestimonialProps[] = [
       es: "Los mejores baos que he comido, sabores fuera de lo esperado! Y el ramen también muy distinto a todo lo que había probado antes, pero exquisito! La kombucha de eucalipto también muy distinta! No es económico pero tampoco caro, y el lugar es la factoría franklin que es perfecto para pasear mientras esperas una mesa!",
       en: "The best baos I've ever eaten, flavors beyond expectations! And the ramen was also very different from anything I had tried before, but exquisite! The eucalyptus kombucha is also very different! It's not cheap but it's not expensive either, and the place is the Franklin Factory which is perfect for walking around while you wait for a table!",
     },
+    location: "Franklin"
   },
   {
     name: "Herman Oporto Seguel",
@@ -305,5 +329,6 @@ const testimonials: TestimonialProps[] = [
       es: "De lo mejor que he probado. La atención muy cordial desde un inicio a pesar de estar con mucha gente esperando. Comencé con una kombucha de eucalipto fenomenal, muy refrescante y balanceada, hecha por ellos mismos, hay otras opciones interesantes como kombucha lavanda y más tradicionales como limón gengibre. Luego de fondo, un tantanmen vegetariano... increíble! Generosa porción, la calidad de los fideos, el sabor cremoso y picante de la base , la firmeza del tofu (podrían marinar un poco más el tofu para más sabor, pequeña sugerencia) y las verduras encurtidas le dieron un toque de frescura y acidez delicioso, y en conjunto un deleite sensorial. Además la meticulosa preparación y presentacion , todo frente a uno, se agradece y felicita.. volvería? Definitivamente! Muy recomendado",
       en: "The best I've ever tried. Very cordial attention from the beginning despite having many people waiting. I started with a phenomenal eucalyptus kombucha, very refreshing and balanced, made by themselves, there are other interesting options like lavender kombucha and more traditional ones like lemon ginger. Then in the background, a vegetarian tantanmen... incredible! Generous portion, the quality of the noodles, the creamy and spicy flavor of the base, the firmness of the tofu (they could marinate the tofu a little more for more flavor, small suggestion) and the pickled vegetables gave it a delicious touch of freshness and acidity , and overall a sensory delight. In addition, the meticulous preparation and presentation, all in front of you, is appreciated and congratulated.. Would I return? Definitely! Highly recommended",
     },
+    location: "Franklin"
   },
 ];
