@@ -187,6 +187,38 @@
     },
     "cta-button": "View products"
   },
+  "founders": {
+    "title": "Who ",
+    "title-highlight": "we are",
+    "description": "Mirai Food Lab was born from the passion of two friends for Japanese gastronomy and culinary experimentation.",
+    "slides": [
+      {
+        "image": "mirai-partners.jpg",
+        "people": [
+          {
+            "name": "Misha FUKUDA",
+            "role": "Co-founder & Chef",
+            "bio": "Chef trained in Japanese gastronomy with experience in fine dining restaurants. Passionate about fermentation and traditional techniques, Misha leads Mirai's kitchen with an innovative vision that fuses Asian flavors with local ingredients."
+          },
+          {
+            "name": "Ignacio ROA",
+            "role": "Co-founder & Chef",
+            "bio": "Chef specialized in fermentation techniques and experimental cuisine. Ignacio contributes his knowledge in traditional and modern fermented products, developing unique products that define the identity of Mirai Food Lab."
+          }
+        ]
+      },
+      {
+        "image": "mirai-team.jpg",
+        "people": [
+          {
+            "name": "Team Mirai",
+            "role": "Our team",
+            "bio": "Beyond the founders, Mirai is a complete team of people passionate about Japanese gastronomy and culinary experimentation. Together we work every day to bring our unique proposal to Santiago."
+          }
+        ]
+      }
+    ]
+  },
   "collaborations": {
     "title": "Our ",
     "title-highlight": "Collaborations",

@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/Testimonials.tsx";
 import { WhereToFindUs } from "@/components/WhereToFindUs.tsx";
 import { ShopCategories } from "@/components/ShopCategories.tsx";
 import { Collaborations } from "@/components/Collaborations.tsx";
+import { OurFounders } from "@/components/OurFounders.tsx";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog.tsx";
 // import { OnlineShopCTA } from "@/components/online-shop-CTA";
 
@@ -33,7 +34,8 @@ export const Home = () => {
       <HeroCarousel /><div className="" />
       <DescriptionCard /><div className="" />
       <WhereToFindUs /><div/>
-      <ShopCategories /><div className="mb-20" />
+      <ShopCategories /><div className="mb-10" />
+      <OurFounders /><div className="my-20" />
       <Testimonials /><div className="my-20" />
       <Collaborations /><div className="my-20" />
       <IntagramCarrousel /><div className="my-20" />
