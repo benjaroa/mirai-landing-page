@@ -11,7 +11,7 @@ import {
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
-import pajaro1 from "@/assets/pajaro_1.svg";
+import gato_2 from "@/assets/gato_2.svg";
 
 interface CollaborationLink {
   label: string;
@@ -55,7 +55,7 @@ export const Collaborations = () => {
     <section id="collaborations" className="py-20">
       <div className="container text-left mb-12 flex flex-col items-start justify-start">
         <div className="flex items-center justify-center gap-4 mb-4">
-          <img src={pajaro1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
+          <img src={gato_2} alt="" className="w-20 h-20 sm:w-20 sm:h-20" />
           <h2 className="sm:text-5xl text-4xl font-bold">
             {title}
             <span className="text-mirai">

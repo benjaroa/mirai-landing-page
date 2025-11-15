@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import partnersImage1 from "@/assets/mirai-partners.jpg";
 import teamImage from "@/assets/mirai-team.jpg";
-import pajaro3 from "@/assets/pajaro_3.svg";
+import misha_ignacio_1 from "@/assets/misha_ignacio_1.svg";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const imageMap: Record<string, string> = {
@@ -39,7 +39,7 @@ export const OurFounders = () => {
       <div className="container">
         <div className="text-left mb-16">
           <div className="flex items-center gap-4 mb-4">
-            <img src={pajaro3} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
+            <img src={misha_ignacio_1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
             <h2 className="sm:text-5xl text-4xl font-bold mb-4">
               {t("founders.title")}
               <span className="text-mirai">{t("founders.title-highlight")}</span>

@@ -6,7 +6,7 @@ import { ShoppingCart, ArrowRight } from "lucide-react";
 import illustrationKombucha from "@/assets/illustration-kombucha.jpg";
 import illustrationRamen from "@/assets/illustration-ramen.jpg";
 import illustrationMerch from "@/assets/illustration-mirai.jpg";
-import pajaro2 from "@/assets/pajaro_3.svg";
+import gato_1 from "@/assets/gato_1.svg";
 
 interface Category {
   id: string;
@@ -51,7 +51,7 @@ export const ShopCategories = () => {
       <div className="container">
         <div className="text-left mb-16">
         <div className="flex items-center gap-4 mb-4">
-          <img src={pajaro2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
+          <img src={gato_1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
           <h2 className="sm:text-5xl text-4xl font-bold mb-4">
             {t("shop-categories.main-title")}
             <span className="text-mirai">{t("shop-categories.main-title-highlight")}</span>

@@ -9,7 +9,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { GoogleLogo } from "@/assets/google-logo";
 import { Star } from "lucide-react";
-import pajaro2 from "@/assets/pajaro_2.svg";
+import pajaro1 from "@/assets/pajaro_1.svg";
 
 type TestimonialProps = {
   image?: string;
@@ -38,7 +38,7 @@ export const Testimonials = () => {
       <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
         <div>
           <div className="flex items-center gap-4 mb-4">
-            <img src={pajaro2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
+            <img src={pajaro1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
             <h2 className="sm:text-5xl text-4xl font-bold">
               {t("testimonials.title")}
               <span className="text-mirai">{t("testimonials.title-highlight")}</span>

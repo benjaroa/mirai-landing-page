@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import miraiMutImage from "@/assets/mirai-mut.jpg";
 import miraiFranklinImage from "@/assets/mirai-franklin.jpg";
 import partnersImage from "@/assets/mirai-partners-2.jpg";
-import pajaro2 from "@/assets/pajaro_1.svg";
+import ramen2 from "@/assets/ramen_2.svg";
 
 interface Restaurant {
   name: string;
@@ -56,7 +56,7 @@ export const WhereToFindUs = () => {
       <div className="container">
         <div className="text-left mb-16">
           <div className="flex items-center gap-4 mb-4">
-            <img src={pajaro2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
+            <img src={ramen2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
             <h2 className="sm:text-5xl text-4xl font-bold mb-4">
               {t("where-to-find-us.title")}
               <span className="text-mirai">{t("where-to-find-us.title-highlight")}</span>
