@@ -90,7 +90,6 @@ export const NewFooter = () => {
               {t("footer.contact.title")}
             </h6>
             <div className="space-y-2 text-sm">
-              <p className="mt-4">{t("footer.contact.phone")}</p>
               <p>
                 <a
                   href="#"
@@ -103,6 +102,7 @@ export const NewFooter = () => {
                   {t("footer.contact.contact")}
                 </a>
               </p>
+              <p className="mt-4">{t("footer.contact.phone")}</p>
             </div>
           </div>
 
