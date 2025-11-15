@@ -172,7 +172,7 @@ export const TopButtons = ({
       </div>
       
       {/* Mobile Shop CTA Button - Below navbar */}
-      <div className={`fixed top-[120px] sm:hidden w-full z-30 px-4 pt-2 pb-1 border-b border-gray-200/50  ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+      <div className={`fixed top-[110px] sm:hidden w-full z-30 px-4 pt-2 pb-1 border-b border-gray-200/50  ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
         <a 
           href="https://tienda.miraifoodlab.cl" 
           target="_blank" 
