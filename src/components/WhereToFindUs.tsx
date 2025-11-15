@@ -20,7 +20,7 @@ export const WhereToFindUs = () => {
 
   const restaurants: Restaurant[] = [
     {
-      name: "MIRAI - MUT",
+      name: "MUT",
       address: i18n.language === 'es' 
         ? "Av. Apoquindo 2730, piso -2, Las Condes, Santiago" 
         : "Av. Apoquindo 2730, piso -2, Las Condes, Santiago",
@@ -30,7 +30,7 @@ export const WhereToFindUs = () => {
       infoUrl: `/${i18n.language}/page/location-and-hours`
     },
     {
-      name: "MIRAI - FRANKLIN",
+      name: "FRANKLIN",
       address: i18n.language === 'es'
         ? "Franklin 741, local B20, Santiago Centro, Santiago"
         : "Franklin 741, local B20, Santiago Centro, Santiago",
@@ -71,7 +71,7 @@ export const WhereToFindUs = () => {
           {restaurants.map((restaurant, index) => (
             <div 
               key={index} 
-              className="rounded-lg overflow-hidden hover:scale-105 shadow-none transition-all duration-300"
+              className="rounded-lg overflow-hidden hover:scale-[1.02] shadow-none transition-all duration-300"
             >
               {/* Imagen completa */}
               <div className="w-full md:h-[350px] h-[250px] -mb-1 p-1 bg-mirai-dark rounded-t-md overflow-hidden">
@@ -129,7 +129,7 @@ export const WhereToFindUs = () => {
                   
                   <Button
                     asChild
-                    className="shadow-none flex items-center justify-center bg-white hover:bg-mirai text-mirai hover:text-white"
+                    className="shadow-none flex items-center justify-center bg-transparent border border-white border-2 hover:bg-white text-white hover:text-mirai"
                   >
                     <a 
                       href={restaurant.mapsUrl}

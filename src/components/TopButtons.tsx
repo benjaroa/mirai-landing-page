@@ -62,7 +62,7 @@ export const TopButtons = ({
           >
             <img
               src={logoI}
-              className={`size-[70px] object-contain   ${
+              className={`w-24 py-4 object-contain   ${
                 isScrolled ? '' : 'brightness-0 invert'
               }`}
               alt="Mirai Food Lab Logo"
@@ -90,21 +90,21 @@ export const TopButtons = ({
               </Button>
             </a>
             
-            <a target="_blank" href="https://instagram.com/miraifoodlab">
-              <Button variant="ghost" size="icon" className={`ml-auto h-8 w-8   ${
+            <a target="_blank" href="https://instagram.com/miraifoodlab" className="flex items-center justify-center">
+              <Button variant="ghost" size="icon" className={`ml-auto h-7 w-7   ${
                 isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'
               }`}>
-                <InstagramLogoIcon className={`h-6 w-6   ${
+                <InstagramLogoIcon className={`h-7 w-7   ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`} />
                 <span className="sr-only">Instagram</span>
               </Button>
             </a>
-            <a target="_blank" href="https://www.tiktok.com/@miraifoodlab">
-              <Button variant="ghost" size="icon" className={`ml-auto h-8 w-8   ${
+            <a target="_blank" href="https://www.tiktok.com/@miraifoodlab" className="flex items-center justify-center">
+              <Button variant="ghost" size="icon" className={`ml-auto h-7 w-7   ${
                 isScrolled ? 'hover:bg-gray-100' : 'hover:bg-white/10'
               }`}>
-                <span className="h-6 w-6">
+                <span className="h-7 w-7">
                   <TikTokIcon className={`  ${isScrolled ? 'fill-gray-700' : 'fill-white'}`} />
                 </span>
                 <span className="sr-only">TikTok</span>
@@ -118,7 +118,7 @@ export const TopButtons = ({
                 variant="outline"
                 size="sm"
                 onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
-                className={`w-[50px] h-8   ${
+                className={`w-[50px] h-7   ${
                   isScrolled 
                     ? 'bg-white border-gray-300 text-black hover:bg-gray-50' 
                     : 'bg-transparent border-white/30 text-white hover:text-white hover:border-white/60 hover:bg-white/20'

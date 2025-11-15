@@ -13,8 +13,8 @@
     }
   },
   "where-to-find-us": {
-    "title": "Nuestras ",
-    "title-highlight": "barras de ramen",
+    "title": "¿Donde ",
+    "title-highlight": "encontrarnos?",
     "description": "Visítanos en nuestros dos restaurantes ubicados en Santiago. Prueba nuestra carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
     "menu": "Menú",
     "info": "Info",
@@ -158,7 +158,54 @@
   ],
   "footer": {
     "stage-and-applications": "Pasantías y postulaciones",
-    "contact-link": "Contacto"
+    "contact-link": "Contacto",
+    "locations": {
+      "title": "Locales",
+      "address-franklin": "Franklin 741, local B20",
+      "address-mut": "Av. Apoquindo 2730, piso -2",
+      "city-franklin": "Santiago",
+      "city-mut": "Las Condes",
+      "see-map": "Ver mapa"
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "+56 9214 4516",
+      "contact": "Escribenos"
+    },
+    "booking-hours": {
+      "title": "Horarios",
+      "franklin": {
+        "name": "Franklin",
+        "friday": "Viernes",
+        "friday-hours": "12:30 - 16:30",
+        "weekend": "Sábado y Domingo",
+        "weekend-hours": "12:30 - 17:30",
+        "closed": "Lunes - Jueves: CERRADO"
+      },
+      "mut": {
+        "name": "MUT",
+        "hours": "Lunes a Domingo",
+        "hours-time": "12:30 - 20:30"
+      }
+    },
+    "careers": {
+      "title": "Carreras",
+      "join-team": "Únete a nuestro equipo"
+    },
+    "about": {
+      "title": "Acerca de",
+      "privacy-policy": "Política de Privacidad",
+      "terms-of-use": "Términos de Uso",
+      "health-inspection": "Reporte de Inspección Sanitaria"
+    },
+    "follow": {
+      "title": "Redes sociales",
+      "announcements": "Anuncios",
+      "newsletter": "Newsletter",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "copyright": "© {year} Mirai Food Lab. Todos los derechos reservados."
   },
   "pages": {
     "pop-ups-history": "Popups - Historial",

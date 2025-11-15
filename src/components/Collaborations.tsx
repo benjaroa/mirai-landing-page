@@ -89,7 +89,7 @@ export const Collaborations = () => {
                         className="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
                       />
                     </div>
-                    <CardContent className="px-6 py-4 flex flex-col gap-4 bg-mirai-dark">
+                    <CardContent className="px-6 py-4 flex flex-col gap-4 bg-mirai-dark min-h-[230px]">
                       <div>
                         <div className="flex flex-col items-start justify-between gap-2">
                             <Badge className=" bg-white hover:bg-white text-foreground text-[10px] rounded-full shadow-none">
@@ -109,7 +109,7 @@ export const Collaborations = () => {
                               variant="outline"
                               size="sm"
                               asChild
-                              className="text-xs bg-white hover:bg-mirai text-mirai hover:text-white border-none shadow-none"
+                              className="text-xs bg-transparent hover:bg-white text-white hover:text-mirai border-white border-2 shadow-none"
                             >
                               <a
                                 href={link.url}

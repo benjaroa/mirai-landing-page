@@ -1,6 +1,5 @@
 import "@/App.css";
 import { NewFooter } from "@/components/NewFooter.tsx";
-import { IntagramCarrousel } from "@/components/InstagramGallery.tsx";
 import { HeroCarousel } from "@/components/HeroCarousel.tsx";
 import { DescriptionCard } from "@/components/DescriptionCard.tsx";
 import { TopButtons } from "@/components/TopButtons.tsx";
@@ -38,7 +37,6 @@ export const Home = () => {
       <OurFounders /><div className="my-20" />
       <Testimonials /><div className="my-20" />
       <Collaborations /><div className="my-20" />
-      <IntagramCarrousel /><div className="my-20" />
       <NewFooter />
       {/* <OnlineShopCTA /> */}
       <ScrollToTop />

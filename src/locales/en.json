@@ -13,8 +13,8 @@
     }
   },
   "where-to-find-us": {
-    "title": "Our ",
-    "title-highlight": "ramen bars",
+    "title": "Where can you ",
+    "title-highlight": "find us?",
     "description": "Visit us at our two restaurants located in Santiago. Try our curated menu of Japanese tapas and ramen, emphasizing the quality of our ingredients and preparation techniques.",
     "menu": "Menu",
     "info": "Info",
@@ -22,7 +22,7 @@
   },
   "back-button-label": "back 👉",
   "testimonials": {
-    "title": "They tell it",
+    "title": "They tell it ",
     "title-highlight": "better than us",
     "description": "What they say about us",
     "review-button-label": "Let us know your opinion on Google",
@@ -159,7 +159,54 @@
   ],
   "footer": {
     "stage-and-applications": "Internships and applications",
-    "contact-link": "Contact"
+    "contact-link": "Contact",
+    "locations": {
+      "title": "Contact",
+      "address-franklin": "Franklin 741, local B20",
+      "address-mut": "Av. Apoquindo 2730, piso -2",
+      "city-franklin": "Santiago",
+      "city-mut": "Las Condes",
+      "see-map": "See map"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "+56 9214 4516",
+      "contact": "Write to us"
+    },
+    "booking-hours": {
+      "title": "OpeningHours",
+      "franklin": {
+        "name": "Franklin",
+        "friday": "Friday",
+        "friday-hours": "12:30 - 16:30",
+        "weekend": "Saturday and Sunday",
+        "weekend-hours": "12:30 - 17:30",
+        "closed": "Monday - Thursday: CLOSED"
+      },
+      "mut": {
+        "name": "MUT",
+        "hours": "Monday to Sunday",
+        "hours-time": "12:30 - 20:30"
+      }
+    },
+    "careers": {
+      "title": "Careers",
+      "join-team": "Join our team"
+    },
+    "about": {
+      "title": "About",
+      "privacy-policy": "Privacy Policy",
+      "terms-of-use": "Terms of Use",
+      "health-inspection": "Health Inspection Report"
+    },
+    "follow": {
+      "title": "Follow",
+      "announcements": "Announcements",
+      "newsletter": "Newsletter",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "copyright": "© {year} Mirai Food Lab. All rights reserved."
   },
   "pages": {
     "pop-ups-history": "Pop-ups - History",

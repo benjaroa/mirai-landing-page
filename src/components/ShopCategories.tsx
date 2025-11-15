@@ -112,7 +112,7 @@ export const ShopCategories = () => {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-mirai hover:bg-mirai/90 text-white"
+                  className="bg-mirai hover:bg-mirai-dark text-white"
                 >
                   <a 
                     href={currentCategory.link}
