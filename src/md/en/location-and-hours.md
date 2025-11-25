@@ -6,7 +6,7 @@
 
 🍜 [Menu](https://miraifoodlab.cl/es/page/menu-franklin)
 
-Our ramen shop and small factory is located in Factoría Fanklin, an ancient drug factory that has many projects like ours.
+Our ramen shop and small factory is located in Factoría Fanklin, an ancient pharmaceutical factory that has many projects like ours.
 
 We attend only by order of arrival, we do not take reservations. If you want to come in a big group, we recommend you not to have breakfast and get here early.
 

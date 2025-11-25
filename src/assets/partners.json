@@ -6,7 +6,9 @@
     "website": "https://cabritaalegre.cl/",
     "district": "Ñuñoa",
     "address": "Pucará 4311",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4567,
+    "lng": -70.5956
   },
   {
     "name": "Verde Sazón",
@@ -15,7 +17,9 @@
     "website": "https://verdesazon.cl/",
     "district": "Providencia",
     "address": "Miguel Claro 1873",
-    "labels": "bar, restaurant"
+    "labels": "bar, restaurant",
+    "lat": -33.4298,
+    "lng": -70.6107
   },
   {
     "name": "Rita Roux",
@@ -24,7 +28,9 @@
     "website": "https://www.ritaroux.cl/",
     "district": "Vitacura",
     "address": "Juan Bautista Pastene 2827",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.3856,
+    "lng": -70.5689
   },
   {
     "name": "Tienda Organica",
@@ -33,7 +39,9 @@
     "website": "https://tiendaorganica.cl/",
     "district": "Providencia",
     "address": "El Aguilucho 3537",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4234,
+    "lng": -70.6089
   },
   {
     "name": "Central Organica",
@@ -42,7 +50,9 @@
     "website": "",
     "district": "Las Condes",
     "address": "MUT, piso -2",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4149,
+    "lng": -70.5849
   },
   {
     "name": "La Pastora",
@@ -51,7 +61,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Antonio Varas 1480",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4312,
+    "lng": -70.6198
   },
   {
     "name": "Felix Café",
@@ -60,7 +72,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Coyancura 2223",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4321,
+    "lng": -70.6134
   },
   {
     "name": "Fabula Restaurant",
@@ -69,7 +83,9 @@
     "website": "",
     "district": "Santiago",
     "address": "Merced 346",
-    "labels": "restaurant, bar"
+    "labels": "restaurant, bar",
+    "lat": -33.4378,
+    "lng": -70.6489
   },
   {
     "name": " Café Cabra Tostaduría ",
@@ -78,7 +94,9 @@
     "website": "",
     "district": "Maipú",
     "address": "El Olimpo 735",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.5234,
+    "lng": -70.7567
   },
   {
     "name": "Buen Campo",
@@ -87,7 +105,9 @@
     "website": "https://buencampo.cl/",
     "district": "Providencia",
     "address": "José Manuel Infante 1728",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4498,
+    "lng": -70.6234
   },
   {
     "name": "Bakery To Go",
@@ -96,7 +116,9 @@
     "website": "https://www.bakerytogo.cl/",
     "district": "Providencia",
     "address": "Miguel Claro 2101",
-    "labels": "panadería"
+    "labels": "panadería",
+    "lat": -33.4289,
+    "lng": -70.6089
   },
   {
     "name": "Le Boletó",
@@ -104,8 +126,10 @@
     "instagram": "leboleto",
     "website": "https://www.leboleto.cl/",
     "district": "Providencia",
-    "address": "Ovispo Donoso 044 A",
-    "labels": "café"
+    "address": "Obispo Donoso 044 A",
+    "labels": "café",
+    "lat": -33.43792501600418,
+    "lng": -70.62844916931412
   },
   {
     "name": "Bipolar Café",
@@ -114,7 +138,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Valenzuela Castillo 1291",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4360636,
+    "lng": -70.6213906
   },
   {
     "name": "El Hornero Panadería",
@@ -123,7 +149,9 @@
     "website": "",
     "district": "Maipú",
     "address": "La Fortuna 520 Local 6",
-    "labels": "panadería"
+    "labels": "panadería",
+    "lat": -33.52315288892958,
+    "lng": -70.76535307179797
   },
   {
     "name": "Mayal Granel ",
@@ -132,7 +160,9 @@
     "website": "https://mayalgranel.cl/",
     "district": "Maipú",
     "address": "Central Gonzalo Pérez Llona 200",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.5001693,
+    "lng": -70.7550627
   },
   {
     "name": "Unclub Café",
@@ -141,7 +171,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Ramón Carnicer 65",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4401193,
+    "lng": -70.6328654
   },
   {
     "name": "El Poroto Gordo",
@@ -150,7 +182,9 @@
     "website": "",
     "district": "Ñuñoa",
     "address": "Av. Irarrazaval 1376",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4528688,
+    "lng": -70.6164044
   },
   {
     "name": "Bar La Isla",
@@ -159,7 +193,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Av. Providencia 1100",
-    "labels": "bar"
+    "labels": "bar",
+    "lat": -33.4298154,
+    "lng": -70.6227663
   },
   {
     "name": "Pícara Pájara Pizzería",
@@ -168,7 +204,9 @@
     "website": "",
     "district": "San Miguel",
     "address": "Octava Avenida 1201",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.51061,
+    "lng": -70.6602125
   },
   {
     "name": "Perritos Chao",
@@ -177,7 +215,9 @@
     "website": "https://www.perritoschao.cl/",
     "district": "Ñuñoa",
     "address": "Avenida Italia 1853",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.4514417,
+    "lng": -70.623742
   },
   {
     "name": "Veggie Lunch",
@@ -186,7 +226,9 @@
     "website": "https://www.veggielunch.cl/",
     "district": "Ñuñoa",
     "address": "José Domingo Cañas 386",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.4563876,
+    "lng": -70.6170976
   },
   {
     "name": "Alma Vegan Food",
@@ -195,7 +237,9 @@
     "website": "",
     "district": "Las Condes",
     "address": "MUT, piso -2",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.41753889131629,
+    "lng": -70.60071539084632
   },
   {
     "name": "Pandias Kitchen ",
@@ -204,7 +248,9 @@
     "website": "https://www.pandiaskitchen.cl/",
     "district": "Providencia",
     "address": "Los Leones 0156",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.422019,
+    "lng": -70.6085607
   },
   {
     "name": "Café Tsiluba",
@@ -213,7 +259,9 @@
     "website": "",
     "district": "La Cisterna",
     "address": "Av. Fernández Albano 196",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.5260978,
+    "lng": -70.6478584
   },
   {
     "name": "Huggo comedor",
@@ -222,7 +270,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Dr. Luis Middleton 1698",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.4268638,
+    "lng": -70.6148425
   },
   {
     "name": "Tostaduría Dulce Vida",
@@ -231,7 +281,9 @@
     "website": "",
     "district": "Ñuñoa",
     "address": "Av. Irarrazaval 1520-B",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.453846,
+    "lng": -70.6082618
   },
   {
     "name": "Bask sushi",
@@ -240,7 +292,9 @@
     "website": "",
     "district": "Santiago",
     "address": "Padre Luis de Valdivia 327",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.4388549,
+    "lng": -70.6416133
   },
   {
     "name": "Café Magnolia",
@@ -249,7 +303,9 @@
     "website": "",
     "district": "San Miguel",
     "address": "Magdalena Vicuña 1399",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4803497,
+    "lng": -70.6516532
   },
   {
     "name": "Greenbook café",
@@ -258,7 +314,9 @@
     "website": "",
     "district": "Santiago",
     "address": "Huerfanos 669",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4388847,
+    "lng": -70.6465667
   },
   {
     "name": "La Compañía ",
@@ -267,7 +325,9 @@
     "website": "https://la-compania.cl/",
     "district": "Providencia",
     "address": "Pedro Lautaro Ferrer 3460",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4449461,
+    "lng": -70.6032681
   },
   {
     "name": "Aliwen",
@@ -276,7 +336,9 @@
     "website": "",
     "district": "Valparaíso",
     "address": "Los Aromos 329 Llo-lleo",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.61031830457516,
+    "lng": -71.61093880803007
   },
   {
     "name": "Black Mamba",
@@ -284,8 +346,10 @@
     "instagram": "cafeblackmamba",
     "website": "",
     "district": "Providencia",
-    "address": "Por confirmar",
-    "labels": "café"
+    "address": "Eliodoro Yáñez 1228, local 104, Providencia",
+    "labels": "café",
+    "lat": -33.43313293438412,
+    "lng": -70.6180180320587
   },
   {
     "name": "Panadería Madeleine",
@@ -294,7 +358,9 @@
     "website": "",
     "district": "Ñuñoa",
     "address": "Condell 1636",
-    "labels": "panadería"
+    "labels": "panadería",
+    "lat": -33.4495412,
+    "lng": -70.6249935
   },
   {
     "name": "El Rezo Café",
@@ -303,7 +369,9 @@
     "website": "",
     "district": "Pichilemu",
     "address": "Punta de lobos",
-    "labels": "café"
+    "labels": "café",
+    "lat": -34.38614081194063,
+    "lng": -72.01157066521914
   },
   {
     "name": "La Popular Infante",
@@ -312,7 +380,9 @@
     "website": "",
     "district": "Providencia",
     "address": "José Manuel Infanta 1232",
-    "labels": "restaurant, panadería, tienda"
+    "labels": "restaurant, panadería, tienda",
+    "lat": -33.4422556321033,
+    "lng": -70.61956985830913
   },
   {
     "name": "La Popular Bilbao",
@@ -321,7 +391,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Av Francisco Bilbao 2793",
-    "labels": "tienda, panadería, restaurant"
+    "labels": "tienda, panadería, restaurant",
+    "lat": -33.435974,
+    "lng": -70.5935293
   },
   {
     "name": "Drip Café",
@@ -330,7 +402,9 @@
     "website": "",
     "district": "Santiago",
     "address": "Arturo Pratt 33",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.9820495,
+    "lng": -71.4579228
   },
   {
     "name": "Café Planta",
@@ -339,7 +413,9 @@
     "website": "",
     "district": "Santiago",
     "address": "Maipú 330",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4419646,
+    "lng": -70.6766371
   },
   {
     "name": "Justicia Café",
@@ -348,7 +424,9 @@
     "website": "",
     "district": "Santiago",
     "address": "1er piso Biblioteca Nacional.",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.442248621805035,
+    "lng": -70.64543538475289
   },
   {
     "name": "Infiltrados",
@@ -357,7 +435,9 @@
     "website": "",
     "district": "San Fernando",
     "address": "Rancagua 709",
-    "labels": "café"
+    "labels": "café",
+    "lat": -34.58690021698294,
+    "lng": -70.98276771080562
   },
   {
     "name": "Dulce Espiga",
@@ -366,7 +446,9 @@
     "website": "",
     "district": "San José del Maipo",
     "address": "Camino el volcán 10751",
-    "labels": "panadería"
+    "labels": "panadería",
+    "lat": -33.58341731365018,
+    "lng": -70.39792095221011
   },
   {
     "name": "Halteros",
@@ -375,7 +457,9 @@
     "website": "",
     "district": "San Miguel",
     "address": "Curiñaca 843",
-    "labels": "gimnasio"
+    "labels": "gimnasio",
+    "lat": -33.48950154862435,
+    "lng": -70.64503959639327
   },
   {
     "name": "Cazta Delicatasen",
@@ -384,7 +468,9 @@
     "website": "",
     "district": "La Reina",
     "address": "Av. Larraín 5972",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4531116,
+    "lng": -70.5683509
   },
   {
     "name": "Tienda Granjero La Concepcíón",
@@ -393,7 +479,9 @@
     "website": "",
     "district": "Providencia",
     "address": "La Concepción 167",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4241498,
+    "lng": -70.616107
   },
   {
     "name": "Tienda Granjero Pedro de Valdivia",
@@ -402,7 +490,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Av. Providencia 1986",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4319448,
+    "lng": -70.624785
   },
   {
     "name": "Tienda Granjero Bilbao",
@@ -411,7 +501,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Av. Francisco Bilbao 721",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.4407625,
+    "lng": -70.6230765
   },
   {
     "name": "Panadería La Semilla",
@@ -420,7 +512,9 @@
     "website": "",
     "district": "Ñuñoa",
     "address": "Hamburgo  1035",
-    "labels": "panadería"
+    "labels": "panadería",
+    "lat": -33.4448748,
+    "lng": -70.5771137
   },
   {
     "name": "Mirlo",
@@ -429,7 +523,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Bravo 960",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4339978,
+    "lng": -70.6224546
   },
   {
     "name": "Esencia Organica",
@@ -438,7 +534,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Amapolas 1515, local 3",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.429558488349855,
+    "lng": -70.59052561413094
   },
   {
     "name": "Café Nuk",
@@ -447,7 +545,9 @@
     "website": "",
     "district": "Providencia",
     "address": "Las Urbinas 31",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.422058,
+    "lng": -70.6121726
   },
   {
     "name": "Emporio Organika",
@@ -456,7 +556,9 @@
     "website": "",
     "district": "Melipilla",
     "address": "Arturo Pratt 678",
-    "labels": "tienda"
+    "labels": "tienda",
+    "lat": -33.9820495,
+    "lng": -71.4579228
   },
   {
     "name": "Microcafé",
@@ -465,7 +567,9 @@
     "website": "",
     "district": "Peñalolén",
     "address": "Comunidad ecológica",
-    "labels": "café"
+    "labels": "café",
+    "lat": -33.4886616,
+    "lng": -70.5308733
   },
   {
     "name": "Fase 4",
@@ -474,7 +578,9 @@
     "website": "",
     "district": "Recoleta",
     "address": "Capitán Ignacio Carrera Pinto 1223",
-    "labels": "bar"
+    "labels": "bar",
+    "lat": -33.3807542,
+    "lng": -70.6560069
   },
   {
     "name": "Wallys",
@@ -483,6 +589,8 @@
     "website": "",
     "district": "Providencia",
     "address": "Pérez Valenzuela 1231",
-    "labels": "restaurant"
+    "labels": "restaurant",
+    "lat": -33.4241453,
+    "lng": -70.618987
   }
 ]

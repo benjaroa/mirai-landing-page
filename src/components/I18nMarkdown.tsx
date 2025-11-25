@@ -31,11 +31,10 @@ const filterMarkdownSection = (markdown: string, section: string): string => {
 
   if (!matchedSection) return markdown;
 
-  // Return the main title plus the matched section
-  const titleMatch = markdown.match(/^# .+$/m);
-  const title = titleMatch ? titleMatch[0] : '';
+  // Remove the ## header from the matched section since we show it in the page title
+  const contentWithoutHeader = matchedSection.replace(/^## .+$/m, '').trim();
   
-  return title + '\n\n' + matchedSection;
+  return contentWithoutHeader;
 };
 
 export const I18nMarkdown = ({ filename, section }: I18nMarkdownProps) => {

@@ -20,7 +20,7 @@
     "info": "Info",
     "directions": "Cómo llegar"
   },
-  "back-button-label": "volver 👉",
+  "back-button-label": "volver",
   "testimonials": {
     "title": "Ellos lo cuentan ",
     "title-highlight": "mejor que nosotros",
@@ -40,6 +40,10 @@
       "keys": {
         "district": "Comuna",
         "type": "Tipo"
+      },
+      "placeholders": {
+        "district": "Buscar comuna...",
+        "type": "Buscar tipo..."
       },
       "footer": {
         "showing": "Mostrando",

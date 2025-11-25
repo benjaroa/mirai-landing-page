@@ -41,6 +41,10 @@
         "district": "District",
         "type": "Type"
       },
+      "placeholders": {
+        "district": "Search district...",
+        "type": "Search type..."
+      },
       "footer": {
         "showing": "Showing",
         "of": "of",
@@ -219,7 +223,7 @@
   "shop-categories": {
     "main-title": "Delivery to ",
     "main-title-highlight": "your house!",
-    "main-description": "Discover our selection of artisanal products, from fermented kombuchas to exclusive merch. Shipping throughout Chile.",
+    "main-description": "Discover our selection of artisanal products, from fermented kombuchas to exclusive merch.",
     "kombuchas": {
       "title": "Kombuchas",
       "description": "Naturally fermented beverages with unique flavors. Live probiotics for your wellness."
