@@ -1,5 +1,3 @@
-# Location and hours
-
 ## Factoría Franklin
 
 📍Franklin 741, local B20, Santiago
