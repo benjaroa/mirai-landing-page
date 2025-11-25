@@ -4,12 +4,20 @@ import heroImage1 from "/assets/hero/hero-1.jpg";
 import heroImage2 from "/assets/hero/hero-2.jpg";
 import heroImage3 from "/assets/hero/hero-3.jpg";
 import heroImage4 from "/assets/hero/hero-4.jpg";
+import miraiMutImage from "@/assets/mirai-mut.jpg";
+import miraiFranklinImage from "@/assets/mirai-franklin.jpg";
+import partnersImage from "@/assets/mirai-partners-2.jpg";
 import { useTranslation } from "react-i18next";
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const getRandomIndex = (min: number, max: number) =>
   Math.floor(Math.random() * (max - min) + min);
-const currentImage = images[getRandomIndex(0, images.length)];
+
+const locationImages: Record<string, string> = {
+  'mut': miraiMutImage,
+  'franklin': miraiFranklinImage,
+  'partners': partnersImage
+};
 
 const goBack = () => {
   return window.history.back();
@@ -17,12 +25,21 @@ const goBack = () => {
 
 export const JsonPage = ({ target }: { target: string }) => {
   const { t } = useTranslation();
+  
+  // Get location parameter from URL
+  const params = new URLSearchParams(window.location.search);
+  const location = params.get('location') || undefined;
+
+  // Get the appropriate image based on location parameter
+  const displayImage = location && locationImages[location.toLowerCase()] 
+    ? locationImages[location.toLowerCase()] 
+    : images[getRandomIndex(0, images.length)];
 
   return (
     <div className="container p-0 relative h-dvh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2">
       <div className="relative hidden h-full flex-col bg-muted text-white dark:border-r lg:flex">
         <img
-          src={currentImage}
+          src={displayImage}
           alt="Mirai"
           className="w-screen h-screen object-cover top-0"
         />
@@ -39,7 +56,7 @@ export const JsonPage = ({ target }: { target: string }) => {
             </a>
           </div>
           <div className="container prose">
-            <I18nMarkdown filename={target} />
+            <I18nMarkdown filename={target} section={location} />
           </div>
         </div>
       </ScrollArea>

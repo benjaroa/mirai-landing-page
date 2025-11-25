@@ -27,7 +27,7 @@ export const WhereToFindUs = () => {
       menuUrl: "https://gour.media/mirai-mut",
       mapsUrl: "https://maps.app.goo.gl/bpBxyUa9WmR3U5Kq9",
       backgroundImage: miraiMutImage,
-      infoUrl: `/${i18n.language}/page/location-and-hours`
+      infoUrl: `/${i18n.language}/page/location-and-hours?location=mut`
     },
     {
       name: "FRANKLIN",
@@ -37,7 +37,7 @@ export const WhereToFindUs = () => {
       menuUrl: "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view",
       mapsUrl: "https://maps.app.goo.gl/xUKMGmqvSDAqwB4Q6",
       backgroundImage: miraiFranklinImage,
-      infoUrl: `/${i18n.language}/page/location-and-hours`
+      infoUrl: `/${i18n.language}/page/location-and-hours?location=franklin`
     },
     {
       name: "PARTNERS",
@@ -47,7 +47,7 @@ export const WhereToFindUs = () => {
       menuUrl: "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view",
       mapsUrl: `/${i18n.language}/page/partners`,
       backgroundImage: partnersImage,
-      infoUrl: `/${i18n.language}/page/location-and-hours`
+      infoUrl: `/${i18n.language}/page/location-and-hours?location=partners`
     }
   ];
 
