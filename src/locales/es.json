@@ -49,7 +49,8 @@
         "showing": "Mostrando",
         "of": "de",
         "partners": "partners"
-      }
+      },
+      "no-results": "No se encontraron partners con los filtros seleccionados."
     }
   },
   "theme-mode-toggle": {
@@ -67,19 +68,19 @@
   "hero-carousel": {
     "slides": [
       {
-        "title": "EXPERIENCIA ÚNICA DE COCINA ASIÁTICA",
+        "title": "NUESTRAS BARRAS DE RAMEN",
         "ctaText": "Descubre dónde encontrarnos",
         "ctaUrl": "#locations"
       },
       {
-        "title": "PRODUCTOS FRESCOS Y AUTÉNTICOS",
-        "ctaText": "Compra Ahora",
+        "title": "NUESTROS PRODUCTOS",
+        "ctaText": "Compra aquí",
         "ctaUrl": "https://tienda.miraifoodlab.cl/"
       },
       {
-        "title": "DESCUBRE NUESTRO RAMEN ARTESANAL",
-        "ctaText": "Descubre nuestra carta",
-        "ctaUrl": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view"
+        "title": "MERCH 2025",
+        "ctaText": "Compra aquí",
+        "ctaUrl": "https://new-miraifoodlab.bsalemarket.com/collection/merch-2025"
       },
       {
         "title": "MIRAI x MAREAL",
@@ -230,11 +231,11 @@
     },
     "de-la-casa": {
       "title": "Productos Mirai",
-      "description": "Productos artesanales hechos en nuestro laboratorio: misos, kojis, salsas y más."
+      "description": "Conoce nuestros productos: interpretaciones propias de recetas y fermentos del mundo como kimchi, hummus, pickles, miso, koji y más."
     },
     "merch": {
       "title": "Merch",
-      "description": "Poleras, gorros y accesorios exclusivos de Mirai. Lleva nuestro estilo contigo."
+      "description": "Poleras, totebags y accesorios exclusivos de Mirai. Lleva nuestro estilo contigo."
     },
     "cta-button": "Ver productos"
   },

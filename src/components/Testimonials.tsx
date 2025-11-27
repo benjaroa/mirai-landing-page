@@ -28,11 +28,36 @@ const CustomStar = (
   )
 };  
 
+// Función para intercalar testimonios de Franklin y MUT
+const interleaveTestimonials = (franklin: TestimonialProps[], mut: TestimonialProps[]): TestimonialProps[] => {
+  const result: TestimonialProps[] = [];
+  const maxLength = Math.max(franklin.length, mut.length);
+  
+  for (let i = 0; i < maxLength; i++) {
+    if (i < franklin.length) {
+      result.push(franklin[i]);
+    }
+    if (i < mut.length) {
+      result.push(mut[i]);
+    }
+  }
+  
+  return result;
+};
+
 export const Testimonials = () => {
   const {
     t,
     i18n: { language },
   } = useTranslation();
+  
+  // Separar testimonios por ubicación
+  const franklinTestimonials = allTestimonials.filter(t => t.location === "Franklin");
+  const mutTestimonials = allTestimonials.filter(t => t.location === "MUT");
+  
+  // Intercalar testimonios
+  const testimonials = interleaveTestimonials(franklinTestimonials, mutTestimonials);
+  
   return (
     <section id="testimonials" className="container">
       <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
@@ -147,11 +172,11 @@ export const Testimonials = () => {
                           const key = `star-${name}-2-${index}-${starIndex}`;
                           if (starIndex < starsAmount) {
                             return (
-                              <CustomStar key={key} size={3} />
+                              <CustomStar color="#d1383a" key={key} size={3} />
                             );
                           }
                           return (
-                            <CustomStar key={key} size={3} color="gray" extraClass="opacity-90" />
+                            <CustomStar key={key} size={3} color="#d1383a" extraClass="opacity-90" />
                           );
                         })}
                       </CardDescription>
@@ -182,7 +207,8 @@ export const Testimonials = () => {
   );
 };
 
-const testimonials: TestimonialProps[] = [
+const allTestimonials: TestimonialProps[] = [
+  // Testimonios de Franklin
   {
     name: "Takahiro Tanohara",
     comment: {
@@ -330,5 +356,107 @@ const testimonials: TestimonialProps[] = [
       en: "The best I've ever tried. Very cordial attention from the beginning despite having many people waiting. I started with a phenomenal eucalyptus kombucha, very refreshing and balanced, made by themselves, there are other interesting options like lavender kombucha and more traditional ones like lemon ginger. Then in the background, a vegetarian tantanmen... incredible! Generous portion, the quality of the noodles, the creamy and spicy flavor of the base, the firmness of the tofu (they could marinate the tofu a little more for more flavor, small suggestion) and the pickled vegetables gave it a delicious touch of freshness and acidity , and overall a sensory delight. In addition, the meticulous preparation and presentation, all in front of you, is appreciated and congratulated.. Would I return? Definitely! Highly recommended",
     },
     location: "Franklin"
+  },
+  
+  // Testimonios de MUT - Reemplazar con comentarios reales de Google Maps
+  {
+    name: "Colette Franchesca Thumala Rojas",
+    comment: {
+      es: "He ido varias veces y estoy gratamente sorprendida por el perfil de sabor que manejan en los platos, el karate es un poco picante y la kombucha fría es refrescante. Lo recomiendo totalmente",
+      en: "I have been several times and I am greatly surprised by the flavor profile they handle in the dishes, the karate is a little spicy and the cold kombucha is refreshing. I recommend it totally"
+    },
+    starsAmount: 5,
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjUfcG0hAJ08jFexwtWB13EddiV6-hw71LHhyorNUPdbUl8ku5yRgQ=w36-h36-p-rp-mo-ba2-br100",
+    location: "MUT"
+  },
+  {
+    name: "Agu",
+    comment: {
+      es: "Todo muy rico, buena atención y rápido el servicio. Esta sucursal se presenta como algo mas express en comparación a su local en Franklin, pero muy ameno el sitio y la atención súper cercana. Muy recomendado pasar por aquí si andan por el mut🩷.",
+      en: "Everything is very rich, good service and fast. This branch presents itself as something more express compared to its local in Franklin, but very nice site and super close attention. Highly recommended to pass by here if you are in the mut🩷."
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjXXTzZ_SDZQjHIlTSkj4UnHHQLjD31V5HQrqIjsIBh_uXdmsqMm=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "María Jesús Montenegro Fernández",
+    comment: {
+      es: "La comida es igual de buena que en el local de Franklin. Me gusta comer en la barra, los chicos son buena onda y atienden muy bien. Mis favoritos son el HMK 🌱 y el tantamen vegetariano 🍜💚 las kombuchas son muy ricas 🫰🏼",
+      en: "The food is just as good as in the Franklin local. I like to eat at the bar, the guys are good vibes and attend very well. My favorites are the HMK 🌱 and the tantamen vegetarian 🍜💚 the kombuchas are very rich 🫰🏼"
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjVg66D85Q_SSwyNwMhGSSkSkY3jW8rJlO0DJoCahbcWFbegh0Qy_A=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Olivia Weale",
+    comment: {
+      es: "Estaba muy emocionada de encontrar ramen real, delicioso y hecho a mano en Santiago! Esta comida es la auténtica y la kombucha estaba deliciosa también. Comimos el ramen vegetariano y el hummus como entrada. Mi único deseo es que tuvieran empanadas. ¡Definitivamente recomiendo!",
+      en: "was so excited to find real, delicious, handmade ramen in Santiago! this stuff is the real deal and the kombucha was yummy too. we had the vegetarian ramen and the hummus appetizer. my only wish is that they had dumplings. definitely recommend!"
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjV1f1n38XKbPN8P4UlZguJi6U1IllyangttgA0FDpgcayCFhXAkHQ=w36-h36-p-rp-mo-ba2-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Silvana Mauna",
+    comment: {
+      es: "Gran sorpresa !!!! Maravilloso ramen Tantanmen, una explosión de sabores en boca, una fusión Thai coreana maravillosa, Deberías probarlo ( dulce levemente picante cremoso con toques acids) mmmm  buenisimo, probé la Kombucha , RicaRica, bien lograda burbujeante y puedo sentir un poco de eucalipto y alguna flor, buenisimo!!",
+      en: "Great surprise !!!! Wonderful Tantanmen ramen, a explosion of flavors in the mouth, a wonderful Thai-Korean fusion, you should try it (sweet slightly spicy creamy with acidic touches) mmmm very good, I tried the Kombucha, RicaRica, well done fizzing and I can feel a little eucalyptus and some flower, very good!!"
+    },
+    image: "https://lh3.googleusercontent.com/a/ACg8ocIYcyHX5e1UvvILzhK1WlEcN3T2a1hWQ87JPIjSm6aBO1mNmA=w36-h36-p-rp-mo-ba2-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Camila Guzman",
+    comment: {
+      es: "Insuperable Mirai Food Lab, sin duda el mejor ramen de Santiago, las kombuchas muy refrescantes, además excelente atención ",
+      en: "Insurmountable Mirai Food Lab, without a doubt the best ramen in Santiago, the kombuchas very refreshing, in addition excellent service "
+    },
+    image: "https://lh3.googleusercontent.com/a/ACg8ocIPJ5T_VZsq4Vm9KxnLmk_ZXmdK50R5cEzPpdqVWFMs2JOUyA=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Carla Durán",
+    comment: {
+      es: "Matías, Max y Natalia son un excelente equipo. Nos encantó la comida, la atención, son todos muy a amables, explicaron cada plato, no es muy común de encontrar. Secos! 🤍",
+      en: "Matías, Max and Natalia are an excellent team. We loved the food, the attention, they are all very friendly, explained each plate, it is not very common to find. Dry! 🤍"
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjUlEgTZIEzp7qQf1Jm5PxE3EC6jzELOGWDAUwU4HC3tvj2jD5Y-=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Cami Kaid",
+    comment: {
+      es: "Local muy grato, cocineros muy bien preparados, linea impecable!! Con mucho gusto vuelvo a venir y por su puesto a recomendar!! Felicitaciones por su buena comida y servicio ♥️☀️",
+      en: "Very nice local, cooks very well prepared, impeccable line!! With much pleasure I will come back and by my own to recommend!! Congratulations for your good food and service ♥️☀️"
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjXp2pFoK-SwAKHvf4sdFYnvmUzl7j_dMJdtFprOKRgaYhH-bPFS=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Pedro Guillermo",
+    comment: {
+      es: "Es el mejor ramen que he probado en Chile. Desde el año 2018, cuando fui a Japón, estuve buscando un ramen así de bueno en Chile y hoy lo encontré. Los chef trabajan de una forma espectacular, pulcros y ordenados. Magnífico! ",
+      en: "It is the best ramen I have tried in Chile. Since 2018, when I went to Japan, I was looking for a ramen as good in Chile and today I found it. The chefs work in a spectacular way, clean and orderly. Magnificent!"
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjXXCqBfPc6tWBvgHVikJgDeNTHO2M3JNgd7-R9MDN7mzmLIrqxV=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
+  },
+  {
+    name: "Constanza Charme",
+    comment: {
+      es: "Ramen creativo, sabroso y diferente, ideal para ir en plan relajado y probar algo fuera de lo común. El tonkotsu lo mejor, lo recomiendo x1000!!!",
+      en: "Creative ramen, tasty and different, ideal for going in a relaxed plan and trying something outside of the common. The tonkotsu is the best, I recommend x1000!!!"
+    },
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjVIGZIU3eleKSjgiMMHR-DTPzFvFooncwafehq-SkVaUWqgwA=w36-h36-p-rp-mo-br100",
+    starsAmount: 5,
+    location: "MUT"
   },
 ];

@@ -96,7 +96,7 @@ export const ShopCategories = () => {
                 <img 
                   src={currentCategory.backgroundImage}
                   alt={currentCategory.name}
-                  className="h-auto max-h-[250px] md:max-h-[350px] object-contain transition-all duration-500 rounded-2xl border border-gray-300"
+                  className="h-auto max-h-[250px] md:max-h-[370px] object-contain transition-all duration-500 rounded-2xl"
                 />
               </div>
               

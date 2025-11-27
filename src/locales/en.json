@@ -49,7 +49,8 @@
         "showing": "Showing",
         "of": "of",
         "partners": "partners"
-      }
+      },
+      "no-results": "No partners found with the selected filters."
     }
   },
   "theme-mode-toggle": {
@@ -68,18 +69,18 @@
   "hero-carousel": {
     "slides": [
       {
-        "title": "UNIQUE ASIAN CUISINE EXPERIENCE",
+        "title": "OUR RAMEN BARS",
         "ctaText": "Discover where to find us",
         "ctaUrl": "#locations"
       },
       {
-        "title": "FRESH AND AUTHENTIC PRODUCTS",
-        "ctaText": "Shop Now",
+        "title": "OUR PRODUCTS",
+        "ctaText": "Buy here",
         "ctaUrl": "https://tienda.miraifoodlab.cl/"
       },
       {
-        "title": "DISCOVER OUR ARTISANAL RAMEN",
-        "ctaText": "Discover our menu",
+        "title": "MERCH 2025",
+        "ctaText": "Buy here",
         "ctaUrl": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view"
       },
       {
@@ -230,12 +231,12 @@
       "description": "Our Kombuchas are the result of a wild fermentation based on an infusion of different teas, then flavored and carbonated with fresh seasonal fruits and herbs."
     },
     "de-la-casa": {
-      "title": "House Made",
-      "description": "Artisanal products made in our lab: misos, kojis, sauces and more."
+      "title": "Mirai Products",
+      "description": "Discover our products: interpretations of recipes and fermented products from the world like kimchi, hummus, pickles, miso, koji and more."
     },
     "merch": {
       "title": "Merch",
-      "description": "Exclusive Mirai t-shirts, hats and accessories. Take our style with you."
+      "description": "Exclusive Mirai t-shirts, totebags and accessories. Take our style with you."
     },
     "cta-button": "View products"
   },

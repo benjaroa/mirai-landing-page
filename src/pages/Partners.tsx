@@ -15,6 +15,8 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { FilterAutocomplete } from "@/components/FilterAutocomplete";
 import { PartnersMap } from "@/components/PartnersMap";
+import { MapPin, Instagram, Link as LinkIcon, Eye, EyeOff } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const images = [heroImage1, heroImage2, heroImage3, heroImage4];
 const getRandomIndex = (min: number, max: number) =>
@@ -74,6 +76,7 @@ export const Partners = () => {
   const { t } = useTranslation();
   const [districtFilter, setDistrictFilter] = useState<string[]>([]);
   const [typeFilter, setTypeFilter] = useState<string[]>([]);
+  const [showMap, setShowMap] = useState<boolean>(true);
 
   const filteredPartnersList = partnersListParsed.filter(
     ({ district, labels }) => {
@@ -146,13 +149,120 @@ export const Partners = () => {
                   title={t("partners.filter.keys.type")}
                 />
               </CardContent>
-              <CardFooter className="h-10 text-sm justify-end">
-                <p className="mb-0 text-gray-700">
+              <CardFooter className="h-10 text-sm justify-between items-center">
+                <p className="text-gray-700">
                   <span className="font-semibold text-mirai">{filteredPartnersList.length}</span> {t("partners.filter.footer.of")} <span className="font-semibold">{partnersListParsed.length}</span> {t("partners.filter.footer.partners")}
                 </p>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setShowMap(!showMap)}
+                  className="h-8 text-xs text-gray-600 hover:text-mirai"
+                >
+                  {showMap ? (
+                    <>
+                      <EyeOff className="h-3.5 w-3.5 mr-1.5" />
+                      Ocultar mapa
+                    </>
+                  ) : (
+                    <>
+                      <Eye className="h-3.5 w-3.5 mr-1.5" />
+                      Mostrar mapa
+                    </>
+                  )}
+                </Button>
               </CardFooter>
             </Card>
-            <PartnersMap partners={filteredPartnersList} />
+            {showMap && <PartnersMap partners={filteredPartnersList} />}
+            
+            {/* Listado completo de locales */}
+            <div className="mt-6">
+              <div className="mb-4">
+                <h2 className="text-sm sm:text-lg font-bold text-gray-900 mb-1">
+                  {t("partners.filter.footer.showing")} {filteredPartnersList.length} {t("partners.filter.footer.partners")}
+                </h2>
+              </div>
+              
+              {filteredPartnersList.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                  {filteredPartnersList.map((partner, index) => (
+                    <div
+                      key={`${partner.name}-${index}`}
+                      className="group border border-gray-200/60 rounded-lg p-3 bg-white/50 hover:bg-white hover:border-mirai/30 transition-all duration-200"
+                    >
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <h3 className="text-sm font-semibold text-gray-900 line-clamp-1 flex-1">
+                          {partner.name}
+                        </h3>
+                        {partner.labels && partner.labels.length > 0 && (
+                          <Badge 
+                            variant="outline" 
+                            className="text-xs px-1.5 py-0 h-5 flex-shrink-0 border-gray-300 text-gray-600 bg-transparent"
+                          >
+                            {partner.labels[0]}
+                          </Badge>
+                        )}
+                      </div>
+                      
+                      {partner.district && (
+                        <div className="flex items-center gap-1 text-xs text-gray-500 mb-1">
+                          <MapPin className="h-3 w-3 text-mirai flex-shrink-0" />
+                          <span className="line-clamp-1">{partner.district}</span>
+                        </div>
+                      )}
+                      
+                      {partner.address && (
+                        <p className="text-xs text-gray-500 line-clamp-1 mb-2">
+                          {partner.address}
+                        </p>
+                      )}
+                      
+                      <div className="flex items-center gap-2 mt-2 pt-2 border-t border-gray-100/50">
+                        {partner.instagram && (
+                          <a
+                            href={`https://instagram.com/${partner.instagram}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-mirai transition-colors"
+                            title={`@${partner.instagram}`}
+                          >
+                            <Instagram className="h-3.5 w-3.5" />
+                          </a>
+                        )}
+                        {partner.website && (
+                          <a
+                            href={partner.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-mirai transition-colors"
+                            title={partner.website}
+                          >
+                            <LinkIcon className="h-3.5 w-3.5" />
+                          </a>
+                        )}
+                        {partner.address && (
+                          <a
+                            href={`https://www.google.com/maps?q=${encodeURIComponent(partner.address + (partner.district ? `, ${partner.district}` : ''))}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-mirai transition-colors ml-auto"
+                            title="Ver en mapa"
+                          >
+                            <MapPin className="h-3.5 w-3.5" />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12">
+                  <p className="text-gray-500 text-lg">
+                    {t("partners.no-results")}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </ScrollArea>
