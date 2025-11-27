@@ -1,12 +1,10 @@
-# Location and hours
-
 ## Factoría Franklin
 
 📍Franklin 741, local B20, Santiago
 
 🍜 [Menu](https://miraifoodlab.cl/es/page/menu-franklin)
 
-Our ramen shop and small factory is located in Factoría Fanklin, an ancient drug factory that has many projects like ours.
+Our ramen shop and small factory is located in Factoría Fanklin, an ancient pharmaceutical factory that has many projects like ours.
 
 We attend only by order of arrival, we do not take reservations. If you want to come in a big group, we recommend you not to have breakfast and get here early.
 
@@ -36,7 +34,7 @@ Small ramen menu. It also has a small bar for five people with open view to the 
 
 ### Hours
 
-Monday to Sunday, 12:30 / 20:30 hrs.
+Monday to Sunday, 12:00 / 20:00 hrs.
 
 ### Maps
 

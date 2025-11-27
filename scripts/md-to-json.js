@@ -16,9 +16,11 @@ const readMdFiles = (filePath, previousData) => {
       if (file.endsWith('.md')) {
         const [fileName] = file.split('.');
         const fileContent = fs.readFileSync(completePath, 'utf-8');
+        // Normalize path to use forward slashes for cross-platform compatibility
+        const normalizedPath = completePath.split(path.sep).join('/');
         return {
           ...acc,
-          [`${completePath}`]: fileContent,
+          [`${normalizedPath}`]: fileContent,
         };
       }
       return acc;

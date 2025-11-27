@@ -6,12 +6,25 @@
     "alert-bar": {
       "text": "🤓 Visita la tienda y recibe nuestros productos directo en tu casa",
       "link": "https://tienda.miraifoodlab.cl"
+    },
+    "promo-banner": {
+      "text": "¡Visita nuestra tienda y recibe nuestros productos directo a tu casa!",
+      "button": "Comprar ahora"
     }
   },
-  "back-button-label": "volver 👉",
+  "where-to-find-us": {
+    "title": "Dónde ",
+    "title-highlight": "encontrarnos",
+    "description": "Visítanos en nuestros dos restaurantes ubicados en Santiago. Prueba nuestra carta reducida de tapas y ramen japoneses, con enfoque en la calidad de los ingredientes y la técnica de preparación.",
+    "menu": "Menú",
+    "info": "Info",
+    "directions": "Cómo llegar"
+  },
+  "back-button-label": "volver",
   "testimonials": {
-    "title": "Testimonios",
-    "description": "Lo que dicen sobre nosotros",
+    "title": "Ellos lo cuentan ",
+    "title-highlight": "mejor que nosotros",
+    "description": "Spoiler: les gustó ;)",
     "review-button-label": "Déjanos tu opinión en Google",
     "google": {
       "rate": 4.8,
@@ -28,6 +41,10 @@
         "district": "Comuna",
         "type": "Tipo"
       },
+      "placeholders": {
+        "district": "Buscar comuna...",
+        "type": "Buscar tipo..."
+      },
       "footer": {
         "showing": "Mostrando",
         "of": "de",
@@ -41,9 +58,36 @@
     "system": "Sistema"
   },
   "hero": {
-    "title": "Ramen + Fermentación",
+    "title": "Ramen ",
+    "title-highlight": "+",
+    "title-end": " Fermentación",
     "main-text": "Utilizamos técnicas tradicionales, del fine dining y del mundo de la fermentación, para fusionar el ramen japonés contemporáneo con los sabores e ingredientes del paladar sudamericano.",
     "secondary-text": "Somos una barra de ramen experimental, somos una fábrica de productos fermentados, somos un equipo que no tiene miedo de experimentar, equivocarse y probar cosas nuevas; somos Mirai Food Lab."
+  },
+  "hero-carousel": {
+    "slides": [
+      {
+        "title": "EXPERIENCIA ÚNICA DE COCINA ASIÁTICA",
+        "ctaText": "Ver locales",
+        "ctaUrl": "#locations"
+      },
+      {
+        "title": "PRODUCTOS FRESCOS Y AUTÉNTICOS",
+        "ctaText": "Compra Ahora",
+        "ctaUrl": "https://tienda.miraifoodlab.cl/"
+      },
+      {
+        "title": "DESCUBRE NUESTRO RAMEN ARTESANAL",
+        "ctaText": "Descubre nuestra carta",
+        "ctaUrl": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view"
+      },
+      {
+        "title": "MIRAI x MAREAL",
+        "subtitle": "MAR 09.12 Y MIER 10.12 | 7PM",
+        "ctaText": "Comprar entradas",
+        "ctaUrl": "https://new-miraifoodlab.bsalemarket.com/collection/pop-up"
+      }
+    ]
   },
   "projects": [
     {
@@ -119,7 +163,54 @@
   ],
   "footer": {
     "stage-and-applications": "Pasantías y postulaciones",
-    "contact-link": "Contacto"
+    "contact-link": "Contacto",
+    "locations": {
+      "title": "Locales",
+      "address-franklin": "Franklin 741, local B20",
+      "address-mut": "Av. Apoquindo 2730, piso -2",
+      "city-franklin": "Santiago",
+      "city-mut": "Las Condes",
+      "see-map": "Ver mapa"
+    },
+    "contact": {
+      "title": "Contacto",
+      "phone": "+56 9214 4516",
+      "contact": "Escribenos"
+    },
+    "booking-hours": {
+      "title": "Horarios",
+      "franklin": {
+        "name": "Franklin",
+        "friday": "Viernes",
+        "friday-hours": "12:30 - 16:30",
+        "weekend": "Sábado y Domingo",
+        "weekend-hours": "12:30 - 17:30",
+        "closed": "Lunes a Jueves: CERRADO"
+      },
+      "mut": {
+        "name": "MUT",
+        "hours": "Lunes a Domingo",
+        "hours-time": "12:00 - 20:00"
+      }
+    },
+    "careers": {
+      "title": "Carreras",
+      "join-team": "Únete a nuestro equipo"
+    },
+    "about": {
+      "title": "Acerca de",
+      "privacy-policy": "Política de Privacidad",
+      "terms-of-use": "Términos de Uso",
+      "health-inspection": "Reporte de Inspección Sanitaria"
+    },
+    "follow": {
+      "title": "Síguenos",
+      "announcements": "Anuncios",
+      "newsletter": "Newsletter",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    },
+    "copyright": "© {year} Mirai Food Lab. Todos los derechos reservados."
   },
   "pages": {
     "pop-ups-history": "Popups - Historial",
@@ -128,5 +219,180 @@
     "menu": "Carta",
     "stage-and-applications": "Pasantías y postulaciones",
     "location-and-hours": "Sucursales y horarios"
+  },
+  "shop-categories": {
+    "main-title": "¡Llegamos hasta ",
+    "main-title-highlight": "tu casa!",
+    "main-description": "Te llevamos directo a tu casa nuestra selección de productos artesanales, desde kombuchas fermentadas y hasta merch exclusivo.",
+    "kombuchas": {
+      "title": "Kombuchas",
+      "description": "Nuestras Kombuchas son el resultado de una fermentación salvaje basada en una infusión de diferentes té, luego saborizadas y carbonatadas con frutas y hierbas frescas de estación."
+    },
+    "de-la-casa": {
+      "title": "Productos Mirai",
+      "description": "Productos artesanales hechos en nuestro laboratorio: misos, kojis, salsas y más."
+    },
+    "merch": {
+      "title": "Merch",
+      "description": "Poleras, gorros y accesorios exclusivos de Mirai. Lleva nuestro estilo contigo."
+    },
+    "cta-button": "Ver productos"
+  },
+  "founders": {
+    "title": "Quiénes ",
+    "title-highlight": "somos",
+    "description": "Mirai Food Lab nace de la pasión de Misha e Ignacio por la gastronomía japonesa y la experimentación culinaria.",
+    "slides": [
+      {
+        "image": "mirai-partners.jpg",
+        "people": [
+          {
+            "name": "Misha FUKUDA",
+            "role": "Co-fundadora & Chef",
+            "bio": "Nacida en Tokio, de padre japonés y madre norteamericana, estudió gastronomía en The Culinary Institute of America (CIA) en Nueva York, Estados Unidos. Ha trabajado en proyectos de gran prestigio como Morimoto NY / EU, Bouley / EU, Noma / DK, 108 / DK, inua / JP, y muchos más. Apasionada por la fermentación y las técnicas tradicionales, combina disciplina con creatividad para fusionar sabores asiáticos con ingredientes locales."
+          },
+          {
+            "name": "Ignacio ROA",
+            "role": "Co-fundador & Chef",
+            "bio": "Nacido en Santiago, estudió gastronomía en Inacap. Al inicio de su carrera se dedicó a viajar y conocer la cocina de distintos países, trabajando en lugares como North Bondi Fish / AU, 108 / DK, Slurp Ramen Joint / DK, Llama / DK, Belon / CN, inua / JP, Menya Nishikawa / JP, entre otros. Creativo e inquieto, su visión de la gastronomía chilena contemporánea se basa en la fusión de sabores con productos locales potenciados por la fermentación."
+          }
+        ]
+      },
+      {
+        "image": "mirai-team.jpg",
+        "images": ["mirai-team.jpg", "team-1.jpg", "team-2.jpg", "team-3.jpg", "team-4.jpg", "team-5.jpg"],
+        "people": [
+          {
+            "name": "Equipo Mirai",
+            "role": "Nuestro equipo",
+            "bio": "Más allá de los fundadores, Mirai es un equipo completo de personas apasionadas por la gastronomía japonesa y la experimentación culinaria. Juntos trabajamos cada día para llevar nuestra propuesta única a Santiago."
+          }
+        ]
+      }
+    ]
+  },
+  "collaborations": {
+    "title": "Nuestras ",
+    "title-highlight": "Colaboraciones",
+    "description": "Colaboraciones con otros restaurantes para llevar nuestra propuesta a nuevos espacios, experimentar y aprender de otros.",
+    "items": [
+      {
+        "date": "Diciembre 2024",
+        "title": "mirai + yum cha",
+        "image": "/assets/pop-up-yumcha-12-2024.png",
+        "description": "Pop-up con ida y vuelta: 11 de diciembre at Yum Cha's y 12 de diciembre at Mirai's. Adaptamos la propuesta a la identidad de cada uno: en yum cha, un menú de 10 tiempos con todo el fine dining; en mirai, un concepto más informal con platos para compartir.",
+        "links": [
+          {
+            "label": "Instagram Yum Cha",
+            "url": "https://www.instagram.com/p/DC7dX2sufnu/"
+          }
+        ]
+      },
+      {
+        "date": "Diciembre 2023",
+        "title": "Izakaya Night",
+        "image": "/assets/popup-izakaya-nightv.jpg",
+        "description": "Una noche especial transformando nuestro espacio en un auténtico izakaya japonés, con tapas, sake y un ambiente único.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/1G3Mz7pjzHU_6_zdIrFeSGbvci1kKETOK/view?usp=sharing"
+          },
+          {
+            "label": "Afiche",
+            "url": "https://drive.google.com/file/d/1FdMlqr8RRyTIKWNHKLElXWHK_IsyptG1/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "date": "Noviembre 2023",
+        "title": "Mareal x Mirai - Santiago",
+        "image": "/assets/popups-6.jpg",
+        "description": "Colaboración con Mareal trayendo los sabores del mar a nuestra cocina japonesa en Santiago.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/1F6DZdFU7QAjpW7v4JmX7FDP0nGkxzuI1/view?usp=sharing"
+          },
+          {
+            "label": "Fotos",
+            "url": "https://drive.google.com/drive/folders/1wlnKs71fTMz5S8mkt4aCGPVrD_e-4rLd"
+          }
+        ]
+      },
+      {
+        "date": "Noviembre 2023",
+        "title": "Mareal x Mirai - Pichilemu",
+        "image": "/assets/popups-5.jpg",
+        "description": "Llevamos nuestra propuesta a la costa, fusionando productos del mar con nuestra cocina japonesa.",
+        "links": []
+      },
+      {
+        "date": "Julio 2023",
+        "title": "UMAMI - Mirai & Yum Cha",
+        "image": "/assets/popup-4-mirai-feat-yumcha.png",
+        "description": "Celebración del umami en colaboración con Yum Cha, explorando el quinto sabor en cada plato.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/1hsz-xj8N6R7rmtb80gx6gZB_k3aftQz0/view?usp=sharing"
+          },
+          {
+            "label": "Fotos en alta",
+            "url": "https://drive.google.com/drive/folders/1zHPVNIVYGDWCJQtXOYu3cG9Dbb-gsNdO"
+          }
+        ]
+      },
+      {
+        "date": "Julio 2023",
+        "title": "UMAMI - Yum Cha & Mirai",
+        "image": "/assets/popups-yumcha1.jpeg",
+        "description": "Segunda edición de nuestra colaboración UMAMI, esta vez en el espacio de Yum Cha.",
+        "links": []
+      },
+      {
+        "date": "Marzo 2023",
+        "title": "Cena de 7 tiempos",
+        "image": "/assets/popups-3.jpeg",
+        "description": "Experiencia gastronómica de degustación con menú de 7 tiempos mostrando nuestra mejor técnica.",
+        "links": []
+      },
+      {
+        "date": "Marzo 2023",
+        "title": "Cenas de degustación",
+        "image": "/assets/popups-2.png",
+        "description": "Serie de cenas de degustación explorando diferentes técnicas y sabores.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/14rTJE9iWxKMYoWpMUApjQ5k6twqJmOx8/view?usp=sharing"
+          },
+          {
+            "label": "Afiche",
+            "url": "https://drive.google.com/file/d/162u9byc8BVNyBY4TNRFhG3He524x30Rn/view?usp=sharing"
+          },
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/p/CpMKQu8ob8O/"
+          },
+          {
+            "label": "Fotos en alta",
+            "url": "https://drive.google.com/drive/folders/1311HvwtK3mtOCECCfOizZSZEDcicm9Y8"
+          }
+        ]
+      },
+      {
+        "date": "Febrero 2023",
+        "title": "7 tiempos + maridaje",
+        "image": "/assets/popups-1.jpeg",
+        "description": "Experiencia completa de 7 tiempos acompañada con maridaje de bebidas seleccionadas.",
+        "links": [
+          {
+            "label": "Menú",
+            "url": "https://drive.google.com/file/d/157qiJCp36EeAx1LKWwBBat2SfKoCpuVY/view?usp=sharing"
+          }
+        ]
+      }
+    ]
   }
 }

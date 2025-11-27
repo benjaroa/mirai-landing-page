@@ -1,5 +1,3 @@
-# Sucursales y horarios
-
 ## Factoría Franklin
 
 📍Franklin 741, local B20, Santiago
@@ -36,7 +34,7 @@ Pequeña carta de ramen al paso. Cuenta, además, con una pequeña barra para ci
 
 ### Horarios
 
-Lunes a domingo, 12:30 a 20:30 hrs.
+Lunes a domingo, 12:00 a 20:00 hrs.
 
 ### Mapas
 
