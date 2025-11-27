@@ -190,8 +190,10 @@
       },
       "mut": {
         "name": "MUT",
-        "hours": "Lunes a Domingo",
-        "hours-time": "12:00 - 20:00"
+        "weekdays": "Lunes a Sábado",
+        "weekdays-hours": "12:00 - 20:30",
+        "sunday": "Domingo",
+        "sunday-hours": "12:00 - 20:00"
       }
     },
     "careers": {
@@ -250,12 +252,12 @@
           {
             "name": "Misha FUKUDA",
             "role": "Co-fundadora & Chef",
-            "bio": "Nacida en Tokio, de padre japonés y madre norteamericana, estudió gastronomía en The Culinary Institute of America (CIA) en Nueva York, Estados Unidos. Ha trabajado en proyectos de gran prestigio como Morimoto NY / EU, Bouley / EU, Noma / DK, 108 / DK, inua / JP, y muchos más. Apasionada por la fermentación y las técnicas tradicionales, combina disciplina con creatividad para fusionar sabores asiáticos con ingredientes locales."
+            "bio": "Nacida en Tokio, de padre japonés y madre norteamericana, estudió gastronomía en The Culinary Institute of America (CIA) en Nueva York, Estados Unidos. Ha trabajado en proyectos de gran prestigio como Morimoto (Nueva York), Bouley (Nueva York), Noma (Copenaghen), 108 (Copenaghen), inua (Tokio), y muchos más. Apasionada por la fermentación y las técnicas tradicionales, combina disciplina con creatividad para fusionar sabores asiáticos con ingredientes locales."
           },
           {
             "name": "Ignacio ROA",
             "role": "Co-fundador & Chef",
-            "bio": "Nacido en Santiago, estudió gastronomía en Inacap. Al inicio de su carrera se dedicó a viajar y conocer la cocina de distintos países, trabajando en lugares como North Bondi Fish / AU, 108 / DK, Slurp Ramen Joint / DK, Llama / DK, Belon / CN, inua / JP, Menya Nishikawa / JP, entre otros. Creativo e inquieto, su visión de la gastronomía chilena contemporánea se basa en la fusión de sabores con productos locales potenciados por la fermentación."
+            "bio": "Nacido en Santiago, estudió gastronomía en Inacap. Al inicio de su carrera se dedicó a viajar y conocer la cocina de distintos países, trabajando en lugares como North Bondi Fish (Australia), 108 (Denmark), Slurp Ramen Joint (Denmark), Llama (Denmark), Belon (China), Inua (Japón), Menya Nishikawa (Japón), entre otros. Creativo e inquieto, su visión de la gastronomía chilena contemporánea se basa en la fusión de sabores con productos locales potenciados por la fermentación."
           }
         ]
       },

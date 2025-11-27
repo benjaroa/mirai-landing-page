@@ -191,8 +191,10 @@
       },
       "mut": {
         "name": "MUT",
-        "hours": "Monday to Sunday",
-        "hours-time": "12:00 - 20:00"
+        "weekdays": "Monday to Saturday",
+        "weekdays-hours": "12:00 - 20:30",
+        "sunday": "Sunday",
+        "sunday-hours": "12:00 - 20:00"
       }
     },
     "careers": {
@@ -251,12 +253,12 @@
           {
             "name": "Misha FUKUDA",
             "role": "Co-founder & Chef",
-            "bio": "Born in Tokyo to a Japanese father and an American mother, she studied Culinary Arts at The Culinary Institute of America (CIA) in New York, United States. She’s worked on top projects like Morimoto NY / EU, Bouley / EU, Noma / DK, 108 / DK, inua / JP, and many more. Passionate about fermentation and traditional techniques, she mixes discipline with creativity to blend Asian flavors with local ingredients."
+            "bio": "Born in Tokyo to a Japanese father and an American mother, she studied Culinary Arts at The Culinary Institute of America (CIA) in New York, United States. She worked on top projects like Morimoto (New York), Bouley (New York), Noma (Copenhagen), 108 (Copenhagen), inua (Tokyo), and many more. Passionate about fermentation and traditional techniques, she mixes discipline with creativity to blend Asian flavors with local ingredients."
           },
           {
             "name": "Ignacio ROA",
             "role": "Co-founder & Chef",
-            "bio": "Born in Santiago, he studied Culinary Arts at Inacap. Early in his career, he traveled around the world exploring different cuisines, working in kitchens like North Bondi Fish / AU, 108 / DK, Slurp Ramen Joint / DK, Llama / DK, Belon / CN, inua / JP, Menya Nishikawa / JP, and more. Creative and curious, his take on contemporary Chilean cuisine focuses on blending flavors with local ingredients, often enhanced by fermentation."
+            "bio": "Born in Santiago, he studied Culinary Arts at Inacap. Early in his career, he traveled around the world exploring different cuisines, working in kitchens like North Bondi Fish (Australia), 108 (Denmark), Slurp Ramen Joint (Denmark), Llama (Denmark), Belon (China), inua (Japan), Menya Nishikawa (Japan), and more. Creative and curious, his take on contemporary Chilean cuisine focuses on blending flavors with local ingredients, often enhanced by fermentation."
           }
         ]
       },
