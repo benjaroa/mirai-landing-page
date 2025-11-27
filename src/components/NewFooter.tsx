@@ -12,57 +12,54 @@ export const NewFooter = () => {
 
       <div className="container mx-auto px-6 py-12">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6 lg:gap-8 mb-8">
-          {/* locations Column */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8 mb-8">
+          {/* Locales y Horarios fusionados */}
           <div>
             <h6 className="mb-4 font-semibold uppercase text-sm tracking-wide text-mirai">
               {t("footer.locations.title")}
             </h6>
-            <div className="space-y-2 text-sm">
-              <p className="font-medium">Franklin</p>
-              <p>{t("footer.locations.address-franklin")}</p>
-              <p>{t("footer.locations.city-franklin")}</p>
-              <p>
-                <a
-                  href="https://maps.app.goo.gl/wvaB3fmgrUKCrKzy7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-slate-900"
-                >
-                  {t("footer.locations.see-map")}
-                </a>
-              </p>
-              <p className="mt-4 font-medium">MUT</p>
-              <p>{t("footer.locations.address-mut")}</p>
-              <p>{t("footer.locations.city-mut")}</p>
-              <p>
-                <a
-                  href="https://maps.app.goo.gl/YsvKtehdg6tZDyj37"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-slate-900"
-                >
-                  {t("footer.locations.see-map")}
-                </a>
-              </p>
-            </div>
-          </div>
+            <div className="space-y-4 text-sm">
+              {/* Local Franklin */}
+              <div className="space-y-1">
+                <p className="font-medium">{t("footer.booking-hours.franklin.name")}</p>
+                <p className="text-xs">{t("footer.locations.address-franklin")}</p>
+                <p className="text-xs">{t("footer.locations.city-franklin")}</p>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/wvaB3fmgrUKCrKzy7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs underline hover:text-slate-900"
+                  >
+                    {t("footer.locations.see-map")}
+                  </a>
+                </p>
+                <div className="text-xs text-slate-600 space-y-0.5 pt-1">
+                  <p>{t("footer.booking-hours.franklin.friday")}: {t("footer.booking-hours.franklin.friday-hours")}</p>
+                  <p>{t("footer.booking-hours.franklin.weekend")}: {t("footer.booking-hours.franklin.weekend-hours")}</p>
+                  <p>{t("footer.booking-hours.franklin.closed")}</p>
+                </div>
+              </div>
 
-          {/* Booking + Hours Column */}
-          <div>
-            <h6 className="mb-4 font-semibold uppercase text-sm tracking-wide text-mirai">
-              {t("footer.booking-hours.title")}
-            </h6>
-            <div className="space-y-2 text-sm">
-              <p className="mt-4 font-medium">{t("footer.booking-hours.franklin.name")}</p>
-              <p>{t("footer.booking-hours.franklin.friday")}</p>
-              <p>{t("footer.booking-hours.franklin.friday-hours")}</p>
-              <p className="mt-2">{t("footer.booking-hours.franklin.weekend")}</p>
-              <p>{t("footer.booking-hours.franklin.weekend-hours")}</p>
-              <p className="mt-2">{t("footer.booking-hours.franklin.closed")}</p>
-              <p className="mt-4 font-medium">{t("footer.booking-hours.mut.name")}</p>
-              <p>{t("footer.booking-hours.mut.hours")}</p>
-              <p>{t("footer.booking-hours.mut.hours-time")}</p>
+              {/* Local MUT */}
+              <div className="space-y-1">
+                <p className="font-medium">{t("footer.booking-hours.mut.name")}</p>
+                <p className="text-xs">{t("footer.locations.address-mut")}</p>
+                <p className="text-xs">{t("footer.locations.city-mut")}</p>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/YsvKtehdg6tZDyj37"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs underline hover:text-slate-900"
+                  >
+                    {t("footer.locations.see-map")}
+                  </a>
+                </p>
+                <div className="text-xs text-slate-600 pt-1">
+                  <p>{t("footer.booking-hours.mut.hours")}: {t("footer.booking-hours.mut.hours-time")}</p>
+                </div>
+              </div>
             </div>
           </div>
 

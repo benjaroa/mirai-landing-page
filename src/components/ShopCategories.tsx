@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { ShoppingCart, ArrowRight } from "lucide-react";
-import illustrationKombucha from "@/assets/illustration-kombucha.jpg";
-import illustrationRamen from "@/assets/illustration-ramen.jpg";
-import illustrationMerch from "@/assets/illustration-mirai.jpg";
+import illustrationKombucha from "@/assets/kombuchas-visual.jpg";
+import illustrationRamen from "@/assets/productos-mirai-visual.jpg";
+import illustrationMerch from "@/assets/merch-visual.jpg";
 import gato_1 from "@/assets/gato_1.svg";
 
 interface Category {
@@ -66,7 +66,6 @@ export const ShopCategories = () => {
           {/* Card solo para el selector de categorías - con rotación */}
           <Card className="w-full md:w-1/4 bg-[#f7f0f1] shadow-none border-none md:rotate-[-2deg] md:z-10 transition-transform duration-300">
             <div className="p-6 md:p-8">
-              <h3 className="mb-6 text-2xl md:text-3xl font-bold text-mirai">Nuestros productos:</h3>
               <div className="space-y-3 md:space-y-4 flex flex-col items-start">
                 {categories.map((category, index) => (
                   <Button
@@ -97,7 +96,7 @@ export const ShopCategories = () => {
                 <img 
                   src={currentCategory.backgroundImage}
                   alt={currentCategory.name}
-                  className="h-auto w-full max-h-[250px] md:max-h-[350px] object-contain transition-all duration-500"
+                  className="h-auto max-h-[250px] md:max-h-[350px] object-contain transition-all duration-500 rounded-2xl border border-gray-300"
                 />
               </div>
               

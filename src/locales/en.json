@@ -68,6 +68,11 @@
   "hero-carousel": {
     "slides": [
       {
+        "title": "UNIQUE ASIAN CUISINE EXPERIENCE",
+        "ctaText": "View locations",
+        "ctaUrl": "#locations"
+      },
+      {
         "title": "FRESH AND AUTHENTIC PRODUCTS",
         "ctaText": "Shop Now",
         "ctaUrl": "https://tienda.miraifoodlab.cl/"
@@ -78,14 +83,10 @@
         "ctaUrl": "https://drive.google.com/file/d/1xlA85COECUPE-Mn1CT6e1bwflz1b250w/view"
       },
       {
-        "title": "UNIQUE ASIAN CUISINE EXPERIENCE",
-        "ctaText": "View locations",
-        "ctaUrl": "#locations"
-      },
-      {
-        "title": "FLAVORS THAT TRANSCEND BORDERS",
-        "ctaText": "About us",
-        "ctaUrl": "#about"
+        "title": "MIRAI x MAREAL",
+        "subtitle": "TUE 09.12 Y WED 10.12 | 7PM",
+        "ctaText": "Buy tickets",
+        "ctaUrl": "https://new-miraifoodlab.bsalemarket.com/collection/pop-up"
       }
     ]
   },
@@ -165,7 +166,7 @@
     "stage-and-applications": "Internships and applications",
     "contact-link": "Contact",
     "locations": {
-      "title": "Contact",
+      "title": "RESTAURANTS",
       "address-franklin": "Franklin 741, local B20",
       "address-mut": "Av. Apoquindo 2730, piso -2",
       "city-franklin": "Santiago",
@@ -178,19 +179,19 @@
       "contact": "Write to us"
     },
     "booking-hours": {
-      "title": "OpeningHours",
+      "title": "Opening Hours",
       "franklin": {
         "name": "Franklin",
         "friday": "Friday",
         "friday-hours": "12:30 - 16:30",
         "weekend": "Saturday and Sunday",
         "weekend-hours": "12:30 - 17:30",
-        "closed": "Monday - Thursday: CLOSED"
+        "closed": "Monday to Thursday: CLOSED"
       },
       "mut": {
         "name": "MUT",
         "hours": "Monday to Sunday",
-        "hours-time": "12:30 - 20:30"
+        "hours-time": "12:00 - 20:00"
       }
     },
     "careers": {
@@ -226,7 +227,7 @@
     "main-description": "Discover our selection of artisanal products, from fermented kombuchas to exclusive merch.",
     "kombuchas": {
       "title": "Kombuchas",
-      "description": "Naturally fermented beverages with unique flavors. Live probiotics for your wellness."
+      "description": "Our Kombuchas are the result of a wild fermentation based on an infusion of different teas, then flavored and carbonated with fresh seasonal fruits and herbs."
     },
     "de-la-casa": {
       "title": "House Made",
@@ -249,17 +250,18 @@
           {
             "name": "Misha FUKUDA",
             "role": "Co-founder & Chef",
-            "bio": "Chef trained in Japanese gastronomy with experience in fine dining restaurants. Passionate about fermentation and traditional techniques, Misha leads Mirai's kitchen with an innovative vision that fuses Asian flavors with local ingredients."
+            "bio": "Born in Tokyo to a Japanese father and an American mother, she studied Culinary Arts at The Culinary Institute of America (CIA) in New York, United States. She’s worked on top projects like Morimoto NY / EU, Bouley / EU, Noma / DK, 108 / DK, inua / JP, and many more. Passionate about fermentation and traditional techniques, she mixes discipline with creativity to blend Asian flavors with local ingredients."
           },
           {
             "name": "Ignacio ROA",
             "role": "Co-founder & Chef",
-            "bio": "Chef specialized in fermentation techniques and experimental cuisine. Ignacio contributes his knowledge in traditional and modern fermented products, developing unique products that define the identity of Mirai Food Lab."
+            "bio": "Born in Santiago, he studied Culinary Arts at Inacap. Early in his career, he traveled around the world exploring different cuisines, working in kitchens like North Bondi Fish / AU, 108 / DK, Slurp Ramen Joint / DK, Llama / DK, Belon / CN, inua / JP, Menya Nishikawa / JP, and more. Creative and curious, his take on contemporary Chilean cuisine focuses on blending flavors with local ingredients, often enhanced by fermentation."
           }
         ]
       },
       {
         "image": "mirai-team.jpg",
+        "images": ["mirai-team.jpg", "team-1.jpg", "team-2.jpg", "team-3.jpg", "team-4.jpg", "team-5.jpg"],
         "people": [
           {
             "name": "Team Mirai",

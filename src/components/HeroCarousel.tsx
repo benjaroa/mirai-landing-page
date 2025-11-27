@@ -19,6 +19,7 @@ export const HeroCarousel = () => {
   // Obtener los slides desde las traducciones
   const slides = (t("hero-carousel.slides", { returnObjects: true }) as Array<{
     title: string;
+    subtitle?: string;
     ctaText: string;
     ctaUrl: string;
   }>).map((slide, index) => ({
@@ -63,6 +64,11 @@ export const HeroCarousel = () => {
           <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 drop-shadow-2xl transition-all duration-500">
             {currentSlideData.title}
           </h1>
+          {currentSlideData.subtitle && (
+            <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-6 drop-shadow-lg transition-all duration-500">
+              {currentSlideData.subtitle}
+            </p>
+          )}
             <Button
               asChild
               size="sm"
