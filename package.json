@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "md-to-json": "node ./scripts/md-to-json.js",
     "geocode": "node ./scripts/geocode-partners.js",
+    "optimize-images": "node ./scripts/optimize-images.js",
     "dev": "run-s md-to-json vite-dev",
     "copy-assets": "cpy './assets/*' './dist/assets'",
     "build": "run-s md-to-json vite-build copy-assets"
@@ -82,6 +83,7 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",
+    "sharp": "^0.34.5",
     "sitemap": "^8.0.0",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
