@@ -17,7 +17,7 @@ export const DescriptionCard = () => {
         </div>
         
         {/* Texto */}
-        <div className="lg:text-right text-left">
+        <div className="lg:text-right text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl uppercase">
             {t("hero.title")}
             <span className="text-mirai">{t("hero.title-highlight")}</span>

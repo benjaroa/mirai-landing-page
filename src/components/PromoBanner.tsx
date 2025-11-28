@@ -5,7 +5,7 @@ export const PromoBanner = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="bg-mirai-dark text-white text-[10px] sm:text-sm py-2 px-4 text-center text-sm font-medium fixed w-full z-50">
+    <div className="bg-mirai-dark text-white text-[11px] sm:text-sm py-2 px-4 text-center font-medium fixed w-full z-50 flex items-center justify-center">
       <div className="container flex items-center justify-center">
         <span>
           {t("navbar.promo-banner.text")}{' '}

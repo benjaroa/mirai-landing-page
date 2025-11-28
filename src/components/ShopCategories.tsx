@@ -47,10 +47,10 @@ export const ShopCategories = () => {
   const currentCategory = categories[selectedCategory];
 
   return (
-    <section className="pt-10 pb-32 bg-gray-50">
+    <section className="pt-10 md:pb-32 pb-16 bg-gray-50">
       <div className="container">
-        <div className="text-left mb-16">
-        <div className="flex items-center gap-4 mb-4">
+        <div className="text-center sm:text-left mb-16">
+        <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
           <img src={gato_1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
           <h2 className="sm:text-5xl text-4xl font-bold mb-4">
             {t("shop-categories.main-title")}
@@ -62,11 +62,11 @@ export const ShopCategories = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-start gap-6 md:gap-0">
+        <div className="flex flex-col md:flex-row md:items-start gap-2 md:gap-0">
           {/* Card solo para el selector de categorías - con rotación */}
           <Card className="w-full md:w-1/4 bg-[#f7f0f1] shadow-none border-none md:rotate-[-2deg] md:z-10 transition-transform duration-300">
-            <div className="p-6 md:p-8">
-              <div className="space-y-3 md:space-y-4 flex flex-col items-start">
+            <div className="p-1 md:p-8">
+              <div className="md:space-y-3 md:space-y-4 flex flex-row md:flex-col md:items-start justify-center md:justify-start">
                 {categories.map((category, index) => (
                   <Button
                     key={category.id}
@@ -81,7 +81,7 @@ export const ShopCategories = () => {
                     {selectedCategory === index && (
                       <ArrowRight className="h-4 w-4 md:h-5 md:w-5" />
                     )}
-                    <h3 className="text-lg md:text-xl font-bold">{category.name}</h3>
+                    <h3 className="text-[10px] md:text-sm lg:text-xl font-bold">{category.name}</h3>
                   </Button>
                 ))}
               </div>
@@ -101,7 +101,7 @@ export const ShopCategories = () => {
               </div>
               
               {/* Texto informativo */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4 md:space-y-6">
+              <div className="w-full md:w-1/2 flex flex-col justify-center space-y-4 md:space-y-6 text-center md:text-left">
                 <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
                   {currentCategory.name}
                 </h3>

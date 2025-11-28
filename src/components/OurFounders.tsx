@@ -68,10 +68,10 @@ export const OurFounders = () => {
   };
 
   return (
-    <section className="md:py-20 py-16 bg-white" id="founders">
+    <section className="md:py-20 pb-10 pt-5 bg-white" id="founders">
       <div className="container">
-        <div className="text-left mb-16">
-          <div className="flex items-center gap-4 mb-4">
+        <div className="text-center sm:text-left mb-16">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
             <img src={misha_ignacio_1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
             <h2 className="sm:text-5xl text-4xl font-bold mb-4">
               {t("founders.title")}
@@ -117,7 +117,7 @@ export const OurFounders = () => {
             </div>
 
             {/* Biografías */}
-            <div className="bg-mirai-dark rounded-lg p-8 lg:p-10 flex flex-col justify-between relative">
+            <div className="bg-mirai-dark rounded-lg p-8 lg:p-10 flex flex-col justify-between relative text-left">
               <div className="space-y-8">
                 {currentSlideData.people.map((person, index) => (
                   <div key={index}>

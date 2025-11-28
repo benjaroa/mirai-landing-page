@@ -47,7 +47,7 @@ export const TopButtons = ({
   return (
     <>
       <PromoBanner />
-      <div className={`z-40 fixed w-full top-[55px] sm:top-[35px] border-b-[0.1px] border-gray-200/50   ${
+      <div className={`z-40 fixed w-full top-[45px] sm:top-[35px] border-b-[0.1px] border-gray-200/50   ${
         isScrolled 
           ? 'bg-white' 
           : 'bg-transparent'
@@ -172,7 +172,7 @@ export const TopButtons = ({
       </div>
       
       {/* Mobile Shop CTA Button - Below navbar */}
-      <div className={`fixed top-[110px] sm:hidden w-full z-30 px-4 pt-2 pb-1 border-b border-gray-200/50  ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+      <div className={`fixed top-[100px] sm:hidden w-full z-30 px-4 pt-2 pb-1 border-b border-gray-200/50  ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
         <a 
           href="https://tienda.miraifoodlab.cl" 
           target="_blank" 

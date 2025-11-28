@@ -60,9 +60,9 @@ export const Testimonials = () => {
   
   return (
     <section id="testimonials" className="container">
-      <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
+      <div className="flex flex-col lg:flex-row justify-between items-center md:items-start mb-8 text-center md:text-left">
         <div>
-          <div className="flex items-center gap-4 mb-4">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-4 text-center sm:text-left">
             <img src={pajaro1} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
             <h2 className="sm:text-5xl text-4xl font-bold">
               {t("testimonials.title")}
@@ -96,7 +96,7 @@ export const Testimonials = () => {
         <div className="absolute left-0 right-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
         
         {/* Contenedor con animación infinita vertical */}
-        <div className="animate-scroll-vertical">
+        <div className="animate-scroll-vertical-mobile md:animate-scroll-vertical">
           {/* Primera serie de testimonios */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block sm:columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
             {testimonials.map(

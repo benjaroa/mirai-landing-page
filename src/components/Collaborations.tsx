@@ -52,10 +52,10 @@ export const Collaborations = () => {
   }, [api]);
 
   return (
-    <section id="collaborations" className="py-20">
-      <div className="container text-left mb-12 flex flex-col items-start justify-start">
-        <div className="flex items-center justify-center gap-4 mb-4">
-          <img src={gato_2} alt="" className="w-20 h-20 sm:w-20 sm:h-20" />
+    <section id="collaborations" className="py-10">
+      <div className="container text-center sm:text-left mb-12 flex flex-col items-start justify-start">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+          <img src={gato_2} alt="" className="w-16 h-16 sm:w-20 sm:h-20" />
           <h2 className="sm:text-5xl text-4xl font-bold">
             {title}
             <span className="text-mirai">

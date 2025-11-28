@@ -4,7 +4,7 @@ import heroImage1 from "/assets/hero/hero-1.jpg";
 import heroImage2 from "/assets/hero/hero-2.jpg";
 import heroImage3 from "/assets/hero/hero-3.jpg";
 import heroImage4 from "/assets/hero/hero-4.jpg";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "./ui/button";
@@ -15,6 +15,7 @@ export const HeroCarousel = () => {
   const { t } = useTranslation();
   const [api, setApi] = useState<CarouselApi>();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const [autoplayPlugin] = useState(() => Autoplay({ delay: 5000, stopOnInteraction: true }));
 
   // Obtener los slides desde las traducciones
@@ -42,6 +43,16 @@ export const HeroCarousel = () => {
     api?.scrollTo(index);
   };
 
+  const togglePause = () => {
+    if (isPaused) {
+      autoplayPlugin.play();
+      setIsPaused(false);
+    } else {
+      autoplayPlugin.stop();
+      setIsPaused(true);
+    }
+  };
+
   const currentSlideData = slides[currentSlide];
 
   return (
@@ -64,26 +75,10 @@ export const HeroCarousel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-
-        {/* Botones de navegación */}
-        <button
-          onClick={() => api?.scrollPrev()}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110 pointer-events-auto"
-          aria-label="Slide anterior"
-        >
-          <ChevronLeft className="w-6 h-6 text-white" />
-        </button>
-        <button
-          onClick={() => api?.scrollNext()}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-200 hover:scale-110 pointer-events-auto"
-          aria-label="Slide siguiente"
-        >
-          <ChevronRight className="w-6 h-6 text-white" />
-        </button>
       </Carousel>
 
-      {/* Indicadores de slide (dots) */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2 pointer-events-auto">
+      {/* Indicadores de slide (dots) - centrados */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 pointer-events-auto">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -98,10 +93,44 @@ export const HeroCarousel = () => {
         ))}
       </div>
 
+      {/* Controles de navegación: flechas y pausa - esquina inferior derecha */}
+      <div className="absolute bottom-8 hidden right-8 z-20 sm:flex items-center gap-2 pointer-events-auto">
+        {/* Botón de pausa/reanudar */}
+        <button
+          onClick={togglePause}
+          className="rounded-full border border-white p-2 transition-all duration-200 hover:scale-110 pointer-events-auto"
+          aria-label={isPaused ? "Reanudar" : "Pausar"}
+        >
+          {isPaused ? (
+            <Play className="w-5 h-5 text-white" />
+          ) : (
+            <Pause className="w-5 h-5 text-white" />
+          )}
+        </button>
+
+        {/* Flecha izquierda */}
+        <button
+          onClick={() => api?.scrollPrev()}
+          className="rounded-full border border-white p-2 transition-all duration-200 hover:scale-110 pointer-events-auto"
+          aria-label="Slide anterior"
+        >
+          <ChevronLeft className="w-5 h-5 text-white" />
+        </button>
+
+        {/* Flecha derecha */}
+        <button
+          onClick={() => api?.scrollNext()}
+          className="rounded-full border border-white p-2 transition-all duration-200 hover:scale-110 pointer-events-auto"
+          aria-label="Slide siguiente"
+        >
+          <ChevronRight className="w-5 h-5 text-white" />
+        </button>
+      </div>
+
       {/* Contenido del slide */}
-      <div className="container absolute overflow-hidden inset-0 flex items-end pointer-events-none text-center md:text-left">
+      <div className="container absolute overflow-hidden inset-0 flex items-end pointer-events-none text-left">
         <div className="w-full max-w-3xl pb-48">
-          <h1 className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 drop-shadow-2xl transition-all duration-500">
+          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 drop-shadow-2xl transition-all duration-500">
             {currentSlideData.title}
           </h1>
           {currentSlideData.subtitle && (
@@ -113,7 +142,7 @@ export const HeroCarousel = () => {
               asChild
               size="sm"
               variant="link"
-              className="pointer-events-auto underline hover:no-underline text-2xl py-6 text-white font-semibold hover:scale-105 transition-all duration-200"
+              className="pointer-events-auto underline hover:no-underline text-lg sm:text-2xl py-6 text-white font-semibold hover:scale-105 transition-all duration-200"
             >
               <a 
                 href={currentSlideData.ctaUrl} 

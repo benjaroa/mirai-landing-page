@@ -54,8 +54,8 @@ export const WhereToFindUs = () => {
   return (
     <section className="md:py-32 py-16 bg-gray-50" id="locations">
       <div className="container">
-        <div className="text-left mb-16">
-          <div className="flex items-center gap-4 mb-4">
+        <div className="text-center sm:text-left mb-16">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-4">
             <img src={ramen2} alt="" className="w-20 h-20 sm:w-24 sm:h-24" />
             <h2 className="sm:text-5xl text-4xl font-bold mb-4">
               {t("where-to-find-us.title")}
