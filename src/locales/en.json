@@ -185,10 +185,8 @@
       },
       "mut": {
         "name": "MUT",
-        "weekdays": "Monday to Saturday",
-        "weekdays-hours": "12:00 - 20:30",
-        "sunday": "Sunday",
-        "sunday-hours": "12:00 - 20:00"
+        "days": "Monday to Sunday",
+        "hours": "12:30 - 21"
       }
     },
     "careers": {

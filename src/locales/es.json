@@ -177,17 +177,15 @@
       "franklin": {
         "name": "Franklin",
         "friday": "Viernes",
-        "friday-hours": "12:30 - 16:30",
+        "friday-hours": "12:30 - 16:30 hrs.",
         "weekend": "Sábado y Domingo",
-        "weekend-hours": "12:30 - 17:30",
+        "weekend-hours": "12:30 - 17:30 hrs.",
         "closed": "Lunes a Jueves: CERRADO"
       },
       "mut": {
         "name": "MUT",
-        "weekdays": "Lunes a Sábado",
-        "weekdays-hours": "12:00 - 20:30",
-        "sunday": "Domingo",
-        "sunday-hours": "12:00 - 20:00"
+        "days": "lunes a domingo",
+        "hours": "12:30 - 21 hrs."
       }
     },
     "careers": {

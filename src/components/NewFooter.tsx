@@ -57,8 +57,7 @@ export const NewFooter = () => {
                   </a>
                 </p>
                 <div className="text-xs text-slate-600 space-y-0.5 pt-1">
-                  <p>{t("footer.booking-hours.mut.weekdays")}: {t("footer.booking-hours.mut.weekdays-hours")}</p>
-                  <p>{t("footer.booking-hours.mut.sunday")}: {t("footer.booking-hours.mut.sunday-hours")}</p>
+                  <p>{t("footer.booking-hours.mut.days")}: {t("footer.booking-hours.mut.hours")}</p>
                 </div>
               </div>
             </div>
