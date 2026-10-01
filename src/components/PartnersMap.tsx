@@ -79,7 +79,7 @@ export const PartnersMap = ({ partners }: PartnersMapProps) => {
         }
         
         .leaflet-tile-pane {
-          filter: grayscale(100%) brightness(1) contrast(1);
+          filter: saturate(0.65) brightness(1.05) contrast(0.95);
           opacity: 1;
         }
         
