@@ -242,6 +242,17 @@
     "labels": "café"
   },
   {
+    "name": "La Compañía",
+    "isActive": "TRUE",
+    "instagram": "lacompania_cl",
+    "website": "https://la-compania.cl/",
+    "district": "Providencia",
+    "address": "Pedro Lautaro Ferrer 3460",
+    "lat": "-33.44412",
+    "lng": "-70.59517",
+    "labels": "café"
+  },
+  {
     "name": "Aliwen",
     "isActive": "TRUE",
     "instagram": "emporioaliwen",
@@ -319,6 +330,17 @@
     "labels": "café"
   },
   {
+    "name": "Infiltrados",
+    "isActive": "TRUE",
+    "instagram": "infiltrados_coffee",
+    "website": "Sin sitio web",
+    "district": "San Fernando",
+    "address": "Rancagua 709",
+    "lat": "-34.5869392",
+    "lng": "-70.9833306",
+    "labels": "café"
+  },
+  {
     "name": "Dulce Espiga",
     "isActive": "TRUE",
     "instagram": "dulceespiga.cl",
@@ -328,6 +350,17 @@
     "lat": "-33.583781",
     "lng": "-70.3983588999999",
     "labels": "panadería"
+  },
+  {
+    "name": "Halteros",
+    "isActive": "TRUE",
+    "instagram": "centro_entrenamiento_halteros",
+    "website": "Sin sitio web",
+    "district": "San Miguel",
+    "address": "Curiñaca 843",
+    "lat": "-33.4896",
+    "lng": "-70.6453399999999",
+    "labels": "gimnasio"
   },
   {
     "name": "Casta Delicatessen",
@@ -404,17 +437,6 @@
     "address": "Amapolas 1515, local 3",
     "lat": "-33.4296391",
     "lng": "-70.5912659",
-    "labels": "tienda"
-  },
-  {
-    "name": "Emporio Organika",
-    "isActive": "TRUE",
-    "instagram": "emporioorganika",
-    "website": "Sin sitio web",
-    "district": "Melipilla",
-    "address": "Arturo Pratt 678",
-    "lat": "-33.6858181",
-    "lng": "-71.2162630999999",
     "labels": "tienda"
   },
   {
@@ -616,17 +638,6 @@
     "labels": "café"
   },
   {
-    "name": "Rossi Pizzería",
-    "isActive": "TRUE",
-    "instagram": "rossipizzeria",
-    "website": "https://rossipizzeria.cl/",
-    "district": "Linares",
-    "address": "Av. René Schneider 063, Local 01",
-    "lat": "-35.8343016",
-    "lng": "-71.5989491",
-    "labels": "restaurant"
-  },
-  {
     "name": "Zenith Fit Studio",
     "isActive": "TRUE",
     "instagram": "zenithfitstudio",
@@ -636,28 +647,6 @@
     "lat": "-33.6678689",
     "lng": "-70.9213268",
     "labels": "gimnasio"
-  },
-  {
-    "name": "Cabrita Alegre Placilla",
-    "isActive": "TRUE",
-    "instagram": "emporio_cabritalegre",
-    "website": "https://cabritaalegre.cl/",
-    "district": "Placilla",
-    "address": "Carranza 971",
-    "lat": "-34.6389143",
-    "lng": "-71.1178987",
-    "labels": "tienda"
-  },
-  {
-    "name": "Cabrita Alegre Pichilemu",
-    "isActive": "TRUE",
-    "instagram": "emporio_cabritalegrepichilemu",
-    "website": "https://cabritaalegre.cl/",
-    "district": "Pichilemu",
-    "address": "Av. Comercio 4851",
-    "lat": "-34.4279297",
-    "lng": "-72.0318254",
-    "labels": "tienda, café"
   },
   {
     "name": "Emporio del Chã",
