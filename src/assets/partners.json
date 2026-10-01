@@ -6,6 +6,8 @@
     "website": "https://cabritaalegre.cl/",
     "district": "Ñuñoa",
     "address": "Pucará 4311, local 16",
+    "lat": "-33.4447629",
+    "lng": "-70.5856934",
     "labels": "tienda, café"
   },
   {
@@ -15,6 +17,8 @@
     "website": "https://verdesazon.cl/",
     "district": "Providencia",
     "address": "Miguel Claro 1873",
+    "lat": "-33.4461996",
+    "lng": "-70.6170545",
     "labels": "bar, restaurant"
   },
   {
@@ -24,6 +28,8 @@
     "website": "https://www.ritaroux.cl/",
     "district": "Vitacura",
     "address": "Juan Bautista Pastene 2827",
+    "lat": "-33.3979064",
+    "lng": "-70.5968738999999",
     "labels": "café"
   },
   {
@@ -33,6 +39,8 @@
     "website": "https://tiendaorganica.cl/",
     "district": "Providencia",
     "address": "El Aguilucho 3537",
+    "lat": "-33.4429595",
+    "lng": "-70.5943614999999",
     "labels": "tienda"
   },
   {
@@ -42,6 +50,8 @@
     "website": "Sin sitio web",
     "district": "Las Condes",
     "address": "Av. Apoquindo 2730, MUT piso -2",
+    "lat": "-33.4175191",
+    "lng": "-70.6008873999999",
     "labels": "tienda"
   },
   {
@@ -51,6 +61,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Coyancura 2223",
+    "lat": "-33.4236939",
+    "lng": "-70.6084217",
     "labels": "café"
   },
   {
@@ -60,6 +72,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "Merced 346, Local E",
+    "lat": "-33.4374816",
+    "lng": "-70.6420574",
     "labels": "restaurant, bar"
   },
   {
@@ -69,6 +83,8 @@
     "website": "Sin sitio web",
     "district": "Maipú",
     "address": "El Olimpo 735",
+    "lat": "-33.5218885",
+    "lng": "-70.7750609",
     "labels": "café"
   },
   {
@@ -78,6 +94,8 @@
     "website": "https://buencampo.cl/",
     "district": "Providencia",
     "address": "José Manuel Infante 1728",
+    "lat": "-33.4467125",
+    "lng": "-70.6187877999999",
     "labels": "tienda"
   },
   {
@@ -87,6 +105,8 @@
     "website": "https://www.bakerytogo.cl/",
     "district": "Providencia",
     "address": "Miguel Claro 2101",
+    "lat": "-33.4477681",
+    "lng": "-70.6167626",
     "labels": "panadería"
   },
   {
@@ -96,6 +116,8 @@
     "website": "https://www.leboleto.cl/",
     "district": "Providencia",
     "address": "Obispo Donoso 044 A",
+    "lat": "-33.4380263",
+    "lng": "-70.6285156",
     "labels": "café"
   },
   {
@@ -105,6 +127,8 @@
     "website": "Sin sitio web",
     "district": "Maipú",
     "address": "La Fortuna 520 Local 6",
+    "lat": "-33.5233318",
+    "lng": "-70.7660719",
     "labels": "panadería"
   },
   {
@@ -114,6 +138,8 @@
     "website": "https://mayalgranel.cl/",
     "district": "Maipú",
     "address": "Central Gonzalo Pérez Llona 200",
+    "lat": "-33.5000707",
+    "lng": "-70.7551053999999",
     "labels": "tienda"
   },
   {
@@ -123,6 +149,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Ramón Carnicer 65",
+    "lat": "-33.4398668",
+    "lng": "-70.6328985999999",
     "labels": "café"
   },
   {
@@ -132,6 +160,8 @@
     "website": "Sin sitio web",
     "district": "Ñuñoa",
     "address": "Av. Irarrazaval 1376",
+    "lat": "-33.4528671",
+    "lng": "-70.6164642999999",
     "labels": "tienda"
   },
   {
@@ -141,6 +171,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Av. Providencia 1100, local 18",
+    "lat": "-33.429801",
+    "lng": "-70.6226995",
     "labels": "bar"
   },
   {
@@ -150,6 +182,8 @@
     "website": "https://www.veggielunch.cl/",
     "district": "Ñuñoa",
     "address": "José Domingo Cañas 386",
+    "lat": "-33.4549584",
+    "lng": "-70.6262067999999",
     "labels": "restaurant"
   },
   {
@@ -159,6 +193,8 @@
     "website": "Sin sitio web",
     "district": "Las Condes",
     "address": "Av. Apoquindo 2730, MUT piso -2",
+    "lat": "-33.4175191",
+    "lng": "-70.6008873999999",
     "labels": "restaurant"
   },
   {
@@ -168,6 +204,8 @@
     "website": "https://www.pandiaskitchen.cl/",
     "district": "Providencia",
     "address": "Los Leones 0156",
+    "lat": "-33.4221279",
+    "lng": "-70.6084573999999",
     "labels": "restaurant"
   },
   {
@@ -177,6 +215,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "Padre Luis de Valdivia 327",
+    "lat": "-33.4390786",
+    "lng": "-70.6416179",
     "labels": "restaurant"
   },
   {
@@ -186,6 +226,8 @@
     "website": "Sin sitio web",
     "district": "San Miguel",
     "address": "Magdalena Vicuña 1399",
+    "lat": "-33.4802741",
+    "lng": "-70.6516583",
     "labels": "café"
   },
   {
@@ -195,6 +237,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "Huérfanos 669",
+    "lat": "-33.4389389",
+    "lng": "-70.6464606999999",
     "labels": "café"
   },
   {
@@ -204,6 +248,8 @@
     "website": "Sin sitio web",
     "district": "San Antonio",
     "address": "Los Aromos 329, Llo-Lleo",
+    "lat": "-33.610526",
+    "lng": "-71.611226",
     "labels": "tienda"
   },
   {
@@ -213,6 +259,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Eliodoro Yáñez 1228, local 104",
+    "lat": "-33.4333121",
+    "lng": "-70.6183506",
     "labels": "café"
   },
   {
@@ -222,6 +270,8 @@
     "website": "https://www.lapopularpizzaypan.cl/",
     "district": "Providencia",
     "address": "José Manuel Infante 1232",
+    "lat": "-33.4424864",
+    "lng": "-70.6201714",
     "labels": "restaurant, panadería, tienda"
   },
   {
@@ -231,6 +281,8 @@
     "website": "https://www.lapopularpizzaypan.cl/",
     "district": "Providencia",
     "address": "Av. Francisco Bilbao 2793",
+    "lat": "-33.4360046",
+    "lng": "-70.5934694",
     "labels": "restaurant, panadería, tienda"
   },
   {
@@ -240,6 +292,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "Arturo Prat 33",
+    "lat": "-33.4449721",
+    "lng": "-70.6505043",
     "labels": "café"
   },
   {
@@ -249,6 +303,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "Maipú 330",
+    "lat": "-33.4419705",
+    "lng": "-70.6767055999999",
     "labels": "café"
   },
   {
@@ -258,6 +314,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "1er piso Biblioteca Nacional.",
+    "lat": "-33.4422661",
+    "lng": "-70.6456508999999",
     "labels": "café"
   },
   {
@@ -267,6 +325,8 @@
     "website": "Sin sitio web",
     "district": "San José del Maipo",
     "address": "Camino al Volcán 10751",
+    "lat": "-33.583781",
+    "lng": "-70.3983588999999",
     "labels": "panadería"
   },
   {
@@ -276,6 +336,8 @@
     "website": "Sin sitio web",
     "district": "La Reina",
     "address": "Av. Larraín 5972",
+    "lat": "-33.4530743",
+    "lng": "-70.5683854",
     "labels": "tienda"
   },
   {
@@ -285,6 +347,8 @@
     "website": "https://granjero.cl/",
     "district": "Providencia",
     "address": "La Concepción 167",
+    "lat": "-33.424157",
+    "lng": "-70.6160682",
     "labels": "tienda"
   },
   {
@@ -294,6 +358,8 @@
     "website": "https://granjero.cl/",
     "district": "Providencia",
     "address": "Av. Providencia 1986",
+    "lat": "-33.4236413",
+    "lng": "-70.6128734999999",
     "labels": "tienda"
   },
   {
@@ -303,6 +369,8 @@
     "website": "https://granjero.cl/",
     "district": "Providencia",
     "address": "Av. Francisco Bilbao 721",
+    "lat": "-33.4407866",
+    "lng": "-70.6230789",
     "labels": "tienda"
   },
   {
@@ -312,6 +380,8 @@
     "website": "Sin sitio web",
     "district": "Ñuñoa",
     "address": "Hamburgo 1035",
+    "lat": "-33.4447485",
+    "lng": "-70.5769145",
     "labels": "panadería"
   },
   {
@@ -321,6 +391,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Eliodoro Yáñez 961",
+    "lat": "-33.4337914",
+    "lng": "-70.6224115",
     "labels": "café"
   },
   {
@@ -330,6 +402,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Amapolas 1515, local 3",
+    "lat": "-33.4296391",
+    "lng": "-70.5912659",
     "labels": "tienda"
   },
   {
@@ -339,6 +413,8 @@
     "website": "Sin sitio web",
     "district": "Melipilla",
     "address": "Arturo Pratt 678",
+    "lat": "-33.6858181",
+    "lng": "-71.2162630999999",
     "labels": "tienda"
   },
   {
@@ -348,6 +424,8 @@
     "website": "Sin sitio web",
     "district": "Peñalolén",
     "address": "Comunidad Ecológica de Peñalolén",
+    "lat": "-33.4834999",
+    "lng": "-70.5341196999999",
     "labels": "café"
   },
   {
@@ -357,6 +435,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Av. Francisco Bilbao 944",
+    "lat": "-33.440106",
+    "lng": "-70.6208893",
     "labels": "restaurant"
   },
   {
@@ -366,6 +446,8 @@
     "website": "https://andariegocoffee.cl/",
     "district": "Santiago",
     "address": "Franklin 741",
+    "lat": "-33.4728193",
+    "lng": "-70.6428081",
     "labels": "café, tienda"
   },
   {
@@ -375,6 +457,8 @@
     "website": "https://xn--maa-8ma.cl/",
     "district": "Santiago",
     "address": "Bombero Salas 1361",
+    "lat": "-33.4417197",
+    "lng": "-70.6557902",
     "labels": "café"
   },
   {
@@ -384,6 +468,8 @@
     "website": "https://singularcoffee.cl/",
     "district": "Providencia",
     "address": "Suecia 161",
+    "lat": "-33.4223652",
+    "lng": "-70.6073214",
     "labels": "café"
   },
   {
@@ -393,6 +479,8 @@
     "website": "https://singularcoffee.cl/",
     "district": "Providencia",
     "address": "Los Leones 1969",
+    "lat": "-33.4221279",
+    "lng": "-70.6084573999999",
     "labels": "café"
   },
   {
@@ -402,6 +490,8 @@
     "website": "https://casaasa.cl/",
     "district": "Las Condes",
     "address": "Av. Apoquindo 2730, MUT piso 3",
+    "lat": "-33.4175191",
+    "lng": "-70.6008873999999",
     "labels": "restaurant"
   },
   {
@@ -411,6 +501,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "Víctor Manuel 2246",
+    "lat": "-33.4745412",
+    "lng": "-70.6404695",
     "labels": "restaurant"
   },
   {
@@ -420,6 +512,8 @@
     "website": "https://elotrohuerto.cl/",
     "district": "Providencia",
     "address": "Carlos Silva Vildósola 1232",
+    "lat": "-33.427643",
+    "lng": "-70.5939267999999",
     "labels": "café, tienda"
   },
   {
@@ -429,6 +523,8 @@
     "website": "https://www.emporiolamocha.cl/",
     "district": "San Miguel",
     "address": "Los Castaños 3482",
+    "lat": "-33.4861743",
+    "lng": "-70.6544913",
     "labels": "tienda"
   },
   {
@@ -438,6 +534,8 @@
     "website": "https://www.ginmalabar.com/",
     "district": "Santiago",
     "address": "Franklin 741, local 31B",
+    "lat": "-33.4728193",
+    "lng": "-70.6428081",
     "labels": "tienda"
   },
   {
@@ -447,6 +545,8 @@
     "website": "https://lafiambreria.cl/",
     "district": "Ñuñoa",
     "address": "Pedro Torres 1227",
+    "lat": "-33.4441483",
+    "lng": "-70.5865092",
     "labels": "tienda, restaurant"
   },
   {
@@ -456,6 +556,8 @@
     "website": "https://www.lapopularpizzaypan.cl/",
     "district": "Ñuñoa",
     "address": "Jorge Washington 116",
+    "lat": "-33.4541185",
+    "lng": "-70.594272",
     "labels": "café, panadería, tienda"
   },
   {
@@ -465,6 +567,8 @@
     "website": "Sin sitio web",
     "district": "Valparaíso",
     "address": "DestinoValpo, Local 06, Valparaíso",
+    "lat": "-33.047238",
+    "lng": "-71.6126884999999",
     "labels": "tienda"
   },
   {
@@ -474,6 +578,8 @@
     "website": "Sin sitio web",
     "district": "Ñuñoa",
     "address": "General Bustamante 655",
+    "lat": "-33.4498991",
+    "lng": "-70.6300112999999",
     "labels": "restaurant"
   },
   {
@@ -483,6 +589,8 @@
     "website": "Sin sitio web",
     "district": "Santiago",
     "address": "José Victorino Lastarria 138",
+    "lat": "-33.4387486",
+    "lng": "-70.6413690999999",
     "labels": "restaurant"
   },
   {
@@ -492,6 +600,8 @@
     "website": "Sin sitio web",
     "district": "Providencia",
     "address": "Santa Beatriz 203",
+    "lat": "-33.4258604",
+    "lng": "-70.6188335",
     "labels": "café, restaurant"
   },
   {
@@ -501,6 +611,8 @@
     "website": "https://www.r3coffee.cl/",
     "district": "Santiago",
     "address": "Miraflores 537",
+    "lat": "-33.4363665",
+    "lng": "-70.6457403",
     "labels": "café"
   },
   {
@@ -510,6 +622,8 @@
     "website": "https://rossipizzeria.cl/",
     "district": "Linares",
     "address": "Av. René Schneider 063, Local 01",
+    "lat": "-35.8343016",
+    "lng": "-71.5989491",
     "labels": "restaurant"
   },
   {
@@ -519,6 +633,8 @@
     "website": "Sin sitio web",
     "district": "Talagante",
     "address": "Balmaceda 1429, Talagante",
+    "lat": "-33.6678689",
+    "lng": "-70.9213268",
     "labels": "gimnasio"
   },
   {
@@ -528,6 +644,8 @@
     "website": "https://cabritaalegre.cl/",
     "district": "Placilla",
     "address": "Carranza 971",
+    "lat": "-34.6389143",
+    "lng": "-71.1178987",
     "labels": "tienda"
   },
   {
@@ -537,6 +655,8 @@
     "website": "https://cabritaalegre.cl/",
     "district": "Pichilemu",
     "address": "Av. Comercio 4851",
+    "lat": "-34.4279297",
+    "lng": "-72.0318254",
     "labels": "tienda, café"
   },
   {
@@ -546,6 +666,8 @@
     "website": "Sin sitio web",
     "district": "Casablanca",
     "address": "Chacabuco 495, Casablanca, Valparaíso",
+    "lat": "-33.3181632",
+    "lng": "-71.4051556",
     "labels": "tienda"
   },
   {
@@ -555,6 +677,8 @@
     "website": "https://pianogourmet.cl/",
     "district": "Las Condes",
     "address": "Av. Américo Vespucio Sur 1650",
+    "lat": "-33.4274271",
+    "lng": "-70.5748984",
     "labels": "tienda, café"
   }
 ]

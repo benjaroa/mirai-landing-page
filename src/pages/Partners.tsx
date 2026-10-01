@@ -39,8 +39,8 @@ const partnersListParsed = jsonPartnersList.reduce(
     if (district) partner.district = district;
     if (address) partner.address = address;
     if (labels) partner.labels = labels.split(", ");
-    if (lat) partner.lat = lat;
-    if (lng) partner.lng = lng;
+    if (lat) partner.lat = Number(lat);
+    if (lng) partner.lng = Number(lng);
     return [...acc, partner];
   },
   []
