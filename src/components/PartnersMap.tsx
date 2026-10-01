@@ -78,11 +78,6 @@ export const PartnersMap = ({ partners }: PartnersMapProps) => {
           font-family: inherit;
         }
         
-        .leaflet-tile-pane {
-          filter: saturate(0.65) brightness(1.05) contrast(0.95);
-          opacity: 1;
-        }
-        
         .custom-marker {
           background: transparent !important;
           border: none !important;
@@ -134,9 +129,9 @@ export const PartnersMap = ({ partners }: PartnersMapProps) => {
         ref={mapRef}
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-          maxZoom={19}
+          attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
+          maxZoom={20}
         />
         
         <MapBoundsController partners={partnersWithLocation} />
